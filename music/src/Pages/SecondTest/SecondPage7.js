@@ -23,7 +23,7 @@ const SecondPage7 = () => {
                     completed={completed}/>
             </div>
             <div className="num2">
-                <h3>난 뭐든지 앞서가야해! 그렇기 때문에 예상치 못한 음악적 요소 속에 장시간 연주되는 악기의 솔로 연주가 멋있어 보여.</h3>
+                <h3>난 뭐든지 앞서가야 해! 그렇기 때문에 예상치 못한 음악적 요소를 가지고 장시간 연주되는 악기의 솔로 연주가 멋있어 보여.</h3>
                 <RockBox id="ProRock2"/>
             </div>
             <div className="num2">
@@ -32,7 +32,7 @@ const SecondPage7 = () => {
                 <RockBox id="HeavyRock2"/>
             </div>
             <div className="num2">
-                <h3>특이한 기타리프 사운드와 대중적인 틀을 무시하고 각각의 아티스트마다 다채로운 창의성이 도드라지는 음악이 진정한 예술이라고 생각해.</h3>
+                <h3>특이한 기타리프 사운드와 대중적인 틀을 무시하고 각각의 아티스트마다 창의성이 도드라지는 음악이 진정한 예술이라고 생각해.</h3>
                 <RockBox id="AlterRock2"/>
             </div>
             <div className="num2">
