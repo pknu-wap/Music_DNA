@@ -32,7 +32,7 @@ const SecondPage4 = () => {
                 <PopBox id="ElecPop2"/>
             </div>
             <div className="num2">
-                <h3>내가 덕질하는 최애 아이돌 음악만이 내 삶의 원동력이라구!
+                <h3>내가 덕질하는 최애 아이돌 음악만이 내 삶의 원동력이라고!
 굿즈 소장은 필수 중 필수 아니겠어?</h3>
                 <PopBox id="BritPop2"/>
             </div>
@@ -43,7 +43,7 @@ const SecondPage4 = () => {
             </div>
             <div className="num2">
                 <h3>스페인어만의 특유한 어감과 레게톤의 음악!
-마치 스페인 바닷가에서 개최한 뮤직 페스티벌에 와 있는것 같아서 정말 신나!</h3>
+마치 해변에서 개최한 뮤직 페스티벌에 와 있는 것 같아서 정말 신나!</h3>
                 <PopBox id="LatinPop2"/>
             </div>
             <SecondBtn to="/SecondPage5" ids={["DancePop2", "ElecPop2", "BritPop2", "IndiPop2", "LatinPop2"]}/>

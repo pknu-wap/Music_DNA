@@ -106,13 +106,11 @@ const SecondPage9 = () => {
                 <RbBox id="NeoRB1"/>
             </div>
             <div className="num2">
-                <h3>현대적인 다양한 장르를 결합해 트렌드를 이끄는 사운드 위에 보컬의 소울과 그루브가 느껴져.
-이런 세련된 섹시함은 나의 미간을 찡그리게 만들지.</h3>
+                <h3>트렌디한 장르와 보컬의 소울과 그루브가 결합된 음악은 나의 미간을 찡그리게 만들지.</h3>
                 <RbBox id="ComRB1"/>
             </div>
             <div className="num2">
-                <h3>끈적하면서 그루비한 보컬의 소울과 드럼의 리듬 위의 째지한 사운드.. 
-독특하면서 센스있는 베이스의 그루브는 나를 춤추게 만들지 I Feel Good~</h3>
+                <h3>흑인 보컬의 소울과 째지한 드럼과 사운드.. 센스있는 베이스의 그루브는 나를 춤추게 만들지 I Feel Good~</h3>
                 <RbBox id="PunkRB1"/>
             </div>
             <div className="num2">
@@ -121,8 +119,8 @@ const SecondPage9 = () => {
                 <RbBox id="SoulRB1"/>
             </div>
             <div className="num2">
-                <h3>자신만의 아이덴티티로 창의성을 펼쳐내 복잡한 자신의 감정을 다양하고 특이한 사운드로 표현하는
-소울이 담겨진 음악.. 이건 아트가 아닐까?</h3>
+                <h3>자신만의 아이덴티티로 창의성을 펼쳐내 복잡한 자신의 감정을 다양한 사운드로 표현하는
+소울이 담겨진 음악.. 이게 예술이지.</h3>
                 <RbBox id="AlterRB1"/>
             </div>
             {/* <div className='linkBox'>

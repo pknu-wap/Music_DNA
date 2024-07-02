@@ -23,8 +23,8 @@ const SecondPage2 = () => {
                     completed={completed}/>
             </div>
             <div className="num2">
-                <h3>난 험난했던 나의 출생지의 자부심이 넘쳐. 
-그래서 그런지 빡센 스토리, 범죄와 관련된 삶 거기에 하드한 비트까지!? 이건 내 피를 끓게 한다고!</h3>
+                <h3>험난했던 나의 출생지의 자부심이 넘쳐. 
+그래서 그런지 할렘가의 삶이 담긴 빡센 스토리와 하드한 비트는 내 피를 끓게 한다고!</h3>
                 <HipBox id="DrillHip1"/>
             </div>
             <div className="num2">
