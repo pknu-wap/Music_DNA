@@ -79,3 +79,5 @@
 <a href="https://www.figma.com/design/MWk0m8IiRdCRySQzntmyIW/%EC%9D%8C%EC%95%85-mbti?node-id=0-1&t=EolFZL5pfBozHZmx-0" target="_blank"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
 </a></div>
 
+### deploy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbeafebf-2f14-4070-bae6-1b111eece2d2/deploy-status)](https://app.netlify.com/sites/wapmusictest/deploys)
