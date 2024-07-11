@@ -80,4 +80,4 @@
 </a></div>
 
 ### deploy
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dbeafebf-2f14-4070-bae6-1b111eece2d2/deploy-status)](https://app.netlify.com/sites/wapmusictest/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbeafebf-2f14-4070-bae6-1b111eece2d2/deploy-status)](https://wapmusictest.netlify.app)
