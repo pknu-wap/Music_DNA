@@ -2,6 +2,7 @@ import React from "react";
 import {useState, useRef} from "react";
 import { ChakraProvider } from '@chakra-ui/react';
 import ProgressBar from "@ramonak/react-progress-bar";
+import { supabase } from '../../supabaseClient';
 
 import RockBox from "../../Components/RockBox";
 import RbBox from "../../Components/RbBox";
@@ -12,33 +13,50 @@ import useCompleted from "../../Components/useCompleted";
 import "./FirstPage.css";
 import testData from "../../Components/testData";
 
+const audioPath = {
+    1: 'POP1.mp3',
+    2: 'POP2.mp3',
+    3: 'HipHop1.mp3',
+    4: 'HipHop2.mp3',
+    5: 'Rock1.mp3',
+    6: 'Rock2.mp3',
+    7: 'RB1.mp3',
+    8: 'RB2.mp3',
+    9: 'Jazz1.mp3',
+    10: 'Jazz2.mp3'
+};
+
 const FirstPage1 = () => {
     const completed = useCompleted(0,1);
 
     const [isPlaying, setIsPlaying] = useState(false);
     // 음원 개수가 총 10개이므로 각 음원의 상태를 배열 형태로 다루어야함 
     const audioRefs = useRef([]);
-    const playMusic = async(audioName) => {
+    
+    const playMusic = async (audioName) => {
         try {
-            // audioRef에 음원이 설정되지 않았다면 설정해줘야함
             if (!audioRefs.current[audioName].src) {
-                // audioName 변수(숫자 1~10)를 사용해서 각 문항마다 다른 음원을 서버로 요청함.
-                const response = await fetch(`https://34.64.108.76.nip.io/music/${audioName}`, {
-                    method: 'POST' // POST 요청으로 변경
-                });
-                // 응답 데이터(response)는 바이너리 데이터이므로 Blob(Binary Large Object) 객체로 변환하여 저장.
-                const blob = await response.blob();
-                // Blob 객체로부터 URL을 생성하여 audioRef의 src에 저장해줌 
-                audioRefs.current[audioName].src = URL.createObjectURL(blob); // 생성된 URL을 audioRef에 설정
+                const { data, error } = await supabase
+                    .storage
+                    .from('Music_src') // 여기에 실제 버킷 이름을 넣으세요
+                    .getPublicUrl(audioPath[audioName]);
+                    
+
+                if (error) {
+                    console.error('Error fetching audio URL:', error);
+                    return;
+                }
+                
+                audioRefs.current[audioName].src = data.publicUrl;
             }
-            
-            // 이전에 재생 중이던 모든 오디오 일시 정지 
-            audioRefs.current.forEach((audio,i)=>{
-                if (i !== audioName && !audio.paused){
+
+            // 재생중인 음악이 있다면 정지
+            audioRefs.current.forEach((audio, i) => {
+                if (i !== audioName && !audio.paused) {
                     audio.pause();
                     audio.currentTime = 0;
-                    }
-                })
+                }
+            });
             
             if (audioRefs.current[audioName].paused) {
                 audioRefs.current[audioName].play();
@@ -50,6 +68,7 @@ const FirstPage1 = () => {
         }
         setIsPlaying(!isPlaying);
     };
+
 
     return (
         <ChakraProvider>
