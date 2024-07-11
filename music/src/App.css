@@ -58,7 +58,7 @@ body{
   margin: 15px;
 }
 
-.text1 {
+.firstText {
   line-height: 50%;
 }
 
@@ -69,7 +69,7 @@ body{
   color: rgb(179, 162, 175);
 }
 
-.text3 {
+.caution {
   text-align: center;
   line-height: 10%;
   font-size: small;
@@ -103,7 +103,7 @@ body{
   background-color: #d6ff328f;
 }
 
-.text3 h4{
+.caution h4{
   position: relative;
   text-align: center;
   font-size: small;
@@ -147,11 +147,11 @@ body{
   top:200px;
   left:270px;
 }
-.text3 {
+.caution {
   display: flex;
 }
 
-.text3 .h4-1 {
+.caution .h4-1 {
   position: fixed;
   font-size: 8px;
   left: 87px;
@@ -159,7 +159,7 @@ body{
   color: aliceblue;
 }
 
-.text3 .h4-2 {
+.caution .h4-2 {
   position: fixed;
   font-size: 8px;
   left: 87px;

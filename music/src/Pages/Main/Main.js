@@ -29,24 +29,47 @@ const Main = () => {
         };
     }, []);
 
+    const SoundIcon = ({ isPlaying, playMusic }) => (
+        <div className='sound'>
+            <img    
+                style={{ cursor: "pointer" }}
+                onClick={playMusic}
+                src="./sound1.png"
+                alt='Sound Icon'
+                className={isPlaying ? 'playing' : ''}
+            />
+        </div>
+    );
+
+    const TextSection = ({ title, subtitle }) => (
+        <div className='firstText'>
+            <h2>{title}</h2>
+            <h1>{subtitle}</h1>
+        </div>
+    );
+
+    const Caution = () => (
+        <div className='caution'>
+            <h4 className='h4-1'>음악 장르에는 하위장르를 포함하여 무수히 많은 장르가 존재합니다.</h4>
+            <h4 className='h4-2'>이 테스트에는 많은 장르 중 대중적인 장르들을 선별하여 추천됩니다.</h4>
+        </div>
+    );
+
+    const MainButton = () => (
+        <div className='mainButton'>
+            <Link to="/firstPage">
+                <button>테스트 시작하기</button>
+            </Link>
+        </div>
+    )
+    
+
     return (
         <div className="Main">
-            <div className='sound'>
-                <img style={{cursor:"pointer"}}onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
-            </div>
-            <div className='text1'>
-                <h2>숨겨진 나의 음악 </h2>
-                <h1>DNA</h1>
-            </div>
-            <div className="text3">
-                <h4 className="h4-1">음악 장르에는 하위장르를 포함하여 무수히 많은 장르가 존재합니다.</h4>
-                <h4 className="h4-2">이 테스트에는 많은 장르 중 대중적인 장르들을 선별하여 추천됩니다.</h4>
-            </div>
-            <div className='mainButton'>
-                <Link to="/firstPage">
-                    <button>테스트 시작하기</button>  
-                </Link> 
-            </div>
+            <SoundIcon isPlaying={isPlaying} playMusic={playMusic} />
+            <TextSection title="숨겨진 나의 음악" subtitle="DNA" />
+            <Caution />
+            <MainButton />
         </div>
     );
 };
