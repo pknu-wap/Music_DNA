@@ -41,21 +41,21 @@ const Main = () => {
         </div>
     );
 
-    const TextSection = ({ title, subtitle }) => (
+    const MainText = ({ title, subtitle }) => (
         <div className='firstText'>
             <h2>{title}</h2>
             <h1>{subtitle}</h1>
         </div>
     );
 
-    const Caution = () => (
+    const CautionText = () => (
         <div className='caution'>
             <h4 className='h4-1'>음악 장르에는 하위장르를 포함하여 무수히 많은 장르가 존재합니다.</h4>
             <h4 className='h4-2'>이 테스트에는 많은 장르 중 대중적인 장르들을 선별하여 추천됩니다.</h4>
         </div>
     );
 
-    const MainButton = () => (
+    const StartButton = () => (
         <div className='mainButton'>
             <Link to="/firstPage">
                 <button>테스트 시작하기</button>
@@ -67,9 +67,9 @@ const Main = () => {
     return (
         <div className="Main">
             <SoundIcon isPlaying={isPlaying} playMusic={playMusic} />
-            <TextSection title="숨겨진 나의 음악" subtitle="DNA" />
-            <Caution />
-            <MainButton />
+            <MainText title="숨겨진 나의 음악" subtitle="DNA" />
+            <CautionText />
+            <StartButton />
         </div>
     );
 };
