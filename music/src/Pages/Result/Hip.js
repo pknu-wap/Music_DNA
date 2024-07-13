@@ -13,8 +13,9 @@ import {
     RageHipModalBody,
     BoomHipModalBody} from "./ModalCon"
 
+import Share from '../../Components/Share';
+
 const Hip = () => {
-     
     const HipValue = useRecoilValue(HipValueState);
 
     useEffect(()=>{
@@ -226,6 +227,7 @@ const Hip = () => {
         </tr>
     </table>
     </div>
+    <Share/>
     </div>
     </ChakraProvider>
     );

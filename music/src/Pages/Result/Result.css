@@ -296,9 +296,9 @@ text-align: left;
         font-size: 10px;
     }
 
-    .vstack-custom {
-       position: relative;
-       left: -300px;
+.vstack-custom {
+    position: relative;
+    left: -300px;
 
     }
 
@@ -350,4 +350,4 @@ text-align: left;
     .vstack-custom .first_box .Sub .AlterRB{
         padding: 0px 37px;
     }
-  }
+}

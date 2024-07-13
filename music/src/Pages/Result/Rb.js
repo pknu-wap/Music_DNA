@@ -11,7 +11,11 @@ import {
     ComtemRbModalBody,
     PunkRbModalBody,
     SoulRbModalBody,
-    AlterRbModalBody} from "./ModalCon"
+    AlterRbModalBody} from "./ModalCon";
+
+
+import Share from '../../Components/Share';
+
 
 const Rb = () => {
     const RbValue = useRecoilValue(RbValueState);
@@ -220,9 +224,9 @@ const Rb = () => {
         </tr>
     </table>
     </div>
-   
-        </div>
-        </ChakraProvider>
+    <Share/>
+    </div>
+    </ChakraProvider>
     );
 }
 

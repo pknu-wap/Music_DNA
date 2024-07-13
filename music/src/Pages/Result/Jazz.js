@@ -11,7 +11,11 @@ import {
     SwingJazzModalBody,
     SoulJazzModalBody,
     FreeJazzModalBody,
-    BibobJazzModalBody} from "./ModalCon"
+    BibobJazzModalBody} from "./ModalCon";
+
+
+import Share from '../../Components/Share';
+
 
 const Jazz = () => {
      
@@ -219,7 +223,7 @@ const Jazz = () => {
         </tr>
     </table>
     </div>
-
+    <Share/>
     </div>
         </ChakraProvider>
     );

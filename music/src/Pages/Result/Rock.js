@@ -14,6 +14,8 @@ import {
     ShowRockModalBody
 } from "./ModalCon";
 
+import Share from '../../Components/Share';
+
 const Rock = () => {
      
     const RockValue = useRecoilValue(RockValueState);
@@ -220,8 +222,9 @@ const Rock = () => {
         </tr>
     </table>
     </div>
-        </div>
-        </ChakraProvider>
+    <Share/>
+    </div>
+    </ChakraProvider>
     );
 }
 
