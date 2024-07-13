@@ -14,6 +14,8 @@ import {
     LatinPopModalBody
 } from "./ModalCon";
 
+import Share from '../../Components/Share';
+
 const Pop = () => {
     
     const PopValue = useRecoilValue(PopValueState);
@@ -65,11 +67,12 @@ const Pop = () => {
     const { isOpen: isIndiPopOpen, onOpen: onIndiPopOpen, onClose: onIndiPopClose } = useDisclosure();
     const { isOpen: isLatinPopOpen, onOpen: onLatinPopOpen, onClose: onLatinPopClose } = useDisclosure();
 
+
+    
     return (
         <ChakraProvider>
         <div className="body">
         <br/><br/><br/><br/><br/>
-
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
             <h2>'<span>POP</span>' 에 가깝군요!</h2>
@@ -182,17 +185,17 @@ const Pop = () => {
             </HStack>
         </Box>
     </VStack>
-        <div className="ques">
-            <h3>추천 플레이리스트 보기</h3>
-        </div>
-        <div class="musictable">
+    <div className="ques">
+        <h3>추천 플레이리스트 보기</h3>
+    </div>
+    <div class="musictable">
         <table>
         <tr>
         <hr/><td>
             <img src="/pop_m1.jpg" id="albumcover"/>
             <div id="song">Just Dance<br/><span>Lady gaga</span></div>
             <img src="19.png" id="prohibit1"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'}         src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
@@ -220,11 +223,11 @@ const Pop = () => {
             <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYaW79d9ymkxjp26uC1xRmT'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
-    </table>
+        </table>
     </div>
-    
-        </div>
-        </ChakraProvider>
+    <Share/>
+    </div>
+    </ChakraProvider>
     );
 }
 
