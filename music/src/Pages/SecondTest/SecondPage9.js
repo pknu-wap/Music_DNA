@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { supabase } from '../../supabaseClient';
 
 import RbBox from "../../Components/RbBox";
 import testData from "../../Components/testData";
@@ -44,6 +45,7 @@ const SecondPage9 = () => {
     const RbTotal = Object.values(RbCheckValue).reduce((sum,value)=> sum + value, 0);
     const RockTotal = Object.values(RockCheckValue).reduce((sum,value)=> sum + value, 0);
 
+    // 장르당 총 합
     const AllTotal = {
         Pop: PopTotal,
         Hip: HipTotal,
@@ -52,50 +54,77 @@ const SecondPage9 = () => {
         Rock: RockTotal,
     };
 
-    const Result = Object.keys(AllTotal).reduce((max, genre) => {  // 최대값 가진 장르
+     // 최대값 가진 장르
+    const Result = Object.keys(AllTotal).reduce((max, genre) => { 
         return AllTotal[genre] > AllTotal[max] ? genre : max;
     }, 'Pop')
 
-    const maxTotal = AllTotal[Result]; // 최대값
+     // 최대값
+    const maxTotal = AllTotal[Result];
+
+    async function getUserInfo(Result) {
+        let { data, error } = await supabase
+            .from('new_song')
+            .select(Result);
+        
+        if (error) {
+            console.log("error: ", error);
+            return null;
+        }
+
+        return data;
+    } 
 
     const completeButton = () => {
         console.log("결과 :" , Result);
         console.log("장르 :", maxTotal);
-        sendDataToServer();
+        getUserInfo(Result).then(userInfo => {
+            if (userInfo) {
+                console.log(userInfo);
+            }
+            else {
+                console.log("fail");
+            }
+        })
     };
-    const sendDataToServer = async () => {
-        const data = {
-            pop: combineKeysValues(PopCheckValue),
-            hip: combineKeysValues(HipCheckValue),
-            jazz: combineKeysValues(JazzCheckValue),
-            rb: combineKeysValues(RbCheckValue),
-            rock: combineKeysValues(RockCheckValue)
-        }
-        try {
-          const response = await fetch("https://34.64.108.76.nip.io/answer", {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
+
+
+    // 서버에 데이터 보냄
+    // const sendDataToServer = async () => {
+    //     const data = {
+    //         pop: combineKeysValues(PopCheckValue),
+    //         hip: combineKeysValues(HipCheckValue),
+    //         jazz: combineKeysValues(JazzCheckValue),
+    //         rb: combineKeysValues(RbCheckValue),
+    //         rock: combineKeysValues(RockCheckValue)
+    //     }
+    //     try {
+    //       const response = await fetch("https://34.64.108.76.nip.io/answer", {
+    //         method: 'POST',
+    //         headers: {
+    //           'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(data)
+    //       });
       
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
+    //       if (!response.ok) {
+    //         throw new Error('Network response was not ok');
+    //       }
       
-          const responseData = await response.json();
-          console.log('Server response:', responseData);
-        } catch (error) {
-          console.error('Error sending data:', error);
-        }
-      };      
+    //       const responseData = await response.json();
+    //       console.log('Server response:', responseData);
+    //     } catch (error) {
+    //       console.error('Error sending data:', error);
+    //     }
+    //   };    
+      
+
 
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                 <ProgressBar
+                <ProgressBar
                     key={11}
                     bgcolor={testData[11].bgcolor}
                     completed={completed}/>
