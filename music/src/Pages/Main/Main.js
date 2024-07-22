@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import '../../App.css';
+import './CautionModal';
+import CautionModal from './CautionModal';
 
 const Main = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -57,13 +58,11 @@ const Main = () => {
 
     const StartButton = () => (
         <div className='mainButton'>
-            <Link to="/firstPage">
-                <button>테스트 시작하기</button>
-            </Link>
+            <CautionModal/>
         </div>
     )
     
-
+    
     return (
         <div className="Main">
             <SoundIcon isPlaying={isPlaying} playMusic={playMusic} />
