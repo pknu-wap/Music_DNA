@@ -12,25 +12,25 @@ body{
 }
 .Main{
   position: fixed;
-  background-image: url("/public/maindesign4.gif");
+  background-image: url("/public/desktop.gif");
   width: 1480px;
   height:1300px;
   top: -100px;
   margin-left: -12px;
-  margin-bottom: 0px;
   background-size: 102.5%;
   background-repeat: no-repeat;
 }
 
+.sound {
+  position: relative;
+  top: 35%;
+  left: 80%;
+  color:rgb(208, 213, 216)
+}
 
-/* Main */
 .sound img{
-  position:relative;
-  top:430px;
-  left:1230px;
   width: 60px;
   height: 60px;
-  color:rgb(208, 213, 216)
 }
 
 .Main h2{
@@ -40,7 +40,7 @@ body{
   height: 82px;
   top: 370px;
   left: 898px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: lighter;
 }
 
@@ -112,8 +112,74 @@ body{
   left:137px;
 }
 
+/* mobile */
+@media (max-width: 768px) {
+  .sound {
+    position: relative;
+    top: 10%;
+    left: 30%;
+    color:rgb(208, 213, 216)
+  }
+  
+  .sound img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .firstText h2{
+    position: absolute;
+    color:white;
+    /* width: 452px;
+    height: 40px; */
+    top: 20%;
+    left: 5%;
+    font-size: 3.0rem;
+    font-weight: 500;
+    color: #D6FF32;
+  }
+  
+  .Main h1{ 
+    position: absolute;
+    color:white;
+    font-size: 3.0rem;
+    font-weight: bolder;
+    top: 24%;
+    left: 5%;
+  }
+  
+  .caution {
+    position: absolute;
+    text-align: center;
+    font-size: small;
+    color: rgb(179, 162, 175);
+    top: 30%;
+    left: -5%;
+  }
+
+  
+  .mainButton button {
+    background-color: #D6FF32;
+    border:#D6FF32;
+    border-radius: 15px;
+    padding: 15px 40px;
+  
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+
+  }
+  
+  .mainButton button:hover{
+    background-color: #d6ff328f;
+  }
+  
+}
+
 /*mobile*/
-@media (max-width:698px) {
+/* @media (max-width:698px) {
 .Main{
   position: fixed;
   width: 445px;
@@ -180,4 +246,4 @@ body{
   padding:10px 100px 10px 100px;
 }
 
-}
+} */

@@ -52,7 +52,7 @@ const Main = () => {
     const CautionText = () => (
         <div className='caution'>
             <h4 className='h4-1'>음악 장르에는 하위장르를 포함하여 무수히 많은 장르가 존재합니다.</h4>
-            <h4 className='h4-2'>이 테스트에는 많은 장르 중 대중적인 장르들을 선별하여 추천됩니다.</h4>
+            <h4 className='h4-2'>이 테스트에는 많은 장르 중 대중적인 장르들을 선별하여 추천됩니다</h4>
         </div>
     );
 
