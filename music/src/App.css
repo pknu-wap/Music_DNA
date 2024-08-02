@@ -7,22 +7,26 @@
 }
 
 body{
-  width:1000px;
   font-family: 'Pretendard-Regular';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 .Main{
   position: fixed;
   background-image: url("/public/desktop.gif");
-  width: 1480px;
+  /* width: 1480px;
   height:1300px;
-  top: -100px;
-  margin-left: -12px;
-  background-size: 102.5%;
+  top: -100px; */
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .sound {
-  position: relative;
+  position: absolute;
   top: 35%;
   left: 80%;
   color:rgb(208, 213, 216)
@@ -34,24 +38,25 @@ body{
 }
 
 .Main h2{
-  position: relative;
+  position: absolute;
   color:white;
   width: 452px;
   height: 82px;
-  top: 370px;
-  left: 898px;
+  top: 50%;
+  right: 10%;
   font-size: 2.5rem;
   font-weight: lighter;
+  color: #D6FF32;
 }
 
 .Main h1{
-  position: relative;
+  position: absolute;
   color:white;
   font-size: 147.42px;
   font-weight: 500;
   line-height: 77.25px;
-  top: 250px;
-  left:990px;
+  top: 50%;
+  right: 12%;
 }
 
 .sound img {
@@ -62,13 +67,6 @@ body{
   line-height: 50%;
 }
 
-.text2 {
-  text-align: center;
-  line-height: 50%;
-  margin-bottom: 50px;
-  color: rgb(179, 162, 175);
-}
-
 .caution {
   text-align: center;
   line-height: 10%;
@@ -76,6 +74,10 @@ body{
   color: rgb(179, 162, 175);
   margin-right: 20px;
   margin-bottom: 50px;
+  position: relative;
+  top: 80%;
+  left: 60%;
+  transform: translateX(-50%);
 }
 
 .mainButton {
@@ -84,167 +86,22 @@ body{
   margin-top: 80px;
   text-align: center;
   margin-bottom: 80px;
+  position: relative;
+  left: 82%;
+  top: 65%;
+  transform: translateX(-50%);
 }
 
 .mainButton button {
   background-color: #D6FF32;
-  border:#D6FF32;
+  border: none;
   border-radius: 15px;
   padding: 15px 40px;
   font-size: medium;
   color: black;
   font-weight: bold;
-  position: relative;
-  left: 473px;
-  top: 140px;
 }
 
 .mainButton button:hover{
   background-color: #d6ff328f;
 }
-
-.caution h4{
-  position: relative;
-  text-align: center;
-  font-size: small;
-  color: rgb(179, 162, 175);
-  top:250px;
-  left:137px;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .sound {
-    position: relative;
-    top: 10%;
-    left: 25%;
-    color:rgb(208, 213, 216)
-  }
-  
-  .sound img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .firstText h2{
-    position: absolute;
-    color:white;
-    /* width: 452px;
-    height: 40px; */
-    top: 20%;
-    left: 5%;
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #D6FF32;
-  }
-  
-  .Main h1{ 
-    position: absolute;
-    color:white;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    top: 22%;
-    left: 5%;
-  }
-  
-  .caution {
-    position: absolute;
-    text-align: center;
-    font-size: smaller;
-    color: rgb(179, 162, 175);
-    top: 30%;
-    left: -5%;
-  }
-
-  .mainButton {
-    position: absolute;
-    top: 40%;
-    left: -27%;
-  }
-  
-  .mainButton button {
-    background-color: #D6FF32;
-    border:#D6FF32;
-    border-radius: 15px;
-    padding: 20px 100px;
-    
-    font-size: medium;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .mainButton button:hover{
-    background-color: #d6ff328f;
-  }
-  
-}
-
-/*mobile*/
-/* @media (max-width:698px) {
-.Main{
-  position: fixed;
-  width: 445px;
-  height: 1000px;
-  top:-7px;
-  background-image: url("/public/mobile.gif");
-}
-
-body{
-  height: 40px!important;
-  width: 370px !important;
-}
-
-.Main h1{
-  position: absolute;
-  font-size: 55px;
-  left:140px;
-  top:140px;
-  margin-right: 20px;
-}
-.Main h2{
-  position: absolute;
-  font-size: 25px;
-  left:110px;
-  top:130px;
-}
-.sound img{
-  position: relative;
-  width: 28px;
-  height: 30px;
-  top:200px;
-  left:270px;
-}
-.caution {
-  display: flex;
-}
-
-.caution .h4-1 {
-  position: fixed;
-  font-size: 8px;
-  left: 87px;
-  top: 595px;
-  color: aliceblue;
-}
-
-.caution .h4-2 {
-  position: fixed;
-  font-size: 8px;
-  left: 87px;
-  top: 607px;
-  color: aliceblue;
-}
-
-
-.mainButton{
-  position: fixed;
-  height:80px;
-  left:-410px;
-  top:320px;
-}
-
-.mainButton button{
-  font-size: small;
-  padding:10px 100px 10px 100px;
-}
-
-} */
