@@ -79,6 +79,8 @@ body{
 }
 
 .mainButton {
+  display: block;
+  margin: 0 auto;
   margin-top: 80px;
   text-align: center;
   margin-bottom: 80px;
@@ -89,11 +91,9 @@ body{
   border:#D6FF32;
   border-radius: 15px;
   padding: 15px 40px;
-
   font-size: medium;
   color: black;
   font-weight: bold;
-
   position: relative;
   left: 473px;
   top: 140px;
@@ -117,7 +117,7 @@ body{
   .sound {
     position: relative;
     top: 10%;
-    left: 30%;
+    left: 25%;
     color:rgb(208, 213, 216)
   }
   
@@ -133,7 +133,7 @@ body{
     height: 40px; */
     top: 20%;
     left: 5%;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #D6FF32;
   }
@@ -141,35 +141,36 @@ body{
   .Main h1{ 
     position: absolute;
     color:white;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    top: 24%;
+    top: 22%;
     left: 5%;
   }
   
   .caution {
     position: absolute;
     text-align: center;
-    font-size: small;
+    font-size: smaller;
     color: rgb(179, 162, 175);
     top: 30%;
     left: -5%;
   }
 
+  .mainButton {
+    position: absolute;
+    top: 40%;
+    left: -27%;
+  }
   
   .mainButton button {
     background-color: #D6FF32;
     border:#D6FF32;
     border-radius: 15px;
-    padding: 15px 40px;
-  
+    padding: 20px 100px;
+    
     font-size: medium;
     color: black;
     font-weight: bold;
-    position: absolute;
-    top: 55%;
-    left: 10%;
-
   }
   
   .mainButton button:hover{
