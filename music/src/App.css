@@ -16,9 +16,6 @@ body{
 .Main{
   position: fixed;
   background-image: url("/public/desktop.gif");
-  /* width: 1480px;
-  height:1300px;
-  top: -100px; */
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -52,7 +49,7 @@ body{
 .Main h1{
   position: absolute;
   color:white;
-  font-size: 147.42px;
+  font-size: 144px;
   font-weight: 500;
   line-height: 77.25px;
   top: 50%;
@@ -104,4 +101,32 @@ body{
 
 .mainButton button:hover{
   background-color: #d6ff328f;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .sound {
+    top: 20%;
+  }
+
+  .Main h2 {
+    top: 40%;
+  }
+
+  .Main h1 {
+    top: 40%;
+  }
+
+  .caution {
+    top: 75%;
+    left: 50% ;
+  }
+
+  .mainButton {
+    top: 70%;
+    left: 50%;
+  }
+
+  .mainButton button {
+    padding: 20px 100px;
+  }
 }
