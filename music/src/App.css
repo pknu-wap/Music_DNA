@@ -32,6 +32,7 @@ body{
 .sound img{
   width: 60px;
   height: 60px;
+  margin: 15px;
 }
 
 .Main h2{
@@ -54,10 +55,6 @@ body{
   line-height: 77.25px;
   top: 50%;
   right: 12%;
-}
-
-.sound img {
-  margin: 15px;
 }
 
 .firstText {
@@ -128,5 +125,43 @@ body{
 
   .mainButton button {
     padding: 20px 100px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .sound {
+    top: 10%;
+  }
+
+  .sound img {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+  }
+  
+  .Main h2 {
+    left: 15%;
+    top: 25%;
+  }
+
+  .Main h1 {
+    left: 15%;
+    top: 28%;
+    font-size: 70px;
+    font-weight: 600;
+  }
+
+  .caution {
+    top: 74%;
+    left: 50% ;
+  }
+
+  .mainButton {
+    top: 70%;
+    left: 50%;
+  }
+
+  .mainButton button {
+    padding: 20px 80px;
   }
 }
