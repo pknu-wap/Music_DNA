@@ -66,7 +66,7 @@ body{
   text-align: center;
   line-height: 10%;
   font-size: small;
-  color: rgb(179, 162, 175);
+  color: white;
   margin-right: 20px;
   margin-bottom: 50px;
   position: relative;
@@ -142,21 +142,22 @@ body{
   }
   
   .Main h2 {
-    left: 15%;
+    left: 10%;
     top: 25%;
+    font-size: 30px;
   }
 
   .Main h1 {
-    left: 15%;
-    top: 28%;
-    font-size: 70px;
+    left: 10%;
+    top: 25%;
+    font-size: 100px;
     font-weight: 600;
   }
 
   .caution {
     top: 74%;
     left: 50%;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .mainButton {
@@ -166,5 +167,6 @@ body{
 
   .mainButton button {
     padding: 20px 80px;
+    font-size: 28px;
   }
 }
