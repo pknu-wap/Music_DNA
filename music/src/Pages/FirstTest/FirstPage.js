@@ -1,6 +1,5 @@
 import React from "react";
 import {useState, useRef} from "react";
-import { ChakraProvider } from '@chakra-ui/react';
 import ProgressBar from "@ramonak/react-progress-bar";
 import { supabase } from '../../supabaseClient';
 
@@ -10,7 +9,7 @@ import RockBox from "../../Components/RockBox";
 import NextButton from "../../Components/NextButton";
 import useCompleted from "../../Components/useCompleted";
 
-import "./FirstPage.css"
+import "./FirstPage.css";
 import testData from "../../Components/testData";
 
 const audioPath = {
@@ -71,7 +70,7 @@ const FirstPage = () => {
     };
 
     return (
-        <ChakraProvider>
+     
         <div className="firstPage">
             <div className="progress">
                 <ProgressBar
@@ -82,7 +81,7 @@ const FirstPage = () => {
             <div className="num1">
                 <img onClick={() => playMusic(1)} src="./sound1.png" alt='Sound Icon'/>
                 <h3><div class="q1">1번 사운드가 당신의 마음에 드나요?</div></h3>
-                <PopBox id="Pop1"/>
+                <PopBox className="pop" id="Pop1"/>
                 <audio ref={el => audioRefs.current[1] = el} />
             </div>
             <div className="num1">
@@ -111,7 +110,7 @@ const FirstPage = () => {
             </div>
             <NextButton to="/FirstPage1" popCount={2} hipCount={2} rockCount={1}/>
         </div>
-        </ChakraProvider>
+
     );
 };
 
