@@ -11,7 +11,7 @@ body{
 .firstPage{
   position: relative;
   background-attachment: fixed;
-  background-image: url("/public/maindesign4.gif");
+  background-image: url("/public/design.png");
   width: 1479px;
   height:1950px;
   margin-left: -12px;
