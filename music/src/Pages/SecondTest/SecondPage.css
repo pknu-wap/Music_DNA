@@ -11,7 +11,7 @@ body{
 .firstPage{
   position: relative;
   background-attachment: fixed;
-  background-image: url("/public/maindesign4.gif");
+  background-image: url("/public/design.png");
   width: 1479px;
   height:1950px;
   margin-left: -12px;
@@ -74,39 +74,4 @@ body{
 .progress {
   margin-left: 80px;
   margin-right: 80px;
-}
-
-/*Mobile*/
-@media (max-width: 698px) {
-    .firstPage{
-      width: 509px !important;
-      height: 2200px!important;
-    }
-
-  .progress {
-    margin-right: 10px;
-    position: fixed;
-    left: -35px;
-    width: 75%;
-    z-index: 1000;
-  }
-
-  .num2{
-    width: 390px;
-    height:180px;
-    margin-left:60px;
-  }
-  
-  body{
-    width: 450px;
-    height: 1200px;
-  }
-
-
-  .num1 img{
-    width: 60px;
-    left:180px;
-    top:30px;
-  }
-
 }
