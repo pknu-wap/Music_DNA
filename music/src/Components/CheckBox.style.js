@@ -25,8 +25,8 @@ const CheckBoxCnt = styled.div`
         transition: transform 0.5s ease-in, background-color 0.3s ease;
 
         @media screen and (min-width: 481px) and (max-width: 1024px) {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             font-size: 7px;
         }
 
@@ -48,8 +48,8 @@ const CheckBoxCnt = styled.div`
         transition: border-color 0.3s ease;
 
         @media screen and (min-width: 481px) and (max-width: 1024px) {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             font-size: 7px;
         }
 
