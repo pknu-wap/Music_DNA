@@ -70,10 +70,10 @@ const CheckBoxCnt = styled.div`
                 switch (num) {
                     case 1:
                     case 2:
-                        return 'rgb(237,107,125)';
+                        return  'rgb(110,159,247)';
                     case 4:
                     case 5:
-                        return 'rgb(110,159,247)';
+                        return 'rgb(237,107,125)';
                     default:
                         return 'rgb(225, 231, 235)';
                 }
@@ -89,12 +89,12 @@ const getBorderColor = (num) => {
     switch (num) {
         case 1:
         case 2:
-            return 'rgb(237,107,125)'; // 빨간색 계열
+            return 'rgb(110,159,247)'; 
         case 4:
         case 5:
-            return 'rgb(110,159,247)'; // 파란색 계열
+            return 'rgb(237,107,125)'; 
         default:
-            return 'rgb(225, 231, 235)'; // 회색 계열 (기본값)
+            return 'rgb(225, 231, 235)'; 
     }
 };
 
