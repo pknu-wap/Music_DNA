@@ -1,16 +1,17 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'CHONBUKL';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
 .firstPage{
+  font-family: 'CHONBUKL', sans-serif;
   position: fixed;
   background-image: url("/public/design.png");
   background-size: cover; 
   background-repeat: no-repeat;
-  width: 100%; 
+  width: 100% !important; 
   height: 100% !important;
 }
 
@@ -21,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 18vh; 
+  height: 25vh; 
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 10%;
@@ -39,10 +40,9 @@
   .num1 .q1{
     display: inline-block;
     position: relative;
-    left: -5%;
     color:#D6FF32;
-    font-size: 20px;
-    top: -25px;
+    font-size: 23px;
+    top: -40px;
   }
 
 .num1 img{
@@ -51,10 +51,9 @@
   background-color:black;
   border-radius: 100px;
   width: 40px;
-  left: 18%;
-  top: 20%
+  top: 33%
 }
-  
+
 /* Progress 바 */
 
 .progress {
@@ -67,5 +66,24 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  
+  .num1 .q1{
+    font-size: 20px;
+  }
+
+  .num1 img{
+    width: 35px;
+  }
+}
+
+
+@media screen and (max-width: 481px) {
+  .firstPage {
+    background-position: center ;
+  }
+
+  .num1 .q1{
+    font-size: 10px;
+  }
+
+
 }
