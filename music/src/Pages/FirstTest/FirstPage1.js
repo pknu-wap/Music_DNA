@@ -1,6 +1,5 @@
 import React from "react";
 import {useState, useRef} from "react";
-import { ChakraProvider } from '@chakra-ui/react';
 import ProgressBar from "@ramonak/react-progress-bar";
 import { supabase } from '../../supabaseClient';
 
@@ -71,7 +70,6 @@ const FirstPage1 = () => {
 
 
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
             <ProgressBar
@@ -111,7 +109,6 @@ const FirstPage1 = () => {
             </div>
             <NextButton to="/SecondPage" rockCount={1} jazzCount={2} RbCount={2}/>
         </div>
-        </ChakraProvider>
     );
 };
 
