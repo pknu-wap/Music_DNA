@@ -17,16 +17,4 @@
 
   .nextPage button:hover {
     background-color: rgb(100, 92, 92);
-  }
-
-
-/*mobile*/
-@media (max-width: 698px) {
-  .nextPage button{
-    position: absolute;
-    top: 1860px;
-    left: 160px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-   }
-}
+  } 
