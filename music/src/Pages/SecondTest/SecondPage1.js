@@ -1,6 +1,4 @@
 import React from "react";
-// import {useRef, useEffect} from "react";
-import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
@@ -13,25 +11,8 @@ import "./SecondPage.css";
 const SecondPage1 = () => {
 
     const completed = useCompleted(0,3);
-    // const audioRef = useRef(new Audio("./BackMusic.mp3"));
-
-    // useEffect(() => {
-    //     const audio = audioRef.current;
-
-    //     audio.play().catch(error => {
-    //         console.error("Audio play error: ", error);
-    //     });
-
-    //     return () => {
-    //         if (!audio.paused) {
-    //             audio.pause();
-    //             audio.currentTime = 0;
-    //         }
-    //     };
-    // }, []);
 
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
             <ProgressBar
@@ -63,7 +44,6 @@ const SecondPage1 = () => {
             </div>
             <SecondBtn to="/SecondPage2" ids={["LatinJazz1", "SwingJazz1", "SoulJazz1", "FreeJazz1", "BibobJazz1"]}/>
         </div>
-        </ChakraProvider>
     );
 };
 

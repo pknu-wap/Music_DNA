@@ -1,5 +1,4 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
@@ -14,7 +13,6 @@ const SecondPage4 = () => {
     const completed = useCompleted(0,6);
 
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
             <ProgressBar
@@ -48,7 +46,6 @@ const SecondPage4 = () => {
             </div>
             <SecondBtn to="/SecondPage5" ids={["DancePop2", "ElecPop2", "BritPop2", "IndiPop2", "LatinPop2"]}/>
         </div>
-        </ChakraProvider>
     );
 };
 

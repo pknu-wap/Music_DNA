@@ -1,5 +1,4 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
@@ -14,7 +13,6 @@ const SecondPage5 = () => {
     const completed = useCompleted(0,7);
 
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
             <ProgressBar
@@ -48,7 +46,6 @@ const SecondPage5 = () => {
             </div>
             <SecondBtn to="/SecondPage6" ids={["LatinJazz2", "SwingJazz2", "SoulJazz2", "FreeJazz2", "BibobJazz2"]}/>
         </div>
-        </ChakraProvider>
     );
 };
 
