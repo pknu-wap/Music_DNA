@@ -30,7 +30,7 @@ const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
             } else if (id.includes("RB")) {
                 return rbValues[id] === undefined;
             } 
-            return false;  // Default case if id does not match any known type
+            return false; 
         });
     };
 
@@ -44,7 +44,7 @@ const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
                             console.log("Not all checkboxes are checked");
                         } else {
                             if (onCompleteButtonClick) {
-                                onCompleteButtonClick(); // Call the onCompleteButtonClick function if provided
+                                onCompleteButtonClick(); 
                             }
                         }
                     }}
