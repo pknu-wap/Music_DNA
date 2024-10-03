@@ -17,7 +17,8 @@
 
 .num1 {
   border-radius: 10px;
-  border: 3px solid #D6FF32;
+  background-color: rgba(214, 255, 50, 0.2); 
+  border: 1px solid #D6FF32;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +28,7 @@
   margin-right: 20%;
   margin-bottom: 10%;
   padding-top: 20px;
+
 }
 
   .num1 span{

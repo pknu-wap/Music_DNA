@@ -1,6 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { supabase } from '../../supabaseClient';
 
@@ -28,6 +26,7 @@ function combineKeysValues(obj) {
 
     return combined;
 }
+
 const SecondPage9 = () => {
 
     const completed = useCompleted(0,11);
@@ -88,40 +87,7 @@ const SecondPage9 = () => {
         })
     };
 
-
-    // 서버에 데이터 보냄
-    // const sendDataToServer = async () => {
-    //     const data = {
-    //         pop: combineKeysValues(PopCheckValue),
-    //         hip: combineKeysValues(HipCheckValue),
-    //         jazz: combineKeysValues(JazzCheckValue),
-    //         rb: combineKeysValues(RbCheckValue),
-    //         rock: combineKeysValues(RockCheckValue)
-    //     }
-    //     try {
-    //       const response = await fetch("https://34.64.108.76.nip.io/answer", {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify(data)
-    //       });
-      
-    //       if (!response.ok) {
-    //         throw new Error('Network response was not ok');
-    //       }
-      
-    //       const responseData = await response.json();
-    //       console.log('Server response:', responseData);
-    //     } catch (error) {
-    //       console.error('Error sending data:', error);
-    //     }
-    //   };    
-      
-
-
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
                 <ProgressBar
@@ -159,7 +125,6 @@ const SecondPage9 = () => {
             </div> */}
             <SecondBtn to={`/${Result}`} ids={["NeoRB1", "ComRB1", "PunkRB1", "SoulRB1", "AlterRB1"]} onCompleteButtonClick={completeButton}/>
         </div>
-        </ChakraProvider>
     );
 };
 
