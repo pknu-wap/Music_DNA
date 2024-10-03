@@ -1,13 +1,11 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'CHONBUKL';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
-body{
-  font-family: 'Pretendard-Regular';
-}
+
 .firstPage{
   position: relative;
   background-attachment: fixed;
@@ -30,35 +28,25 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width:1200px;
-    height: 20vh; 
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-bottom: 200px;
-    font-size: 20px;
+    height: 25vh; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
   }
-
-  .num2 span{
-    display: fixed;
-    color:white;
-    font-size: 60px;
-    top:110px;
-  }
-
 
   .num2 h3 {
     position: relative;
-    top:63px;
+    top:30px;
     color: #D6FF32; 
     margin-bottom: 70px;
 }
   
-  /* 다음으로 넘어가는 버튼 */
   .linkBox {
     margin-top: 80px;
     text-align: center;
     margin-bottom: 80px;
   }
+
   .linkBox button {
     margin-right: 70px;
     background-color:#D6FF32;
@@ -68,8 +56,6 @@ body{
     color: black;
   }
   
-
-/* Progress 바 */
 
 .progress {
   margin-left: 80px;
