@@ -1,13 +1,14 @@
 .SecondBtn {
-    margin-top: 80px;
+    
     text-align: center;
+    margin-top: 80px;
     margin-bottom: 80px;
   }
   
   .SecondBtn button {
     position: relative;
     top:-30px;
-    left: -38px;
+    left: -30px;
     background-color:#D6FF32;
     padding: 10px 40px;
     font-size: medium;
@@ -16,10 +17,14 @@
     font-weight: bold;
   }
 
-  .SecondBtn button:hover {
-    background-color: rgb(100, 92, 92);
+  .SecondBtn button {
+    background-color: #D6FF32; 
+    transition: background-color 0.3s ease; 
   }
 
+  .SecondBtn button:hover {
+    background-color: rgb(100, 92, 92); 
+  }
 
 /*mobile*/
 @media (max-width: 698px) {
@@ -29,5 +34,5 @@
     left: 179px;
     margin-top: 40px;
     margin-bottom: 20px;
-   }
+  }
 }
