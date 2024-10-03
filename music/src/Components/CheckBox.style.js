@@ -8,6 +8,7 @@ const CheckBoxCnt = styled.div`
     }
 
     input[type=checkbox] + label {
+        text-indent: -9999px;
         display:block;
         position:relative;
         top: -15%;
@@ -37,6 +38,7 @@ const CheckBoxCnt = styled.div`
     }
 
     input[type=checkbox]:checked + label {
+        text-indent: -9999px;
         background-color: transparent;
         border: 3px solid ${props => getBorderColor(props.num)};
         padding: 8px 8px; 
