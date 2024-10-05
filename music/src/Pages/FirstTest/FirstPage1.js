@@ -1,16 +1,15 @@
 import React from "react";
 import {useState, useRef} from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 import { supabase } from '../../supabaseClient';
 
 import RockBox from "../../Components/RockBox";
 import RbBox from "../../Components/RbBox";
 import JazzBox from "../../Components/JazzBox";
 import NextButton from "../../Components/NextButton";
-import useCompleted from "../../Components/useCompleted";
 
 import "./FirstPage.css";
 import testData from "../../Components/testData";
+import Progress from '../../Components/progress';
 
 const audioPath = {
     1: 'POP1.mp3',
@@ -26,7 +25,6 @@ const audioPath = {
 };
 
 const FirstPage1 = () => {
-    const completed = useCompleted(0,1);
 
     const [isPlaying, setIsPlaying] = useState(false);
     // 음원 개수가 총 10개이므로 각 음원의 상태를 배열 형태로 다루어야함 
@@ -72,10 +70,7 @@ const FirstPage1 = () => {
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={1}
-                    bgcolor={testData[1].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[1].completed}/>
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(6)} src="./sound1.png" alt='Sound Icon'/>

@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage3 = () => {
 
-    const completed = useCompleted(0,5);
-
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={5}
-                    bgcolor={testData[5].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[5].completed}/>
             </div>
             <div className="num2">
                 <h3> 환상이 결합된 환각적인 시공간을 넘나드는 듯한 실험적인 사운드. 상상 속에만 존재하는 시간여행을 하고 싶어져.</h3>

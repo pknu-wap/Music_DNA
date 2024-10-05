@@ -1,26 +1,19 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage2 = () => {
 
-    const completed = useCompleted(0,4);
 
     return (
-        <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={4}
-                    bgcolor={testData[4].bgcolor}
-                    completed={completed}/>
+            <Progress percentage={testData[4].completed}/>
             </div>
             <div className="num2">
                 <h3>험난했던 나의 출생지의 자부심이 넘쳐. 
@@ -47,7 +40,6 @@ const SecondPage2 = () => {
             </div>
             <SecondBtn to="/SecondPage3" ids={["DrillHip1", "TrapHip1", "AlterHip1", "RageHip1", "BoomHip1"]}/>
         </div>
-        </ChakraProvider>
     );
 };
 

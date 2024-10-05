@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage5 = () => {
 
-    const completed = useCompleted(0,7);
-
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={7}
-                    bgcolor={testData[7].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[7].completed}/>
             </div>
             <div className="num2">
                 <h3>모래알들이 부딪히는 듯한 리듬과 차분하고 경쾌한 리듬, 따스한 멜로디.. 이 조합은 마치 스페인 바다가 훤히 보이는<br/>
