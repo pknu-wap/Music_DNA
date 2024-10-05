@@ -29,11 +29,11 @@ export const ProgressBar = styled.div`
   border-radius: 10px;
 
 
-  @media screen and (min-width: 481px) and (max-width: 1024px) {
+  @media screen and (min-width: 698px) and (max-width: 1024px) {
     margin-right: 20%;
   }
 
-  @media screen and (max-width: 481px) {
+  @media screen and (max-width: 698px) {
     margin-right: 30%;
   }
 `;
@@ -56,11 +56,11 @@ export const Label = styled.span`
   color: #333; 
   z-index: 1;
 
-  @media screen and (min-width: 481px) and (max-width: 1024px) {
+  @media screen and (min-width: 698px) and (max-width: 1024px) {
     font-size: 10px;
   }
 
-  @media screen and (max-width: 481px) {
+  @media screen and (max-width: 698px) {
     font-size: 8px;
   }
 `;

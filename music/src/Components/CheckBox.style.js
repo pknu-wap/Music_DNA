@@ -25,13 +25,13 @@ const CheckBoxCnt = styled.div`
         border-radius: 50%;
         transition: transform 0.5s ease-in, background-color 0.3s ease;
 
-        @media screen and (min-width: 500px) and (max-width: 1024px) {
+        @media screen and (min-width: 698px) and (max-width: 1024px) {
             width: 30px;
             height: 30px;
             font-size: 7px;
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 698px) {
             width: 25px;
             height: 25px;
         }
@@ -49,13 +49,13 @@ const CheckBoxCnt = styled.div`
         height: 40px;
         transition: border-color 0.3s ease;
 
-        @media screen and (min-width: 500px) and (max-width: 1024px) {
+        @media screen and (min-width: 698px) and (max-width: 1024px) {
             width: 30px;
             height: 30px;
             font-size: 7px;
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 698px) {
             width: 25px;
             height: 25px;
         }
