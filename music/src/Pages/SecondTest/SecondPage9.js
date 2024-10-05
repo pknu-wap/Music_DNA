@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 import { supabase } from '../../supabaseClient';
 
 import RbBox from "../../Components/RbBox";
@@ -10,7 +9,7 @@ import { JazzValueState } from "../../Components/JazzBox";
 import { RbValueState } from "../../Components/RbBox";
 import { RockValueState} from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 import SecondBtn from "./Button/SecondBtn"; 
 
 import "./SecondPage.css";
@@ -28,8 +27,6 @@ function combineKeysValues(obj) {
 }
 
 const SecondPage9 = () => {
-
-    const completed = useCompleted(0,11);
 
     const PopCheckValue = useRecoilValue(PopValueState); 
     const HipCheckValue = useRecoilValue(HipValueState);
@@ -90,10 +87,7 @@ const SecondPage9 = () => {
     return (
         <div className="firstPage">
             <div className="progress">
-                <ProgressBar
-                    key={11}
-                    bgcolor={testData[11].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[11].completed}/>
             </div>
             <div className="num2">
                 <h3>디지털한 사운드가 기반이 된 끈적한 사랑과 사회참여적인 가사를 담아낸 흑인들의 가사, 고요하고 그루비한 보컬..<br/> 

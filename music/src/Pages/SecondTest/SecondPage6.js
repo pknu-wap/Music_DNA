@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage6 = () => {
 
-    const completed = useCompleted(0,8);
-
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={8}
-                    bgcolor={testData[8].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[8].completed}/>
             </div>
             <div className="num2">
                 <h3> 잔인하고 거친 질감이 느껴지는 사운드와 야만적인 가사들은 잠재되어 있는 나의 야성을 잠시 깨워줘.</h3>

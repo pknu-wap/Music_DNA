@@ -1,24 +1,19 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage1 = () => {
 
-    const completed = useCompleted(0,3);
 
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={3}
-                    bgcolor={testData[3].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[3].completed}/>
             </div>
             <div className="num2">
                 <h3>석양이 떠오르는 해변에서 차분한 선율에 맞춰 탱고춤을 추는 라틴 사람들. 이건 환상적인 바이브야.</h3>

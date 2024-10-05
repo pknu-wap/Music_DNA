@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage7 = () => {
 
-    const completed = useCompleted(0,9);
-
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={9}
-                    bgcolor={testData[9].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[9].completed}/>
             </div>
             <div className="num2">
                 <h3>난 뭐든지 앞서가야 해! 그렇기 때문에 예상치 못한 음악적 요소를 가지고 장시간 연주되는 악기의 솔로 연주가 멋있어 보여.</h3>

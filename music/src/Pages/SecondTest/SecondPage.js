@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage = () => {
-    const completed = useCompleted(0, 2);
 
     return (
             <div className="firstPage">
                 <div className="progress">
-                    <ProgressBar
-                        key={2}
-                        bgcolor={testData[2].bgcolor}
-                        completed={completed}
-                    />
+                    <Progress percentage={testData[2].completed}/>
                 </div>
                 <div className="num2">
                     <h3>

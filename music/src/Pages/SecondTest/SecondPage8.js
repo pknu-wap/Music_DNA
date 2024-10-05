@@ -1,24 +1,18 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 import RbBox from "../../Components/RbBox";
 import testData from "../../Components/testData";
 import SecondBtn from "./Button/SecondBtn";
-import useCompleted from "../../Components/useCompleted";
+import Progress from '../../Components/progress';
 
 import "./SecondPage.css";
 
 const SecondPage8 = () => {
 
-    const completed = useCompleted(0,10);
-
     return (
         <div className="firstPage">
             <div className="progress">
-            <ProgressBar
-                    key={10}
-                    bgcolor={testData[10].bgcolor}
-                    completed={completed}/>
+                <Progress percentage={testData[10].completed}/>
             </div>
             <div className="num2">
                 <h3>흑인의 색감이 진하게 나타나는 섹시한 보컬과 그루브. 많은 장르의 요소에 흑인의 소울을 합쳐 조화를 이루는 음악.<br/>

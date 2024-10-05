@@ -5,6 +5,7 @@
   }
   
   .nextPage button {
+    font-family: 'CHONBUKL', sans-serif;
     margin-right: 10px;
     margin-left: 10px;
     background-color:#D6FF32;
@@ -18,3 +19,16 @@
   .nextPage button:hover {
     background-color: rgb(100, 92, 92);
   } 
+
+  @media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    .nextPage button{
+      border-color: #D6FF32;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .nextPage button{
+      border-color: #D6FF32;
+    }
+  }
