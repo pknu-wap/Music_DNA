@@ -28,7 +28,6 @@
   margin-right: 20%;
   margin-bottom: 10%;
   padding-top: 20px;
-
 }
 
   .num1 span{
@@ -56,18 +55,22 @@
   top: 30%
 }
 
-/* Progress 바 */
-
 .progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  margin-left: 80px;
   position: fixed;
   top: 0;
-  width: 90%;
+  left: 5%;
+  right: 0;
+  width: 80%;
   z-index: 1000;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
 
   .firstPage{
     background-image: url("/public/ipadPro.gif") !important;
@@ -77,18 +80,19 @@
     font-size: 20px;
   }
 
-  .num1 img{
+  .num1 img{ 
     width: 35px;
   }
+
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 500px) {
   .firstPage {
     background-position: center ;
   }
 
   .num1 .q1{
-    font-size: 10px;
+    font-size: 15px;
   }
 
 }
