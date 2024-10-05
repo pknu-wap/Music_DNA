@@ -2,7 +2,6 @@
     
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 80px;
   }
   
   .SecondBtn button {
@@ -25,14 +24,3 @@
   .SecondBtn button:hover {
     background-color: rgb(100, 92, 92); 
   }
-
-/*mobile*/
-@media (max-width: 698px) {
-  .SecondBtn button{
-    position: absolute;
-    top: 1960px;
-    left: 179px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-}
