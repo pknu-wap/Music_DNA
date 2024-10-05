@@ -70,7 +70,7 @@
 }
 
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 698px) and (max-width: 1024px) {
 
   .firstPage{
     background-image: url("/public/ipadPro.gif") !important;
@@ -80,15 +80,12 @@
     font-size: 20px;
   }
 
-  .num1 img{ 
-    width: 35px;
-  }
-
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 698px) {
+
   .firstPage {
-    background-position: center ;
+    background-image: url("/public/mobile.gif") !important;
   }
 
   .num1 .q1{
