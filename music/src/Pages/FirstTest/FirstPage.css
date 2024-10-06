@@ -42,7 +42,7 @@
     display: inline-block;
     position: relative;
     color:#D6FF32;
-    font-size: 23px;
+    font-size: 25px;
     top: -40px;
   }
 
@@ -89,7 +89,7 @@
   }
 
   .num1 .q1{
-    font-size: 15px;
+    font-size: 12px;
   }
 
 }
