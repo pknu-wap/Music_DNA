@@ -1,6 +1,5 @@
-# Music DNA
-
-이 프로젝트는 **사용자의 취향 장르**를 판별하고 그에 맞는 **플레이리스트**를 제공하기 위해 설계된 **웹 애플리케이션**입니다. 
+### Introduction(소개)
+**사용자의 취향 장르**를 판별하고 그에 맞는 **플레이리스트**를 제공하기 위해 설계된 **웹 애플리케이션**입니다. 
 <br/>
 
 ### 메인페이지
@@ -67,7 +66,6 @@
 <div>
 <img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"/>
 <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/> 
-<img alt="supabase" src ="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white"/> 
 
 
 ### Back
