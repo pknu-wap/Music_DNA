@@ -17,7 +17,8 @@
   }
 
   .nextPage button:hover {
-    background-color: rgb(100, 92, 92);
+    transition: background-color 0.3s ease; 
+    background-color: #88a221; 
   } 
 
   @media screen and (min-width: 500px) and (max-width: 1024px) {

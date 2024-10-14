@@ -39,6 +39,7 @@
     top:30px;
     color: #D6FF32; 
     margin-bottom: 70px;
+    font-size: 22px;
 }
   
   .linkBox {
@@ -60,4 +61,16 @@
 .progress {
   margin-left: 80px;
   margin-right: 80px;
+}
+
+@media screen and (min-width: 698px) and (max-width: 1024px) {
+  .num2 h3{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .num2 h3{
+    font-size: 15px;
+  }
 }

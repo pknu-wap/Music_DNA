@@ -1,13 +1,10 @@
 .SecondBtn {
-    
-    text-align: center;
-    margin-top: 80px;
+  text-align: center;
+  margin-top: 80px;
   }
   
   .SecondBtn button {
     position: relative;
-    top:-30px;
-    left: -30px;
     background-color:#D6FF32;
     padding: 10px 40px;
     font-size: medium;
@@ -22,5 +19,6 @@
   }
 
   .SecondBtn button:hover {
-    background-color: rgb(100, 92, 92); 
+    background-color: #88a221; 
+
   }
