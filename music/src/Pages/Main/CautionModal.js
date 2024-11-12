@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal'
+import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
 Modal.setAppElement('#root');
@@ -24,11 +24,11 @@ const CautionModal = () => {
 
   const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
   const afterOpenModal = () => {
     subtitle.style.color = '#808080';
-  }
+  };
 
   // const closeModal = () => {
   //   setIsOpen(false);
@@ -41,17 +41,16 @@ const CautionModal = () => {
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         style={customStyles}
-        contentLabel='Example'
+        contentLabel="Example"
       >
-      <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Caution</h2>
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Caution</h2>
         <div>임시 내용</div>
         <Link to="/firstPage">
           <button>테스트 시작하기</button>
         </Link>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default CautionModal
-
+export default CautionModal;

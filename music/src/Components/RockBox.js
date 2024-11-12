@@ -1,13 +1,12 @@
-import React from "react";
-import CheckBoxCnt from "./CheckBox.style";
-import "../App.css";
-import { atom } from "recoil";
-import { useRecoilState } from "recoil";
-import { useEffect } from "react";
-
+import React from 'react';
+import CheckBoxCnt from './CheckBox.style';
+import '../App.css';
+import { atom } from 'recoil';
+import { useRecoilState } from 'recoil';
+import { useEffect } from 'react';
 
 export const RockValueState = atom({
-  key: "Rock",
+  key: 'Rock',
   default: {},
 });
 
@@ -25,20 +24,19 @@ const RockBox = ({ id }) => {
     const handleCheckboxChange = () => {
       console.log(id, rockValues[id]);
     };
-  
+
     const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-  
+
     if (checkboxElement) {
       checkboxElement.addEventListener('change', handleCheckboxChange);
     }
-  
+
     return () => {
       if (checkboxElement) {
         checkboxElement.removeEventListener('change', handleCheckboxChange);
       }
     };
   }, [rockValues, id]);
-  
 
   const generateUniqueId = (name) => `${id}_${name}`;
 

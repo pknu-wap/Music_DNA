@@ -1,4 +1,4 @@
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 
 import Main from '../Pages/Main/Main';
@@ -24,33 +24,32 @@ import Hip from '../Pages/Result/Hip';
 import Rock from '../Pages/Result/Rock';
 import Rb from '../Pages/Result/Rb';
 
-
 export const Routers = () => {
-    return (
+  return (
     <RecoilRoot>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <ScrollToTop/>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <ScrollToTop />
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='FirstPage' element={<FirstPage/>} />
-          <Route path='FirstPage1' element={<FirstPage1/>} />
-          <Route path='SecondPage' element={<SecondPage/>} />
-          <Route path='SecondPage1' element={<SecondPage1/>} />
-          <Route path='SecondPage2' element={<SecondPage2/>} />
-          <Route path='SecondPage3' element={<SecondPage3/>} />
-          <Route path='SecondPage4' element={<SecondPage4/>} />
-          <Route path='SecondPage5' element={<SecondPage5/>} />
-          <Route path='SecondPage6' element={<SecondPage6/>} />
-          <Route path='SecondPage7' element={<SecondPage7/>} />
-          <Route path='SecondPage8' element={<SecondPage8/>} />
-          <Route path='SecondPage9' element={<SecondPage9/>} />
-          <Route path='Pop' element={<Pop/>} />
-          <Route path='Jazz' element={<Jazz/>} />
-          <Route path='Hip' element={<Hip/>} />
-          <Route path='Rock' element={<Rock/>} />
-          <Route path='Rb' element={<Rb/>} />
+          <Route path="/" element={<Main />} />
+          <Route path="FirstPage" element={<FirstPage />} />
+          <Route path="FirstPage1" element={<FirstPage1 />} />
+          <Route path="SecondPage" element={<SecondPage />} />
+          <Route path="SecondPage1" element={<SecondPage1 />} />
+          <Route path="SecondPage2" element={<SecondPage2 />} />
+          <Route path="SecondPage3" element={<SecondPage3 />} />
+          <Route path="SecondPage4" element={<SecondPage4 />} />
+          <Route path="SecondPage5" element={<SecondPage5 />} />
+          <Route path="SecondPage6" element={<SecondPage6 />} />
+          <Route path="SecondPage7" element={<SecondPage7 />} />
+          <Route path="SecondPage8" element={<SecondPage8 />} />
+          <Route path="SecondPage9" element={<SecondPage9 />} />
+          <Route path="Pop" element={<Pop />} />
+          <Route path="Jazz" element={<Jazz />} />
+          <Route path="Hip" element={<Hip />} />
+          <Route path="Rock" element={<Rock />} />
+          <Route path="Rb" element={<Rb />} />
         </Routes>
       </BrowserRouter>
-      </RecoilRoot>
-    );
-}
+    </RecoilRoot>
+  );
+};

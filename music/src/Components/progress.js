@@ -1,14 +1,13 @@
-import styled,{keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-const Progress = ({percentage = 0}) => {
-
+const Progress = ({ percentage = 0 }) => {
   return (
     <ProgressBar>
       <Gauge percentage={percentage}>
         <Label>{percentage}%</Label>
       </Gauge>
     </ProgressBar>
-  )
+  );
 };
 
 export default Progress;
@@ -28,7 +27,6 @@ export const ProgressBar = styled.div`
   border: 1px solid lightgray;
   border-radius: 10px;
 
-
   @media screen and (min-width: 698px) and (max-width: 1024px) {
     margin-right: 20%;
   }
@@ -40,20 +38,20 @@ export const ProgressBar = styled.div`
 
 export const Gauge = styled.div`
   height: 100%;
-  background: linear-gradient(90deg, white, #D6FF32);
+  background: linear-gradient(90deg, white, #d6ff32);
   border-radius: 15px;
   width: ${({ percentage }) => `${percentage}%`};
   animation: ${fillAnimation} 1s ease-out forwards;
-  display: flex;                
-  justify-content: flex-end;     
-  align-items: center;       
-  padding-right: 5px;     
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
 `;
 
 export const Label = styled.span`
   font-size: 15px;
   font-weight: bold;
-  color: #333; 
+  color: #333;
   z-index: 1;
 
   @media screen and (min-width: 698px) and (max-width: 1024px) {

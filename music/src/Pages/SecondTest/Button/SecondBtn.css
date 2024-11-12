@@ -1,24 +1,23 @@
 .SecondBtn {
   text-align: center;
   margin-top: 80px;
-  }
-  
-  .SecondBtn button {
-    position: relative;
-    background-color:#D6FF32;
-    padding: 10px 40px;
-    font-size: medium;
-    color: black;
-    border-radius: 15px;
-    font-weight: bold;
-  }
+}
 
-  .SecondBtn button {
-    background-color: #D6FF32; 
-    transition: background-color 0.3s ease; 
-  }
+.SecondBtn button {
+  position: relative;
+  background-color: #d6ff32;
+  padding: 10px 40px;
+  font-size: medium;
+  color: black;
+  border-radius: 15px;
+  font-weight: bold;
+}
 
-  .SecondBtn button:hover {
-    background-color: #88a221; 
+.SecondBtn button {
+  background-color: #d6ff32;
+  transition: background-color 0.3s ease;
+}
 
-  }
+.SecondBtn button:hover {
+  background-color: #88a221;
+}

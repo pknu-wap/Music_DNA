@@ -1,13 +1,12 @@
-import React from "react";
-import CheckBoxCnt from "./CheckBox.style";
-import "../App.css";
-import { atom } from "recoil";
-import { useRecoilState } from "recoil";
-import { useEffect } from "react";
-
+import React from 'react';
+import CheckBoxCnt from './CheckBox.style';
+import '../App.css';
+import { atom } from 'recoil';
+import { useRecoilState } from 'recoil';
+import { useEffect } from 'react';
 
 export const JazzValueState = atom({
-  key: "Jazz",
+  key: 'Jazz',
   default: {},
 });
 
@@ -25,20 +24,19 @@ const JazzBox = ({ id }) => {
     const handleCheckboxChange = () => {
       console.log(id, jazzValues[id]);
     };
-  
+
     const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-  
+
     if (checkboxElement) {
       checkboxElement.addEventListener('change', handleCheckboxChange);
     }
-  
+
     return () => {
       if (checkboxElement) {
         checkboxElement.removeEventListener('change', handleCheckboxChange);
       }
     };
   }, [jazzValues, id]);
-
 
   const generateUniqueId = (name) => `${id}_${name}`;
 

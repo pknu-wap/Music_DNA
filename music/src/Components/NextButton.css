@@ -1,35 +1,34 @@
 .nextPage {
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.nextPage button {
+  font-family: 'CHONBUKL', sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #d6ff32;
+  padding: 10px 40px;
+  font-size: medium;
+  color: black;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.nextPage button:hover {
+  transition: background-color 0.3s ease;
+  background-color: #88a221;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
   .nextPage button {
-    font-family: 'CHONBUKL', sans-serif;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-color:#D6FF32;
-    padding: 10px 40px;
-    font-size: medium;
-    color: black;
-    border-radius: 15px;
-    font-weight: bold;
+    border-color: #d6ff32;
   }
+}
 
-  .nextPage button:hover {
-    transition: background-color 0.3s ease; 
-    background-color: #88a221; 
-  } 
-
-  @media screen and (min-width: 500px) and (max-width: 1024px) {
-
-    .nextPage button{
-      border-color: #D6FF32;
-    }
+@media screen and (max-width: 698px) {
+  .nextPage button {
+    border-color: #d6ff32;
   }
-
-  @media screen and (max-width: 698px) {
-    .nextPage button{
-      border-color: #D6FF32;
-    }
-  }
+}

@@ -13,14 +13,11 @@ function CommonModal({ isOpen, onClose, title, children }) {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-      <ModalContent
-      background='#D6FF32'
-      fontWeight='bold'>
+      <ModalContent background="#D6FF32" fontWeight="bold">
         <ModalHeader>{title}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>{children}</ModalBody>
-        <ModalFooter>
-        </ModalFooter>
+        <ModalFooter></ModalFooter>
       </ModalContent>
     </Modal>
   );

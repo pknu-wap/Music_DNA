@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'CHONBUKL';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff') format('woff');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-
-.firstPage{
+.firstPage {
   position: relative;
   background-attachment: fixed;
-  background-image: url("/public/design.png");
+  background-image: url('/public/design.png');
   width: 1479px;
-  height:1950px;
+  height: 1950px;
   margin-left: -12px;
   margin-bottom: -100px;
   padding-top: 90px;
@@ -20,43 +20,42 @@
 }
 
 /* 두 번째 페이지 체크박스 */
-  .num2 {
-    border-radius: 10px;
-    border: 3px solid #D6FF32;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 25vh; 
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-  }
-
-  .num2 h3 {
-    position: relative;
-    top:30px;
-    color: #D6FF32; 
-    margin-bottom: 70px;
-    font-size: 22px;
+.num2 {
+  border-radius: 10px;
+  border: 3px solid #d6ff32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 25vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
 }
-  
-  .linkBox {
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 80px;
-  }
 
-  .linkBox button {
-    margin-right: 70px;
-    background-color:#D6FF32;
-    padding: 10px 40px;
-    border-radius: 15px;
-    font-size: medium;
-    color: black;
-  }
-  
+.num2 h3 {
+  position: relative;
+  top: 30px;
+  color: #d6ff32;
+  margin-bottom: 70px;
+  font-size: 22px;
+}
+
+.linkBox {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.linkBox button {
+  margin-right: 70px;
+  background-color: #d6ff32;
+  padding: 10px 40px;
+  border-radius: 15px;
+  font-size: medium;
+  color: black;
+}
 
 .progress {
   margin-left: 80px;
@@ -64,13 +63,13 @@
 }
 
 @media screen and (min-width: 698px) and (max-width: 1024px) {
-  .num2 h3{
+  .num2 h3 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 698px) {
-  .num2 h3{
+  .num2 h3 {
     font-size: 15px;
   }
 }

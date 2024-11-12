@@ -1,58 +1,59 @@
 @font-face {
   font-family: 'CHONBUKL';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff') format('woff');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-.firstPage{
+.firstPage {
   font-family: 'CHONBUKL', sans-serif;
   position: fixed;
-  background-image: url("/public/desktop.gif");
-  background-size: cover; 
+  background-image: url('/public/desktop.gif');
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100% !important; 
+  width: 100% !important;
   height: 100% !important;
 }
 
 .num1 {
   border-radius: 10px;
-  background-color: rgba(214, 255, 50, 0.2); 
-  border: 1px solid #D6FF32;
+  background-color: rgba(214, 255, 50, 0.2);
+  border: 1px solid #d6ff32;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 25vh; 
+  height: 25vh;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 10%;
   padding-top: 20px;
 }
 
-  .num1 span{
-    position: relative;
-    color:white;
-    font-size: 60px;
-    left:-440px;
-    top:0px;
-  }
+.num1 span {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  left: -440px;
+  top: 0px;
+}
 
-  .num1 .q1{
-    display: inline-block;
-    position: relative;
-    color:#D6FF32;
-    font-size: 25px;
-    top: -40px;
-  }
+.num1 .q1 {
+  display: inline-block;
+  position: relative;
+  color: #d6ff32;
+  font-size: 25px;
+  top: -40px;
+}
 
-.num1 img{
+.num1 img {
   cursor: pointer;
   position: relative;
-  background-color:black;
+  background-color: black;
   border-radius: 100px;
   width: 40px;
-  top: 30%
+  top: 30%;
 }
 
 .progress {
@@ -69,33 +70,27 @@
   z-index: 1000;
 }
 
-
 @media screen and (min-width: 698px) and (max-width: 1024px) {
-
-  .firstPage{
-    background-image: url("/public/ipadPro.gif") !important;
+  .firstPage {
+    background-image: url('/public/ipadPro.gif') !important;
   }
-  
-  .num1 .q1{
+
+  .num1 .q1 {
     font-size: 20px;
   }
-
 }
 
 @media screen and (max-width: 698px) {
-
   .firstPage {
-    background-image: url("/public/mobile.gif") !important;
+    background-image: url('/public/mobile.gif') !important;
   }
 
   .num1 {
     height: 20vh;
   }
 
-  .num1 .q1{
+  .num1 .q1 {
     top: -50px;
     font-size: 10px;
   }
-
-
 }

@@ -1,22 +1,23 @@
 /* App */
 @font-face {
   font-family: 'CHONBUKL';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff') format('woff');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
 
-.Main{
+.Main {
   font-family: 'CHONBUKL', sans-serif;
   position: fixed;
-  background-image: url("/public/desktop.gif");
+  background-image: url('/public/desktop.gif');
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -27,30 +28,30 @@ body{
   position: absolute;
   top: 35%;
   left: 80%;
-  color:rgb(208, 213, 216)
+  color: rgb(208, 213, 216);
 }
 
-.sound img{
+.sound img {
   width: 60px;
   height: 60px;
   margin: 15px;
 }
 
-.Main h2{
+.Main h2 {
   position: absolute;
-  color:white;
+  color: white;
   width: 452px;
   height: 82px;
   top: 50%;
   right: 10%;
   font-size: 2.5rem;
   font-weight: lighter;
-  color: #D6FF32;
+  color: #d6ff32;
 }
 
-.Main h1{
+.Main h1 {
   position: absolute;
-  color:white;
+  color: white;
   font-size: 144px;
   font-weight: 500;
   line-height: 77.25px;
@@ -89,7 +90,7 @@ body{
 
 .mainButton button {
   font-family: 'CHONBUKL', sans-serif;
-  background-color: #D6FF32;
+  background-color: #d6ff32;
   border: none;
   border-radius: 15px;
   padding: 15px 40px;
@@ -98,7 +99,7 @@ body{
   font-weight: bold;
 }
 
-.mainButton button:hover{
+.mainButton button:hover {
   background-color: #d6ff328f;
 }
 
@@ -117,7 +118,7 @@ body{
 
   .caution {
     top: 75%;
-    left: 50% ;
+    left: 50%;
   }
 
   .mainButton {
@@ -140,7 +141,7 @@ body{
     height: 40px;
     margin: 15px;
   }
-  
+
   .Main h2 {
     left: 10%;
     top: 25%;

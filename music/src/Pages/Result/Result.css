@@ -1,353 +1,348 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.body{
-    position: relative;
-    background-color: rgb(37, 37, 103);
-    width:147%;
-    height: 1900px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;  
-    top:0px;
-    font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
-.Top{
-    margin-bottom: 50px;
-    color:white;
-   
+.body {
+  position: relative;
+  background-color: rgb(37, 37, 103);
+  width: 147%;
+  height: 1900px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  font-family: 'Pretendard-Regular';
 }
 
-.Top h2{
-    font-weight: 700;
-    font-size: 43.903px;
-    line-height: 52px;
- 
+.Top {
+  margin-bottom: 50px;
+  color: white;
 }
 
-.Top h3{
-    color:#D6FF32;
-    font-size: 25px;
-    font-weight: 700;
+.Top h2 {
+  font-weight: 700;
+  font-size: 43.903px;
+  line-height: 52px;
 }
 
-.Top span,.graph span{
-    color:#D6FF32;
+.Top h3 {
+  color: #d6ff32;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.Top span,
+.graph span {
+  color: #d6ff32;
 }
 
 /*추천 가수*/
-.singer table{
-    position: relative;
-    text-align: center;
-    margin-left: 220px;
-    background-color: #d8d8d884;
-    border-radius: 20px;
-    opacity: 0.2px;
-    height: 300px;
-    width: 1050px;
+.singer table {
+  position: relative;
+  text-align: center;
+  margin-left: 220px;
+  background-color: #d8d8d884;
+  border-radius: 20px;
+  opacity: 0.2px;
+  height: 300px;
+  width: 1050px;
 }
 
-.singer img{
-    width:140px;
-    margin-left: 35px;
-    margin-right: 20px;
+.singer img {
+  width: 140px;
+  margin-left: 35px;
+  margin-right: 20px;
 }
 
-.singer td{
-    color: white;
-    font-weight: 500;
-   font-size: 20px;
+.singer td {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.singer td span{
-    color:#D6FF32;
-    font-weight: 700;
-    font-size: 20px;
- }
+.singer td span {
+  color: #d6ff32;
+  font-weight: 700;
+  font-size: 20px;
+}
 
 /*추천곡 모음*/
 .ques {
-    margin-top: 40px;
-    text-align: center;
-    color: white;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
 }
 
-.ques h2{
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 60px;
+.ques h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 60px;
 }
 
-.ques h3{
-    font-size: 18px;
-    margin-bottom: 10px;
-    color:#D6FF32
+.ques h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d6ff32;
 }
 
-.musictable table{
-    display: inline;
-    width:500px;
-    left:1000px;
-    top:20px;
+.musictable table {
+  display: inline;
+  width: 500px;
+  left: 1000px;
+  top: 20px;
 }
 
 .musictable hr {
-    border-color:#D6FF32 ;
-    width: 800px;
+  border-color: #d6ff32;
+  width: 800px;
 }
 
-.musictable td{
-display: flex;
-text-align: center;
-align-items: center;
-color:white;
-font-weight: 400;
-font-size: 20px;
-text-align: left;
+.musictable td {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
 }
 
-.musictable #song span{
-    color:#D6FF32;
-    font-size: 16px;
+.musictable #song span {
+  color: #d6ff32;
+  font-size: 16px;
 }
 
- .musictable table #albumcover{
-    width: 100px;
-    margin-left: 20px;
-    text-align: center;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.musictable table #albumcover {
+  width: 100px;
+  margin-left: 20px;
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.musictable #prohibit1{
+.musictable #prohibit1 {
   position: relative;
   width: 20px;
-  top:-13px;
-  left:14px;
+  top: -13px;
+  left: 14px;
 }
 
-.musictable #prohibit3{
-    position: relative;
-    width: 20px;
-    top:-14px;
-    left:-20px;
-  }
+.musictable #prohibit3 {
+  position: relative;
+  width: 20px;
+  top: -14px;
+  left: -20px;
+}
 
 /*플레이 버튼*/
-.musictable .play{
-    position: absolute;
-    font-size: 15px;
-    margin-left:680px;
-    color:#D6FF32;
-    align-items: center; 
+.musictable .play {
+  position: absolute;
+  font-size: 15px;
+  margin-left: 680px;
+  color: #d6ff32;
+  align-items: center;
 }
 
-.musictable .play span{
-    display:flex;
-    position: relative;
-    margin-left: 12px;
+.musictable .play span {
+  display: flex;
+  position: relative;
+  margin-left: 12px;
 }
 
-.musictable .play img{
-    display: inline;
-    width: 50px;
-    background-color: black;
-    border-radius: 180px;
-    cursor: pointer;
-} 
-
+.musictable .play img {
+  display: inline;
+  width: 50px;
+  background-color: black;
+  border-radius: 180px;
+  cursor: pointer;
+}
 
 /*결과 그래프*/
 .graph {
-    font-family: Pretendard;
-    font-size: 30px;
-    font-weight: 700;
-    color:white;
-    margin-top: 60px;
-    margin-bottom: 30px;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
-.Sub { 
-    margin-left: 50px;
+.Sub {
+  margin-left: 50px;
 }
 
 .Sub button {
-    background-color: rgb(217, 220, 232);
-    border-radius: 5px;
-    margin-left: 10px;
+  background-color: rgb(217, 220, 232);
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .music {
-    background-color: white;
+  background-color: white;
 }
 
-.vstack-custom .first_box .Sub .RageHip{
-    padding: 0px 30px;
+.vstack-custom .first_box .Sub .RageHip {
+  padding: 0px 30px;
 }
 
-.vstack-custom .first_box .Sub .HeavyRock{
-    padding: 0px 43px;
+.vstack-custom .first_box .Sub .HeavyRock {
+  padding: 0px 43px;
 }
 
-.vstack-custom .first_box .Sub .AlterRock{
-    padding: 0px 22px;
+.vstack-custom .first_box .Sub .AlterRock {
+  padding: 0px 22px;
 }
 
-.vstack-custom .first_box .Sub .PunkRock{
-    padding: 0px 43px;
+.vstack-custom .first_box .Sub .PunkRock {
+  padding: 0px 43px;
 }
 
-.vstack-custom .first_box .Sub .show{
-    padding: 0px 29px;
+.vstack-custom .first_box .Sub .show {
+  padding: 0px 29px;
 }
 
 /* 말풍선 */
-#menu { 
-    width: 200px;
-    margin: 100px auto;
-    background: #f3f3f3;
-    border: 1px solid #d8d8d8;
-    text-align: center;
+#menu {
+  width: 200px;
+  margin: 100px auto;
+  background: #f3f3f3;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+}
+
+@media (max-width: 698px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  @media (max-width:698px) {
+  .body {
+    width: 500px;
+    height: 1600px !important;
+    margin: 0 auto;
+    background-size: cover;
+    padding: -200px;
+    overflow-x: hidden;
+  }
 
+  .Top h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 110px;
+  }
 
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; 
-    }
+  .Top h3 {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 180px;
+  }
 
-    .body {
-        width: 500px;
-        height: 1600px !important;
-        margin: 0 auto; 
-        background-size: cover;
-        padding: -200px; 
-        overflow-x: hidden; 
-    }
+  .singer table {
+    width: 340px;
+    height: 120px;
+    margin-left: 70px;
+  }
 
-    .Top h2{
-        text-align: left;
-        font-size: 30px;
-        margin-left: 110px;
-      }
+  .singer img {
+    width: 40px;
+    margin-left: 10px;
+  }
+  .singer td,
+  .singer td span {
+    font-size: 10px;
+  }
 
-    .Top h3{
-        font-size: 14px;
-        text-align: left;
-        margin-left: 180px;
-    }
+  .graph {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 140px;
+  }
 
-    .singer table{
-        width: 340px;
-        height: 120px;
-        margin-left: 70px;
-    }
+  .musictable hr {
+    width: 380px;
+  }
 
-    .singer img{
-        width: 40px;
-        margin-left: 10px;
-    }
-    .singer td,.singer td span{
-        font-size: 10px;
-    }
-    
-    .graph{
-        text-align: left;
-        font-size: 20px;
-        margin-left: 140px;
-    }
-   
-    .musictable hr{
-        width:380px;
-    }
+  .musictable table #albumcover {
+    width: 50px;
+  }
 
-    .musictable table #albumcover{
-        width: 50px;
-    }
+  .musictable td {
+    font-size: 13px;
+  }
 
-    .musictable td{
-        font-size: 13px;
-    }
+  .musictable #song span {
+    font-size: 10px;
+  }
 
-    .musictable #song span{
-        font-size: 10px;
-    }
+  .musictable .play img {
+    position: relative;
+    width: 25px;
+    left: -340px;
+  }
 
+  .musictable .play span {
+    left: -347px;
+    font-size: 10px;
+  }
 
-    .musictable .play img{
-        position: relative;
-        width:25px;
-        left:-340px;
-    }
-
-    .musictable .play span{
-        left:-347px;
-        font-size: 10px;
-    }
-
-.vstack-custom {
+  .vstack-custom {
     position: relative;
     left: -300px;
+  }
 
-    }
+  .vstack-custom .first_box {
+    width: 420px;
+  }
 
-    .vstack-custom .first_box {
-        width: 420px;
-    }
+  .vstack-custom .first_box .Sub Button {
+    width: 10px;
+    font-size: 10px;
+  }
+  .vstack-custom .first_box .Sub .elec {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-    .vstack-custom .first_box .Sub Button{
-        width: 10px;
-        font-size: 10px;
-    }
-    .vstack-custom .first_box .Sub .elec{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  .vstack-custom .first_box .Sub .AlterHip {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 
-    .vstack-custom .first_box .Sub .AlterHip{
-        padding-left: 37px;
-        padding-right: 37px;
-    }
+  .vstack-custom .first_box .Sub .RageHip {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 
-    .vstack-custom .first_box .Sub .RageHip{
-        padding-left: 37px;
-        padding-right: 37px;
-    }
+  .vstack-custom .first_box .Sub .Pro {
+    padding: 0px 43px;
+  }
 
-    .vstack-custom .first_box .Sub .Pro{
-        padding: 0px 43px;
-    }
+  .vstack-custom .first_box HStack Box ProgressBar {
+    width: 1000px;
+  }
 
+  .vstack-custom .first_box .Sub .AlterRock {
+    padding: 0px 43px;
+  }
 
-    .vstack-custom .first_box HStack Box ProgressBar{
-        width: 1000px;
-    }
+  .vstack-custom .first_box .Sub .show {
+    padding: 0px 43px;
+  }
 
-    .vstack-custom .first_box .Sub .AlterRock{
-        padding: 0px 43px;
-    }
+  .vstack-custom .first_box .Sub .ComRB {
+    padding: 0px 37px;
+  }
 
-    
-    .vstack-custom .first_box .Sub .show{
-        padding: 0px 43px;
-    }
-
-    .vstack-custom .first_box .Sub .ComRB{
-        padding: 0px 37px;
-    }
-
-    .vstack-custom .first_box .Sub .AlterRB{
-        padding: 0px 37px;
-    }
+  .vstack-custom .first_box .Sub .AlterRB {
+    padding: 0px 37px;
+  }
 }

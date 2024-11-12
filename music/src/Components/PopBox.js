@@ -1,13 +1,12 @@
-import React from "react";
-import CheckBoxCnt from "./CheckBox.style";
-import "../App.css";
-import { atom } from "recoil";
-import { useRecoilState } from "recoil";
-import { useEffect } from "react";
-
+import React from 'react';
+import CheckBoxCnt from './CheckBox.style';
+import '../App.css';
+import { atom } from 'recoil';
+import { useRecoilState } from 'recoil';
+import { useEffect } from 'react';
 
 export const PopValueState = atom({
-  key: "Pop",
+  key: 'Pop',
   default: {},
 });
 
@@ -21,18 +20,17 @@ const PopBox = ({ id }) => {
     });
   };
 
-
   useEffect(() => {
     const handleCheckboxChange = () => {
       console.log(id, popValues[id]);
     };
-  
+
     const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-  
+
     if (checkboxElement) {
       checkboxElement.addEventListener('change', handleCheckboxChange);
     }
-  
+
     return () => {
       if (checkboxElement) {
         checkboxElement.removeEventListener('change', handleCheckboxChange);
