@@ -1,26 +1,32 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+  font-family: 'CHONBUKL';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
     format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 .body {
-  position: relative;
-  background-color: rgb(37, 37, 103);
-  width: 147%;
-  height: 1900px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-color: rgb(37, 37, 103);
+
+  height: 2000px;
   top: 0px;
-  font-family: 'Pretendard-Regular';
+  overflow: hidden;
+  font-family: 'CHONBUKL', sans-serif;
 }
 
 .Top {
-  margin-bottom: 50px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .Top h2 {
@@ -40,11 +46,10 @@
   color: #d6ff32;
 }
 
-/*추천 가수*/
 .singer table {
   position: relative;
   text-align: center;
-  margin-left: 220px;
+
   background-color: #d8d8d884;
   border-radius: 20px;
   opacity: 0.2px;
@@ -91,6 +96,7 @@
 
 .musictable table {
   display: inline;
+
   width: 500px;
   left: 1000px;
   top: 20px;
@@ -186,6 +192,10 @@
   background-color: white;
 }
 
+.vstack-custom .first_box .Sub .elec {
+  padding: 0px 14px;
+}
+
 .vstack-custom .first_box .Sub .RageHip {
   padding: 0px 30px;
 }
@@ -204,6 +214,15 @@
 
 .vstack-custom .first_box .Sub .show {
   padding: 0px 29px;
+}
+
+.vstack-custom .first_box Button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vstack-custom .first_box Button:hover {
+  background-color: #d6ff32;
+  transform: scale(1.05);
 }
 
 /* 말풍선 */

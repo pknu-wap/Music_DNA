@@ -57,37 +57,38 @@ const Pop = () => {
     }
   }
 
-  // 서브장르당 비율 계산
   DancePop = parseInt((DancePop / Total) * 100);
   ElecPop = parseInt((ElecPop / Total) * 100);
   IndiPop = parseInt((IndiPop / Total) * 100);
   LatinPop = parseInt((LatinPop / Total) * 100);
   BritPop = parseInt((BritPop / Total) * 100);
 
-  // 퍼센트 제일 높은 장르 진행바 형광색
   const maxProgress = Math.max(DancePop, ElecPop, IndiPop, LatinPop, BritPop);
 
-  // 모달 상태관리
   const {
     isOpen: isDancePopOpen,
     onOpen: onDancePopOpen,
     onClose: onDancePopClose,
   } = useDisclosure();
+
   const {
     isOpen: isElecPopOpen,
     onOpen: onElecPopOpen,
     onClose: onElecPopClose,
   } = useDisclosure();
+
   const {
-    isOpen: isBritPopOpen,
-    onOpen: onBritPopOpen,
-    onClose: onBritPopClose,
+    isOpen: isKPopOpen,
+    onOpen: onKPopOpen,
+    onClose: onKPopClose,
   } = useDisclosure();
+
   const {
     isOpen: isIndiPopOpen,
     onOpen: onIndiPopOpen,
     onClose: onIndiPopClose,
   } = useDisclosure();
+
   const {
     isOpen: isLatinPopOpen,
     onOpen: onLatinPopOpen,
@@ -97,56 +98,41 @@ const Pop = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="Top">
+          <img src="/pop2.png" width="300" height="50" />
+          <br />
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>POP</span>' 에 가깝군요!
           </h2>
+          <br />
         </div>
-
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Dance</span>
-                <br />
-                <br />
                 <img src="/pop_singer1.png" alt="Lady gaga" />
                 Lady gaga
               </td>
               <td>
                 <span>Electro</span>
-                <br />
-                <br />
                 <img src="/pop_singer2.png" alt="Halsey" />
                 Halsey
                 <br />
               </td>
               <td>
                 <span>Indie</span>
-                <br />
-                <br />
                 <img src="/pop_singer3.png" alt="The smtihs" />
                 The smtihs
-                <br />
               </td>
               <td>
                 <span>Latin</span>
-                <br />
-                <br />
                 <img src="/pop_singer4.png" alt="Camila Cabello" />
                 Camila Cabello
-                <br />
               </td>
               <td>
                 <span>Kpop</span>
-                <br />
-                <br />
                 <img src="/pop_singer5.png" alt="Oasis" />
                 BTS
               </td>
@@ -270,12 +256,16 @@ const Pop = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onBritPopOpen} style={{ padding: '0px 30px' }}>
-                  케이
+                <Button
+                  className="kpop"
+                  onClick={onKPopOpen}
+                  style={{ padding: '0px 22px' }}
+                >
+                  케이팝
                 </Button>
                 <CommonModal
-                  isOpen={isBritPopOpen}
-                  onClose={onBritPopClose}
+                  isOpen={isKPopOpen}
+                  onClose={onKPopClose}
                   title="케이팝"
                 >
                   <BritPopModalBody />
@@ -295,7 +285,7 @@ const Pop = () => {
         <div className="ques">
           <h3>추천 플레이리스트 보기</h3>
         </div>
-        <div class="musictable">
+        <div className="musictable">
           <table>
             <tr>
               <hr />
