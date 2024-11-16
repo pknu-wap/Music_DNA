@@ -7,14 +7,16 @@
 }
 
 .body {
-  position: relative;
-  background-color: rgb(37, 37, 103);
-  width: 147%;
-  height: 1900px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-color: rgb(37, 37, 103);
+
+  height: 2000px;
   top: 0px;
+  overflow: hidden;
   font-family: 'CHONBUKL', sans-serif;
 }
 
