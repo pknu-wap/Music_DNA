@@ -285,7 +285,7 @@ const Pop = () => {
         <div className="ques">
           <h3>추천 플레이리스트 보기</h3>
         </div>
-        <div class="musictable">
+        <div className="musictable">
           <table>
             <tr>
               <hr />
