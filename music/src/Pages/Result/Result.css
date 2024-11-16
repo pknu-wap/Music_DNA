@@ -21,8 +21,12 @@
 }
 
 .Top {
-  margin-bottom: 50px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .Top h2 {
