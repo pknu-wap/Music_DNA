@@ -216,6 +216,15 @@
   padding: 0px 29px;
 }
 
+.vstack-custom .first_box Button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vstack-custom .first_box Button:hover {
+  background-color: #d6ff32;
+  transform: scale(1.05);
+}
+
 /* 말풍선 */
 #menu {
   width: 200px;
