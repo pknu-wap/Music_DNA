@@ -270,8 +270,12 @@ const Pop = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onBritPopOpen} style={{ padding: '0px 30px' }}>
-                  케이
+                <Button
+                  className="kpop"
+                  onClick={onKPopOpen}
+                  style={{ padding: '0px 22px' }}
+                >
+                  케이팝
                 </Button>
                 <CommonModal
                   isOpen={isBritPopOpen}
