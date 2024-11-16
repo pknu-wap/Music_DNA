@@ -46,11 +46,10 @@
   color: #d6ff32;
 }
 
-/*추천 가수*/
 .singer table {
   position: relative;
   text-align: center;
-  margin-left: 220px;
+
   background-color: #d8d8d884;
   border-radius: 20px;
   opacity: 0.2px;
@@ -97,6 +96,7 @@
 
 .musictable table {
   display: inline;
+
   width: 500px;
   left: 1000px;
   top: 20px;
