@@ -192,6 +192,10 @@
   background-color: white;
 }
 
+.vstack-custom .first_box .Sub .elec {
+  padding: 0px 14px;
+}
+
 .vstack-custom .first_box .Sub .RageHip {
   padding: 0px 30px;
 }
