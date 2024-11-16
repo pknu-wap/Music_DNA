@@ -26,7 +26,6 @@ const audioPath = {
 
 const FirstPage = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  // 음원 개수가 총 10개이므로 각 음원의 상태를 배열 형태로 다루어야함
   const audioRefs = useRef([]);
 
   const playMusic = async (audioName) => {
@@ -44,7 +43,6 @@ const FirstPage = () => {
         audioRefs.current[audioName].src = data.publicUrl;
       }
 
-      // 재생중인 음악이 있다면 정지
       audioRefs.current.forEach((audio, i) => {
         if (i !== audioName && !audio.paused) {
           audio.pause();
