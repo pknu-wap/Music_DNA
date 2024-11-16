@@ -1,4 +1,3 @@
-// checkBox.styles.js
 import styled from 'styled-components';
 
 const CheckBoxCnt = styled.div`
