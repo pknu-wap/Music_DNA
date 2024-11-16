@@ -79,9 +79,9 @@ const Pop = () => {
     onClose: onElecPopClose,
   } = useDisclosure();
   const {
-    isOpen: isBritPopOpen,
-    onOpen: onBritPopOpen,
-    onClose: onBritPopClose,
+    isOpen: isKPopOpen,
+    onOpen: onKPopOpen,
+    onClose: onKPopClose,
   } = useDisclosure();
   const {
     isOpen: isIndiPopOpen,
@@ -97,10 +97,6 @@ const Pop = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
@@ -130,14 +126,12 @@ const Pop = () => {
               <td>
                 <span>Indie</span>
                 <br />
-                <br />
                 <img src="/pop_singer3.png" alt="The smtihs" />
                 The smtihs
                 <br />
               </td>
               <td>
                 <span>Latin</span>
-                <br />
                 <br />
                 <img src="/pop_singer4.png" alt="Camila Cabello" />
                 Camila Cabello
@@ -278,8 +272,8 @@ const Pop = () => {
                   케이팝
                 </Button>
                 <CommonModal
-                  isOpen={isBritPopOpen}
-                  onClose={onBritPopClose}
+                  isOpen={isKPopOpen}
+                  onClose={onKPopClose}
                   title="케이팝"
                 >
                   <BritPopModalBody />
