@@ -65,12 +65,21 @@
 }
 
 @media screen and (min-width: 698px) and (max-width: 1024px) {
+  .num2 {
+    width: 80%;
+    margin-left: 10%;
+  }
+
   .num2 h3 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 698px) {
+  .num2 {
+    width: 80%;
+    margin-left: 10%;
+  }
   .num2 h3 {
     font-size: 15px;
   }
