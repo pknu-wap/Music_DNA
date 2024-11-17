@@ -8,6 +8,7 @@
   background-color: #d6ff32;
   padding: 10px 40px;
   font-size: medium;
+  border-color: transparent;
   color: black;
   border-radius: 15px;
   font-weight: bold;
@@ -19,5 +20,5 @@
 }
 
 .SecondBtn button:hover {
-  background-color: #88a221;
+  background-color: #a9c246;
 }
