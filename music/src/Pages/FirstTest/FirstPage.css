@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'CHONBUKL';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
     format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 .firstPage {
-  font-family: 'CHONBUKL', sans-serif;
+  font-family: 'Pretendard-Regular', sans-serif;
   position: fixed;
   background-image: url('/public/desktop.gif');
   background-size: cover;

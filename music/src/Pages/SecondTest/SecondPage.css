@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'CHONBUKL';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/CHONBUKL.woff')
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
     format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -19,7 +19,6 @@
   background-repeat: no-repeat;
 }
 
-/* 두 번째 페이지 체크박스 */
 .num2 {
   border-radius: 10px;
   border: 3px solid #d6ff32;
