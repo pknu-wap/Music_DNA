@@ -10,7 +10,7 @@ export const HipValueState = atom({
   default: {},
 });
 
-const HipBox = ({ id }) => {
+const HipBox = ({ id, onNext }) => {
   const [hipValues, setHipValueState] = useRecoilState(HipValueState);
 
   const checkOnlyOne = (num) => {
@@ -18,6 +18,9 @@ const HipBox = ({ id }) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
+    if (onNext) {
+      onNext();
+    }
   };
 
   useEffect(() => {

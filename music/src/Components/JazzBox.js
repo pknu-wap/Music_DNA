@@ -10,7 +10,7 @@ export const JazzValueState = atom({
   default: {},
 });
 
-const JazzBox = ({ id }) => {
+const JazzBox = ({ id, onNext }) => {
   const [jazzValues, setJazzValueState] = useRecoilState(JazzValueState);
 
   const checkOnlyOne = (num) => {
@@ -18,6 +18,9 @@ const JazzBox = ({ id }) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
+    if (onNext) {
+      onNext();
+    }
   };
 
   useEffect(() => {

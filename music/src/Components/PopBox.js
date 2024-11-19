@@ -10,7 +10,7 @@ export const PopValueState = atom({
   default: {},
 });
 
-const PopBox = ({ id }) => {
+const PopBox = ({ id, onNext }) => {
   const [popValues, setPopValueState] = useRecoilState(PopValueState);
 
   const checkOnlyOne = (num) => {
@@ -18,6 +18,9 @@ const PopBox = ({ id }) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
+    if (onNext) {
+      onNext();
+    }
   };
 
   useEffect(() => {
