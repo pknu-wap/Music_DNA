@@ -4,56 +4,56 @@ import HipBox from '../../Components/HipBox';
 import testData from '../../Components/testData';
 import SecondBtn from './Button/SecondBtn';
 import Progress from '../../Components/progress';
+import ScrollToNext from '../../Components/scrollToNext';
 
 import './SecondPage.css';
 
 const SecondPage6 = () => {
   return (
-    <div className="firstPage">
-      <div className="progress">
-        <Progress percentage={testData[8].completed} />
-      </div>
-      <div className="num2">
-        <h3>
-          잔인하고 거친 질감이 느껴지는 사운드와 야만적인 가사들은 잠재되어 있는
-          나의 야성을 잠시 깨워줘.
-        </h3>
-        <HipBox id="DrillHip2" />
-      </div>
-      <div className="num2">
-        <h3>
-          마치 스포츠카의 시동을 건 듯한 808 베이스! 대교 위를 달리는 듯한 비트!{' '}
-          돈과 섹슈얼한 가사! 어두운 도시 속 빛줄기들이 연상되는 이런 음악은
-          나를 더 섹시하게 만들어줘.
-        </h3>
-        <HipBox id="TrapHip2" />
-      </div>
-      <div className="num2">
-        <h3>
-          기존에 있는 규칙을 무시한 채 많은 장르를 혼합하여, 독창적인 사운드로
-          조화롭게 랩하는 아티스트가 매력적이야.
-        </h3>
-        <HipBox id="AlterHip2" />
-      </div>
-      <div className="num2">
-        <h3>
-          에너지가 뿜어져 나오는 듯한 강력한 전자 사운드와 분노로 행진하는 듯한
-          랩과 비트의 조합은 내 가슴을 뻥 뚫리게 해줘.
-        </h3>
-        <HipBox id="RageHip2" />
-      </div>
-      <div className="num2">
-        <h3>
-          드럼의 그루브를 타며 박자를 가지고 노는 랩에 집중하다 보면 골목벽에
-          그려진 알록달록한 그래피티 그림들이 떠올라.
-        </h3>
-        <HipBox id="BoomHip2" />
-      </div>
-      <SecondBtn
-        to="/SecondPage7"
-        ids={['DrillHip2', 'TrapHip2', 'AlterHip2', 'RageHip2', 'BoomHip2']}
-      />
-    </div>
+    <ScrollToNext>
+      {({ sectionRefs, handleScrollToNext }) => (
+        <div className="firstPage">
+          <div className="progress">
+            <Progress percentage={testData[8].completed} />
+          </div>
+          {[
+            {
+              id: 'DrillHip2',
+              text: '잔인하고 거친 질감이 느껴지는 사운드와 야만적인 가사들은 잠재되어 있는 나의 야성을 잠시 깨워줘.',
+            },
+            {
+              id: 'TrapHip2',
+              text: '마치 스포츠카의 시동을 건 듯한 808 베이스! 대교 위를 달리는 듯한 비트! 돈과 섹슈얼한 가사! 어두운 도시 속 빛줄기들이 연상되는 이런 음악은 나를 더 섹시하게 만들어줘.',
+            },
+            {
+              id: 'AlterHip2',
+              text: '기존에 있는 규칙을 무시한 채 많은 장르를 혼합하여, 독창적인 사운드로 조화롭게 랩하는 아티스트가 매력적이야.',
+            },
+            {
+              id: 'RageHip2',
+              text: '에너지가 뿜어져 나오는 듯한 강력한 전자 사운드와 분노로 행진하는 듯한 랩과 비트의 조합은 내 가슴을 뻥 뚫리게 해줘.',
+            },
+            {
+              id: 'BoomHip2',
+              text: '드럼의 그루브를 타며 박자를 가지고 노는 랩에 집중하다 보면 골목벽에 그려진 알록달록한 그래피티 그림들이 떠올라.',
+            },
+          ].map((item, index) => (
+            <div
+              key={item.id}
+              className="num2"
+              ref={(el) => (sectionRefs.current[index] = el)}
+            >
+              <h3>{item.text}</h3>
+              <HipBox id={item.id} onNext={() => handleScrollToNext(index)} />
+            </div>
+          ))}
+          <SecondBtn
+            to="/SecondPage7"
+            ids={['DrillHip2', 'TrapHip2', 'AlterHip2', 'RageHip2', 'BoomHip2']}
+          />
+        </div>
+      )}
+    </ScrollToNext>
   );
 };
 

@@ -9,8 +9,10 @@ import { JazzValueState } from '../../Components/JazzBox';
 import { RbValueState } from '../../Components/RbBox';
 import { RockValueState } from '../../Components/RockBox';
 import { useRecoilValue } from 'recoil';
+
 import Progress from '../../Components/progress';
 import SecondBtn from './Button/SecondBtn';
+import ScrollToNext from '../../Components/scrollToNext';
 
 import './SecondPage.css';
 
@@ -97,58 +99,51 @@ const SecondPage9 = () => {
   };
 
   return (
-    <div className="firstPage">
-      <div className="progress">
-        <Progress percentage={testData[11].completed} />
-      </div>
-      <div className="num2">
-        <h3>
-          디지털한 사운드가 기반이 된 끈적한 사랑과 사회참여적인 가사를 담아낸
-          흑인들의 가사, 고요하고 그루비한 보컬.. 오우.. 이런 노래엔 스모키한
-          위스키 한 잔이 딱이야.
-        </h3>
-        <RbBox id="NeoRB1" />
-      </div>
-      <div className="num2">
-        <h3>
-          트렌디한 장르와 보컬의 소울과 그루브가 결합된 음악은 나의 미간을
-          찡그리게 만들지.
-        </h3>
-        <RbBox id="ComRB1" />
-      </div>
-      <div className="num2">
-        <h3>
-          흑인 보컬의 소울과 째지한 드럼과 사운드.. 센스있는 베이스의 그루브는
-          나를 춤추게 만들지 I Feel Good~
-        </h3>
-        <RbBox id="PunkRB1" />
-      </div>
-      <div className="num2">
-        <h3>
-          교회에서 들릴 듯한 전통적인 구성들과 흑인민권 운동을 기반으로 흑인의
-          한과 울림이 담긴 음악. 무대 옆에 있는 코러스(콰이어)들이 하모니를 만들
-          때 그 시대가 입체적으로 떠올라.
-        </h3>
-        <RbBox id="SoulRB1" />
-      </div>
-      <div className="num2">
-        <h3>
-          자신만의 아이덴티티로 창의성을 펼쳐내 복잡한 자신의 감정을 다양한
-          사운드로 표현하는 소울이 담겨진 음악.. 이게 예술이지.
-        </h3>
-        <RbBox id="AlterRB1" />
-      </div>
-      {/* <div className='linkBox'>
-                <Link to={`/${Result}`}>
-                    <button onClick={completeButton}>완료</button> 
-                </Link>
-            </div> */}
-      <SecondBtn
-        to={`/${Result}`}
-        ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
-        onCompleteButtonClick={completeButton}
-      />
-    </div>
+    <ScrollToNext>
+      {({ sectionRefs, handleScrollToNext }) => (
+        <div className="firstPage">
+          <div className="progress">
+            <Progress percentage={testData[11].completed} />
+          </div>
+          {[
+            {
+              id: 'NeoRB1',
+              text: '디지털한 사운드가 기반이 된 끈적한 사랑과 사회참여적인 가사를 담아낸 흑인들의 가사, 고요하고 그루비한 보컬.. 오우.. 이런 노래엔 스모키한 위스키 한 잔이 딱이야.',
+            },
+            {
+              id: 'ComRB1',
+              text: '트렌디한 장르와 보컬의 소울과 그루브가 결합된 음악은 나의 미간을 찡그리게 만들지.',
+            },
+            {
+              id: 'PunkRB1',
+              text: '흑인 보컬의 소울과 째지한 드럼과 사운드.. 센스있는 베이스의 그루브는 나를 춤추게 만들지 I Feel Good~',
+            },
+            {
+              id: 'SoulRB1',
+              text: '교회에서 들릴 듯한 전통적인 구성들과 흑인민권 운동을 기반으로 흑인의 한과 울림이 담긴 음악. 무대 옆에 있는 코러스(콰이어)들이 하모니를 만들 때 그 시대가 입체적으로 떠올라.',
+            },
+            {
+              id: 'AlterRB1',
+              text: '자신만의 아이덴티티로 창의성을 펼쳐내 복잡한 자신의 감정을 다양한 사운드로 표현하는 소울이 담겨진 음악.. 이게 예술이지.',
+            },
+          ].map((item, index) => (
+            <div
+              key={item.id}
+              className="num2"
+              ref={(el) => (sectionRefs.current[index] = el)}
+            >
+              <h3>{item.text}</h3>
+              <RbBox id={item.id} onNext={() => handleScrollToNext(index)} />
+            </div>
+          ))}
+          <SecondBtn
+            to={`/${Result}`}
+            ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
+            onCompleteButtonClick={completeButton}
+          />
+        </div>
+      )}
+    </ScrollToNext>
   );
 };
 
