@@ -10,7 +10,7 @@ export const RockValueState = atom({
   default: {},
 });
 
-const RockBox = ({ id }) => {
+const RockBox = ({ id, onNext }) => {
   const [rockValues, setRockValueState] = useRecoilState(RockValueState);
 
   const checkOnlyOne = (num) => {
@@ -18,6 +18,9 @@ const RockBox = ({ id }) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
+    if (onNext) {
+      onNext();
+    }
   };
 
   useEffect(() => {

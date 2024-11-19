@@ -10,6 +10,7 @@ import NextButton from '../../Components/NextButton';
 import './FirstPage.css';
 import testData from '../../Components/testData';
 import Progress from '../../Components/progress';
+import ScrollToNext from '../../Components/scrollToNext';
 
 const audioPath = {
   1: 'POP1.mp3',
@@ -64,56 +65,50 @@ const FirstPage1 = () => {
   };
 
   return (
-    <div className="firstPage">
-      <div className="progress">
-        <Progress percentage={testData[1].completed} />
-      </div>
-      <div className="num1">
-        <img onClick={() => playMusic(6)} src="./sound1.png" alt="Sound Icon" />
-        <h3>
-          <div class="q1">6번 사운드가 당신의 마음에 드나요?</div>
-        </h3>
-        <RockBox id="Rock2" />
-        <audio ref={(el) => (audioRefs.current[6] = el)} />
-      </div>
-      <div className="num1">
-        <img onClick={() => playMusic(7)} src="./sound1.png" alt="Sound Icon" />
-        <h3>
-          <div class="q1">7번 사운드가 당신의 마음에 드나요?</div>
-        </h3>
-        <RbBox id="RB1" />
-        <audio ref={(el) => (audioRefs.current[7] = el)} />
-      </div>
-      <div className="num1">
-        <img onClick={() => playMusic(8)} src="./sound1.png" alt="Sound Icon" />
-        <h3>
-          <div class="q1">8번 사운드가 당신의 마음에 드나요?</div>
-        </h3>
-        <RbBox id="RB2" />
-        <audio ref={(el) => (audioRefs.current[8] = el)} />
-      </div>
-      <div className="num1">
-        <img onClick={() => playMusic(9)} src="./sound1.png" alt="Sound Icon" />
-        <h3>
-          <div class="q1">9번 사운드가 당신의 마음에 드나요?</div>
-        </h3>
-        <JazzBox id="Jazz1" />
-        <audio ref={(el) => (audioRefs.current[9] = el)} />
-      </div>
-      <div className="num1">
-        <img
-          onClick={() => playMusic(10)}
-          src="./sound1.png"
-          alt="Sound Icon"
-        />
-        <h3>
-          <div class="q1">10번 사운드가 당신의 마음에 드나요?</div>
-        </h3>
-        <JazzBox id="Jazz2" />
-        <audio ref={(el) => (audioRefs.current[10] = el)} />
-      </div>
-      <NextButton to="/SecondPage" rockCount={1} jazzCount={2} RbCount={2} />
-    </div>
+    <ScrollToNext>
+      {({ sectionRefs, handleScrollToNext }) => (
+        <div className="firstPage">
+          <div className="progress">
+            <Progress percentage={testData[1].completed} />
+          </div>
+          {[
+            { id: 'Rock2', Component: RockBox, audio: 6 },
+            { id: 'RB1', Component: RbBox, audio: 7 },
+            { id: 'RB2', Component: RbBox, audio: 8 },
+            { id: 'Jazz1', Component: JazzBox, audio: 9 },
+            { id: 'Jazz2', Component: JazzBox, audio: 10 },
+          ].map((item, index) => (
+            <div
+              key={item.id}
+              className="num1"
+              ref={(el) => (sectionRefs.current[index] = el)}
+            >
+              <img
+                onClick={() => playMusic(item.audio)}
+                src="./sound1.png"
+                alt="Sound Icon"
+              />
+              <h3>
+                <div className="q1">
+                  {index + 6}번 사운드가 당신의 마음에 드나요?
+                </div>
+              </h3>
+              <item.Component
+                id={item.id}
+                onNext={() => handleScrollToNext(index)}
+              />
+              <audio ref={(el) => (audioRefs.current[item.audio] = el)} />
+            </div>
+          ))}
+          <NextButton
+            to="/SecondPage"
+            rockCount={1}
+            jazzCount={2}
+            RbCount={2}
+          />
+        </div>
+      )}
+    </ScrollToNext>
   );
 };
 

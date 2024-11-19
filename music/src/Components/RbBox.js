@@ -10,7 +10,7 @@ export const RbValueState = atom({
   default: {},
 });
 
-const RbBox = ({ id }) => {
+const RbBox = ({ id, onNext }) => {
   const [RbValues, setRbValueState] = useRecoilState(RbValueState);
 
   const checkOnlyOne = (num) => {
@@ -18,6 +18,9 @@ const RbBox = ({ id }) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
+    if (onNext) {
+      onNext();
+    }
   };
 
   useEffect(() => {
