@@ -38,7 +38,6 @@ const Rock = () => {
   let ShowRock = 0;
 
   for (const key in RockValue) {
-    // 하위장르 점수 합하기
     if (key === 'ProRock1' || key === 'ProRock2') {
       Total += RockValue[key];
       ProRock += RockValue[key];
@@ -57,7 +56,6 @@ const Rock = () => {
     }
   }
 
-  // 서브장르당 비율 계산
   ProRock = parseInt((ProRock / Total) * 100);
   HeavyRock = parseInt((HeavyRock / Total) * 100);
   AlterRock = parseInt((AlterRock / Total) * 100);
@@ -101,59 +99,41 @@ const Rock = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>Rock</span>' 에 가깝군요!
           </h2>
         </div>
+        <br />
 
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Progressive</span>
-                <br />
-                <br />
                 <img src="/rock_singer1.png" alt="Yes" />
                 Yes
               </td>
               <td>
                 <span>Hard</span>
-                <br />
-                <br />
                 <img src="/rock_singer2.png" alt="Guns N' Roses" />
                 Guns N' Roses
-                <br />
               </td>
               <td>
                 <span>Alternative</span>
-                <br />
-                <br />
                 <img src="/rock_singer3.png" alt="Nirvana" />
                 Nirvana
-                <br />
               </td>
               <td>
                 <span>Punk</span>
-                <br />
-                <br />
                 <img src="/rock_singer4.png" alt="Sex pistols" />
-                Sex pistols
-                <br />
+                Sex Pistols
               </td>
               <td>
                 <span>Shoegaze</span>
-                <br />
-                <br />
                 <img src="/rock_singer5.png" alt="Slow dive" />
-                Slow dive
+                Slow Dive
               </td>
             </tr>
           </table>
@@ -197,7 +177,11 @@ const Rock = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button className="HeavyRock" onClick={onHeavyRockOpen}>
+                <Button
+                  className="HeavyRock"
+                  onClick={onHeavyRockOpen}
+                  style={{ padding: '0px 44px' }}
+                >
                   하드
                 </Button>
                 <CommonModal
@@ -221,7 +205,11 @@ const Rock = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button className="AlterRock" onClick={onAlterRockOpen}>
+                <Button
+                  className="AlterRock"
+                  onClick={onAlterRockOpen}
+                  style={{ padding: '0px 23px' }}
+                >
                   얼터너티브
                 </Button>
                 <CommonModal
@@ -248,7 +236,7 @@ const Rock = () => {
                 <Button
                   className="PunkRock"
                   onClick={onPunkRockOpen}
-                  style={{ padding: '0px 43px' }}
+                  style={{ padding: '0px 44px' }}
                 >
                   펑크
                 </Button>
@@ -273,7 +261,11 @@ const Rock = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button className="show" onClick={onShowRockOpen}>
+                <Button
+                  className="show"
+                  onClick={onShowRockOpen}
+                  style={{ padding: '0px 30px' }}
+                >
                   슈게이징
                 </Button>
                 <CommonModal
@@ -375,7 +367,7 @@ const Rock = () => {
                 <div id="song">
                   God Save The Queen
                   <br />
-                  <span>Sex pistols</span>
+                  <span>Sex Pistols</span>
                 </div>
                 <div class="play">
                   <img
@@ -397,7 +389,7 @@ const Rock = () => {
                 <div id="song">
                   When the Sun Hits
                   <br />
-                  <span>Slow dive</span>
+                  <span>Slow Dive</span>
                 </div>
                 <div class="play">
                   <img
