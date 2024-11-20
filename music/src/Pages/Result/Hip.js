@@ -38,7 +38,6 @@ const Hip = () => {
   let BoomHip = 0;
 
   for (const key in HipValue) {
-    // 하위장르 점수 합하기
     if (key === 'DrillHip1' || key === 'DrillHip2') {
       Total += HipValue[key];
       DrillHip += HipValue[key];
@@ -57,14 +56,12 @@ const Hip = () => {
     }
   }
 
-  // 서브장르당 비율 계산
   DrillHip = parseInt((DrillHip / Total) * 100);
   TrapHip = parseInt((TrapHip / Total) * 100);
   AlterHip = parseInt((AlterHip / Total) * 100);
   RageHip = parseInt((RageHip / Total) * 100);
   BoomHip = parseInt((BoomHip / Total) * 100);
 
-  // 퍼센트 제일 높은 장르 진행바 형광색
   const maxProgress = Math.max(DrillHip, TrapHip, AlterHip, RageHip, BoomHip);
 
   const {
@@ -96,52 +93,38 @@ const Hip = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
           <h2>
-            '<span>힙합</span>' 에 가깝군요!
+            '<span>Hiphop</span>' 에 가깝군요!
           </h2>
         </div>
-
+        <br />
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Drill</span>
-                <br />
                 <img src="/hip_singer1.png" alt="Pop Smoke" />
                 Pop Smoke
               </td>
               <td>
                 <span>Trap</span>
-                <br />
                 <img src="/hip_singer2.png" alt="Future" />
                 Future
-                <br />
               </td>
               <td>
                 <span>Alternative</span>
-                <br />
                 <img src="/hip_singer3.png" alt="Kanye west(Ye)" />
-                Kanye west(Ye)
-                <br />
+                Kanye West
               </td>
               <td>
                 <span>Rage</span>
-                <br />
                 <img src="/hip_singer4.png" alt="Trippie Redd" />
                 Trippie Redd
-                <br />
               </td>
               <td>
                 <span>Boom Bap</span>
-                <br />
                 <img src="/hip_singer5.png" alt="B.I.G." />
                 B.I.G.
               </td>
@@ -344,7 +327,7 @@ const Hip = () => {
                 <img src="/hip_m3.jpg" id="albumcover" />
                 <div id="song">
                   Bound 2<br />
-                  <span>Kanye west(Ye)</span>
+                  <span>Kanye West</span>
                 </div>
                 <img src="/19.png" id="prohibit3" />
                 <div class="play">

@@ -38,7 +38,6 @@ const Pop = () => {
   let BritPop = 0;
 
   for (const key in PopValue) {
-    // 하위장르 점수 합하기
     if (key === 'DancePop1' || key === 'DancePop2') {
       Total += PopValue[key];
       DancePop += PopValue[key];
@@ -100,31 +99,30 @@ const Pop = () => {
       <div className="body">
         <div className="Top">
           <img src="/pop2.png" width="300" height="50" />
-          <br />
+
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>POP</span>' 에 가깝군요!
           </h2>
-          <br />
         </div>
+        <br />
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Dance</span>
                 <img src="/pop_singer1.png" alt="Lady gaga" />
-                Lady gaga
+                Lady Gaga
               </td>
               <td>
                 <span>Electro</span>
                 <img src="/pop_singer2.png" alt="Halsey" />
                 Halsey
-                <br />
               </td>
               <td>
                 <span>Indie</span>
                 <img src="/pop_singer3.png" alt="The smtihs" />
-                The smtihs
+                The Smiths
               </td>
               <td>
                 <span>Latin</span>
@@ -132,7 +130,7 @@ const Pop = () => {
                 Camila Cabello
               </td>
               <td>
-                <span>Kpop</span>
+                <span>K-pop</span>
                 <img src="/pop_singer5.png" alt="Oasis" />
                 BTS
               </td>
@@ -259,7 +257,7 @@ const Pop = () => {
                 <Button
                   className="kpop"
                   onClick={onKPopOpen}
-                  style={{ padding: '0px 22px' }}
+                  style={{ padding: '0px 23px' }}
                 >
                   케이팝
                 </Button>
@@ -294,7 +292,7 @@ const Pop = () => {
                 <div id="song">
                   Just Dance
                   <br />
-                  <span>Lady gaga</span>
+                  <span>Lady Gaga</span>
                 </div>
                 <img src="19.png" id="prohibit1" />
                 <div class="play">
@@ -340,7 +338,7 @@ const Pop = () => {
                 <div id="song">
                   This Charming Man
                   <br />
-                  <span>The smtihs</span>
+                  <span>The Smiths</span>
                 </div>
                 <div class="play">
                   <img

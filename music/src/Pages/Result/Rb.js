@@ -38,7 +38,6 @@ const Rb = () => {
   let AlterRb = 0;
 
   for (const key in RbValue) {
-    // 하위장르 점수 합하기
     if (key === 'NeoRB1' || key === 'NeoRB2') {
       Total += RbValue[key];
       NeoRb += RbValue[key];
@@ -94,54 +93,41 @@ const Rb = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>R&B</span>' 에 가깝군요!
           </h2>
         </div>
+        <br />
 
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Neo Soul</span>
-                <br />
                 <img src="/rb_singer1.png" alt="D'Angelo" />
                 D'Angelo
               </td>
               <td>
                 <span>Contemporary</span>
-                <br />
                 <img src="/rb_singer2.png" alt="SZA" />
                 Beyoncé
-                <br />
               </td>
               <td>
                 <span>Funk</span>
-                <br />
                 <img src="/rb_singer3.png" alt="Michael Jackson" />
                 James Brown
-                <br />
               </td>
               <td>
                 <span>Soul</span>
-                <br />
                 <img src="/rb_singer4.png" alt="Stevie Wonder" />
                 Stevie Wonder
-                <br />
               </td>
               <td>
                 <span>Alternative</span>
-                <br />
                 <img src="/rb_singer5.png" alt="Frank ocean" />
-                Frank ocean
+                Frank Ocean
               </td>
             </tr>
           </table>
@@ -384,7 +370,7 @@ const Rb = () => {
                 <div id="song">
                   Self Control
                   <br />
-                  <span>Frank ocean</span>
+                  <span>Frank Ocean</span>
                 </div>
                 <div class="play">
                   <img

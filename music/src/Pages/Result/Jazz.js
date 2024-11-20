@@ -38,7 +38,6 @@ const Jazz = () => {
   let BibobJazz = 0;
 
   for (const key in JazzValue) {
-    // 하위장르 점수 합하기
     if (key === 'LatinJazz1' || key === 'LatinJazz2') {
       Total += JazzValue[key];
       LatinJazz += JazzValue[key];
@@ -57,7 +56,6 @@ const Jazz = () => {
     }
   }
 
-  // 서브장르당 비율 계산
   LatinJazz = parseInt((LatinJazz / Total) * 100);
   SwingJazz = parseInt((SwingJazz / Total) * 100);
   SoulJazz = parseInt((SoulJazz / Total) * 100);
@@ -101,52 +99,39 @@ const Jazz = () => {
   return (
     <ChakraProvider>
       <div className="body">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
           <h2>
-            '<span>재즈</span>' 에 가깝군요!
+            '<span>Jazz</span>' 에 가깝군요!
           </h2>
         </div>
+        <br />
 
         <div class="singer">
           <table>
             <tr>
               <td>
                 <span>Latin</span>
-                <br />
                 <img src="/jazz_singer1.png" alt="Stan Getz" />
                 Stan Getz
               </td>
               <td>
                 <span>Swing</span>
-                <br />
                 <img src="/jazz_singer2.png" alt="Benny Goodman" />
                 Benny Goodman
-                <br />
               </td>
               <td>
                 <span>Soul</span>
-                <br />
                 <img src="/jazz_singer3.png" alt="Jimmy smith" />
-                Jimmy smith
-                <br />
+                Jimmy Smith
               </td>
               <td>
                 <span>Free</span>
-                <br />
                 <img src="/jazz_singer4.png" alt="Ornette Coleman" />
                 Ornette Coleman
-                <br />
               </td>
               <td>
                 <span>Bebop</span>
-                <br />
                 <img src="/jazz_singer5.png" alt="Charlie Parker" />
                 Charlie Parker
               </td>
@@ -168,7 +153,12 @@ const Jazz = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onLatinJazzOpen}>라틴</Button>
+                <Button
+                  onClick={onLatinJazzOpen}
+                  style={{ padding: '0px 30px' }}
+                >
+                  라틴
+                </Button>
                 <CommonModal
                   isOpen={isLatinJazzOpen}
                   onClose={onLatinJazzClose}
@@ -190,7 +180,12 @@ const Jazz = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onSwingJazzOpen}>스윙</Button>
+                <Button
+                  onClick={onSwingJazzOpen}
+                  style={{ padding: '0px 30px' }}
+                >
+                  스윙
+                </Button>
                 <CommonModal
                   isOpen={isSwingJazzOpen}
                   onClose={onSwingJazzClose}
@@ -212,7 +207,12 @@ const Jazz = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onSoulJazzOpen}>소울</Button>
+                <Button
+                  onClick={onSoulJazzOpen}
+                  style={{ padding: '0px 30px' }}
+                >
+                  소울
+                </Button>
                 <CommonModal
                   isOpen={isSoulJazzOpen}
                   onClose={onSoulJazzClose}
@@ -234,7 +234,12 @@ const Jazz = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onFreeJazzOpen}>프리</Button>
+                <Button
+                  onClick={onFreeJazzOpen}
+                  style={{ padding: '0px 30px' }}
+                >
+                  프리
+                </Button>
                 <CommonModal
                   isOpen={isFreeJazzOpen}
                   onClose={onFreeJazzClose}
@@ -256,7 +261,12 @@ const Jazz = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button onClick={onBibobJazzOpen}>비밥</Button>
+                <Button
+                  onClick={onBibobJazzOpen}
+                  style={{ padding: '0px 30px' }}
+                >
+                  비밥
+                </Button>
                 <CommonModal
                   isOpen={isBibobJazzOpen}
                   onClose={onBibobJazzClose}
@@ -334,7 +344,7 @@ const Jazz = () => {
                 <div id="song">
                   Midnight Special
                   <br />
-                  <span>Jimmy smith</span>
+                  <span>Jimmy Smith</span>
                 </div>
                 <div class="play">
                   <img
@@ -354,7 +364,6 @@ const Jazz = () => {
               <td>
                 <img src="/jazz_m4.jpg" id="albumcover" />
                 <div id="song">
-                  {' '}
                   Lonely Woman
                   <br />
                   <span>Ornette Coleman</span>
