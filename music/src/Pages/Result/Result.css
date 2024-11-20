@@ -143,7 +143,6 @@
   position: relative;
   width: 20px;
   top: -14px;
-  left: -20px;
 }
 
 /*플레이 버튼*/
@@ -194,27 +193,11 @@
 }
 
 .vstack-custom .first_box .Sub .elec {
-  padding: 0px 14px;
+  padding: 0px 16px;
 }
 
 .vstack-custom .first_box .Sub .RageHip {
   padding: 0px 30px;
-}
-
-.vstack-custom .first_box .Sub .HeavyRock {
-  padding: 0px 43px;
-}
-
-.vstack-custom .first_box .Sub .AlterRock {
-  padding: 0px 22px;
-}
-
-.vstack-custom .first_box .Sub .PunkRock {
-  padding: 0px 43px;
-}
-
-.vstack-custom .first_box .Sub .show {
-  padding: 0px 29px;
 }
 
 .vstack-custom .first_box Button {
