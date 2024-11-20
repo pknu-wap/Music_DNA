@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
-import './CautionModal';
-import CautionModal from './CautionModal';
 
 const Main = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,12 +20,11 @@ const Main = () => {
   };
 
   useEffect(() => {
-    const audio = audioRef.current; // Copy ref to a local variable
+    const audio = audioRef.current;
 
     return () => {
-      // Cleanup function to pause the audio when the component unmounts
       audio.pause();
-      audio.currentTime = 0; // Reset the audio to the start
+      audio.currentTime = 0;
     };
   }, []);
 
@@ -62,7 +60,9 @@ const Main = () => {
 
   const StartButton = () => (
     <div className="mainButton">
-      <CautionModal />
+      <Link to="/firstPage">
+        <button>테스트 시작하기</button>
+      </Link>
     </div>
   );
 

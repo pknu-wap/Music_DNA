@@ -14,10 +14,11 @@
   color: black;
   border-radius: 15px;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nextPage button:hover {
-  transition: background-color 0.3s ease;
+  transform: scale(1.1);
   background-color: #88a221;
 }
 

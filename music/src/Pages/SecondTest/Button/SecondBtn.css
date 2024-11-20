@@ -12,13 +12,10 @@
   color: black;
   border-radius: 15px;
   font-weight: bold;
-}
-
-.SecondBtn button {
-  background-color: #d6ff32;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .SecondBtn button:hover {
-  background-color: #a9c246;
+  transform: scale(1.1);
+  background-color: #88a221;
 }

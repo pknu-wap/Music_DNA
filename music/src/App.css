@@ -96,10 +96,16 @@ body {
   font-size: medium;
   color: black;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .mainButton button:hover {
-  background-color: #d6ff328f;
+  transform: scale(1.1);
+  background-color: #88a221;
+}
+
+.mainButton button:active {
+  transform: scale(0.95);
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
