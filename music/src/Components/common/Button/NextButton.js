@@ -1,15 +1,15 @@
 import React from 'react';
+import { useRecoilState } from 'recoil';
 import { Link } from 'react-router-dom';
 
-import '../Pages/FirstTest/FirstPage';
-import './NextButton.css';
+import { PopValueState } from '../../CheckBox/PopBox';
+import { RockValueState } from '../../CheckBox/RockBox';
+import { HipValueState } from '../../CheckBox/HipBox';
+import { JazzValueState } from '../../CheckBox/JazzBox';
+import { RbValueState } from '../../CheckBox/RbBox';
 
-import { PopValueState } from './PopBox';
-import { RockValueState } from './RockBox';
-import { HipValueState } from './HipBox';
-import { JazzValueState } from './JazzBox';
-import { RbValueState } from './RbBox';
-import { useRecoilState } from 'recoil';
+import '../../../Pages/FirstTest/FirstPage';
+import './NextButton.css';
 
 const NextButton = ({
   to,
@@ -26,7 +26,6 @@ const NextButton = ({
   const [RbValues] = useRecoilState(RbValueState);
 
   const isNextButtonDisabled = () => {
-    // 모든 체크박스가 체크된 상태인지 확인
     const popCheck =
       popCount === 0 ||
       Array.from({ length: popCount }, (_, i) => i + 1).every(
@@ -63,7 +62,7 @@ const NextButton = ({
           onClick={(e) => {
             if (isNextButtonDisabled()) {
               e.preventDefault();
-              console.log(isNextButtonDisabled()); // true면 하나이상 체크 안됨, false여야 다음으로 넘어감
+              console.log(isNextButtonDisabled());
             }
           }}
         >

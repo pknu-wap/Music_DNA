@@ -1,0 +1,21 @@
+.SecondBtn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.SecondBtn button {
+  position: relative;
+  background-color: #d6ff32;
+  padding: 10px 40px;
+  font-size: medium;
+  border-color: transparent;
+  color: black;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.SecondBtn button:hover {
+  transform: scale(1.1);
+  background-color: #88a221;
+}
