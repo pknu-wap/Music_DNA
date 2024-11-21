@@ -2,10 +2,7 @@
 **사용자의 취향 장르**를 판별하고 그에 맞는 **플레이리스트**를 제공하기 위해 설계된 **웹 애플리케이션**입니다. 
 <br/>
 
-
-
-<img width="500" alt="스크린샷 2024-11-16 18 02 21" src="https://github.com/user-attachments/assets/3c938af6-7a9c-4eea-b5da-6ff53dc08fe1">
-
+<img width="500" alt="스크린샷 2024-11-21 16 45 16" src="https://github.com/user-attachments/assets/a6e40c21-9f4a-44d1-ab0d-fb663f7cf6f8">
 
 ## 👨‍💻 Contributors 👩‍💻
 
