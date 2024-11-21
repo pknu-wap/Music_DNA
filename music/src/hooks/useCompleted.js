@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import testData from './testData';
+import testData from '../constants/gaugePercentages';
 
 const useCompleted = (initialValue, dataIndex) => {
   const [completed, setCompleted] = useState(initialValue);
