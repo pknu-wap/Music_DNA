@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { atom, useRecoilState } from 'recoil';
+
 import CheckBoxCnt from './CheckBox.style';
-import '../App.css';
-import { atom } from 'recoil';
-import { useRecoilState } from 'recoil';
-import { useEffect } from 'react';
+import '../../App.css';
 
 export const RockValueState = atom({
   key: 'Rock',
