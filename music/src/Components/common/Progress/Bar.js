@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const Progress = ({ percentage = 0 }) => {
+const Bar = ({ percentage = 0 }) => {
   return (
     <ProgressBar>
       <Gauge percentage={percentage}>
@@ -10,7 +10,7 @@ const Progress = ({ percentage = 0 }) => {
   );
 };
 
-export default Progress;
+export default Bar;
 
 const fillAnimation = keyframes`
   0% {
