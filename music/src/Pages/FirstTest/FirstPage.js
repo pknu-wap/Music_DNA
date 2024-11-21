@@ -1,16 +1,17 @@
 import React from 'react';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { supabase } from '../../supabaseClient';
 
-import PopBox from '../../Components/PopBox';
-import HipBox from '../../Components/HipBox';
-import RockBox from '../../Components/RockBox';
-import NextButton from '../../Components/NextButton';
+import PopBox from '../../Components/CheckBox/PopBox';
+import HipBox from '../../Components/CheckBox/HipBox';
+import RockBox from '../../Components/CheckBox/RockBox';
+import NextButton from '../../Components/common/Button/NextButton';
+
+import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
+import Bar from '../../Components/common/Progress/Bar';
+import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
 
 import './FirstPage.css';
-import testData from '../../Components/testData';
-import Progress from '../../Components/progress';
-import ScrollToNext from '../../Components/scrollToNext';
 
 const audioPath = {
   1: 'POP1.mp3',
@@ -64,7 +65,7 @@ const FirstPage = () => {
       {({ sectionRefs, handleScrollToNext }) => (
         <div className="firstPage">
           <div className="progress">
-            <Progress percentage={testData[0].completed} />
+            <Bar percentage={GAUGE_PERCENTAGES[0].completed} />
           </div>
           {[
             { id: 'Pop1', Component: PopBox, audio: 1 },

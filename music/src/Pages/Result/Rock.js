@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './Result.css';
-import CommonModal from './Modal';
+import { useRecoilValue } from 'recoil';
 
+import { RockValueState } from '../../Components/CheckBox/RockBox';
 import {
   ChakraProvider,
   VStack,
@@ -11,17 +11,18 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import ProgressBar from '@ramonak/react-progress-bar';
-import { RockValueState } from '../../Components/RockBox';
-import { useRecoilValue } from 'recoil';
+
 import {
   ProRockModalBody,
   HeavyRockModalBody,
   AlterRockModalBody,
   PunkRockModalBody,
   ShowRockModalBody,
-} from './ModalCon';
+} from '../../Components/modal/ModalContent';
 
-import Share from '../../Components/Share';
+import CommonModal from '../../Components/modal/Modal';
+import Share from '../../Components/Share/Share';
+import './Result.css';
 
 const Rock = () => {
   const RockValue = useRecoilValue(RockValueState);

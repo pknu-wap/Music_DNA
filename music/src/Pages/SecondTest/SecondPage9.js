@@ -1,18 +1,18 @@
 import React from 'react';
+import { useRecoilValue } from 'recoil';
 import { supabase } from '../../supabaseClient';
 
-import RbBox from '../../Components/RbBox';
-import testData from '../../Components/testData';
-import { PopValueState } from '../../Components/PopBox';
-import { HipValueState } from '../../Components/HipBox';
-import { JazzValueState } from '../../Components/JazzBox';
-import { RbValueState } from '../../Components/RbBox';
-import { RockValueState } from '../../Components/RockBox';
-import { useRecoilValue } from 'recoil';
+import RbBox from '../../Components/CheckBox/RbBox';
+import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
+import { PopValueState } from '../../Components/CheckBox/PopBox';
+import { HipValueState } from '../../Components/CheckBox/HipBox';
+import { JazzValueState } from '../../Components/CheckBox/JazzBox';
+import { RbValueState } from '../../Components/CheckBox/RbBox';
+import { RockValueState } from '../../Components/CheckBox/RockBox';
 
-import Progress from '../../Components/progress';
-import SecondBtn from './Button/SecondBtn';
-import ScrollToNext from '../../Components/scrollToNext';
+import Bar from '../../Components/common/Progress/Bar';
+import SecondBtn from '../../Components/common/Button/SecondBtn';
+import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
 
 import './SecondPage.css';
 
@@ -103,7 +103,7 @@ const SecondPage9 = () => {
       {({ sectionRefs, handleScrollToNext }) => (
         <div className="firstPage">
           <div className="progress">
-            <Progress percentage={testData[11].completed} />
+            <Bar percentage={GAUGE_PERCENTAGES[11].completed} />
           </div>
           {[
             {
