@@ -10,7 +10,7 @@ import {
 } from 'react-share';
 
 import styled from 'styled-components';
-import { useScript } from './hooks';
+import { useScript } from '../../hooks/useScript';
 
 const Share = () => {
   const currentUrl = window.location.href; // 임시 url

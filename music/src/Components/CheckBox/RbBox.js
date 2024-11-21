@@ -1,20 +1,19 @@
-import React from 'react';
-import CheckBoxCnt from './CheckBox.style';
-import '../App.css';
-import { atom } from 'recoil';
-import { useRecoilState } from 'recoil';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { atom, useRecoilState } from 'recoil';
 
-export const JazzValueState = atom({
-  key: 'Jazz',
+import CheckBoxCnt from './CheckBox.style';
+import '../../App.css';
+
+export const RbValueState = atom({
+  key: 'RB',
   default: {},
 });
 
-const JazzBox = ({ id, onNext }) => {
-  const [jazzValues, setJazzValueState] = useRecoilState(JazzValueState);
+const RbBox = ({ id, onNext }) => {
+  const [RbValues, setRbValueState] = useRecoilState(RbValueState);
 
   const checkOnlyOne = (num) => {
-    setJazzValueState((prevCheckedValues) => {
+    setRbValueState((prevCheckedValues) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
@@ -25,7 +24,7 @@ const JazzBox = ({ id, onNext }) => {
 
   useEffect(() => {
     const handleCheckboxChange = () => {
-      console.log(id, jazzValues[id]);
+      console.log(id, RbValues[id]);
     };
 
     const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
@@ -39,12 +38,12 @@ const JazzBox = ({ id, onNext }) => {
         checkboxElement.removeEventListener('change', handleCheckboxChange);
       }
     };
-  }, [jazzValues, id]);
+  }, [RbValues, id]);
 
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (
-    <CheckBoxCnt id={`checkBoxCnt_${id}`} num={jazzValues[id]}>
+    <CheckBoxCnt id={`checkBoxCnt_${id}`} num={RbValues[id]}>
       {[1, 2, 3, 4, 5].map((num) => (
         <React.Fragment key={num}>
           <input
@@ -52,7 +51,7 @@ const JazzBox = ({ id, onNext }) => {
             id={generateUniqueId(`b${num}`)}
             name="checkWrap"
             value={num}
-            checked={jazzValues[id] === num}
+            checked={RbValues[id] === num}
             onChange={() => checkOnlyOne(num)}
           />
           <label htmlFor={generateUniqueId(`b${num}`)}>{num}</label>
@@ -62,4 +61,4 @@ const JazzBox = ({ id, onNext }) => {
   );
 };
 
-export default JazzBox;
+export default RbBox;

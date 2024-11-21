@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './Result.css';
-import CommonModal from './Modal';
+import { useRecoilValue } from 'recoil';
 
+import { RbValueState } from '../../Components/CheckBox/RbBox';
 import ProgressBar from '@ramonak/react-progress-bar';
 import {
   ChakraProvider,
@@ -11,17 +11,18 @@ import {
   Button,
   useDisclosure,
 } from '@chakra-ui/react';
-import { RbValueState } from '../../Components/RbBox';
-import { useRecoilValue } from 'recoil';
+
 import {
   NeoRbModalBody,
   ComtemRbModalBody,
   PunkRbModalBody,
   SoulRbModalBody,
   AlterRbModalBody,
-} from './ModalCon';
+} from '../../Components/modal/ModalContent';
 
-import Share from '../../Components/Share';
+import Share from '../../Components/Share/Share';
+import CommonModal from '../../Components/modal/Modal';
+import './Result.css';
 
 const Rb = () => {
   const RbValue = useRecoilValue(RbValueState);

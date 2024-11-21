@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 
 import Main from '../Pages/Main/Main';
-import ScrollToTop from '../Components/ScrollToTop';
+import ScrollToTop from '../Components/ScrollToTop/ScrollToTop';
 
 import FirstPage from '../Pages/FirstTest/FirstPage';
 import FirstPage1 from '../Pages/FirstTest/FirstPage1';

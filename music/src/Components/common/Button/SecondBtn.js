@@ -2,13 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 
+import { PopValueState } from '../../CheckBox/PopBox';
+import { HipValueState } from '../../CheckBox/HipBox';
+import { RockValueState } from '../../CheckBox/RockBox';
+import { JazzValueState } from '../../CheckBox/JazzBox';
+import { RbValueState } from '../../CheckBox/RbBox';
 import './SecondBtn.css';
-
-import { PopValueState } from '../../../Components/PopBox';
-import { JazzValueState } from '../../../Components/JazzBox';
-import { HipValueState } from '../../../Components/HipBox';
-import { RockValueState } from '../../../Components/RockBox';
-import { RbValueState } from '../../../Components/RbBox';
 
 const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
   const [popValues] = useRecoilState(PopValueState);

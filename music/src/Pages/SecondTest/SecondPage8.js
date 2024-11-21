@@ -1,10 +1,10 @@
 import React from 'react';
 
-import RbBox from '../../Components/RbBox';
-import testData from '../../Components/testData';
-import SecondBtn from './Button/SecondBtn';
-import Progress from '../../Components/progress';
-import ScrollToNext from '../../Components/scrollToNext';
+import RbBox from '../../Components/CheckBox/RbBox';
+import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
+import SecondBtn from '../../Components/common/Button/SecondBtn';
+import Bar from '../../Components/common/Progress/Bar';
+import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
 
 import './SecondPage.css';
 
@@ -14,7 +14,7 @@ const SecondPage8 = () => {
       {({ sectionRefs, handleScrollToNext }) => (
         <div className="firstPage">
           <div className="progress">
-            <Progress percentage={testData[10].completed} />
+            <Bar percentage={GAUGE_PERCENTAGES[10].completed} />
           </div>
           {[
             {

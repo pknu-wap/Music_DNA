@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './Result.css';
-import CommonModal from './Modal';
+import { useRecoilValue } from 'recoil';
 
+import { HipValueState } from '../../Components/CheckBox/HipBox';
 import ProgressBar from '@ramonak/react-progress-bar';
 import {
   ChakraProvider,
@@ -11,17 +11,18 @@ import {
   Button,
   useDisclosure,
 } from '@chakra-ui/react';
-import { HipValueState } from '../../Components/HipBox';
-import { useRecoilValue } from 'recoil';
+
 import {
   DrillHipModalBody,
   TrapHipModalBody,
   AlterHipModalBody,
   RageHipModalBody,
   BoomHipModalBody,
-} from './ModalCon';
+} from '../../Components/modal/ModalContent';
 
-import Share from '../../Components/Share';
+import Share from '../../Components/Share/Share';
+import CommonModal from '../../Components/modal/Modal';
+import './Result.css';
 
 const Hip = () => {
   const HipValue = useRecoilValue(HipValueState);

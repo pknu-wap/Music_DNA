@@ -1,4 +1,4 @@
-const testData = [
+export const GAUGE_PERCENTAGES = [
   { completed: 8.3 },
   { completed: 16.6 },
   { completed: 24.8 },
@@ -12,5 +12,3 @@ const testData = [
   { completed: 91.2 },
   { completed: 99.5 },
 ];
-
-export default testData;

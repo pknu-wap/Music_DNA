@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Result.css';
-import CommonModal from './Modal';
+import CommonModal from '../../Components/modal/Modal';
 
 import ProgressBar from '@ramonak/react-progress-bar';
 import {
@@ -11,7 +11,7 @@ import {
   useDisclosure,
   Button,
 } from '@chakra-ui/react';
-import { PopValueState } from '../../Components/PopBox';
+import { PopValueState } from '../../Components/CheckBox/PopBox';
 import { useRecoilValue } from 'recoil';
 import {
   DancePopModalBody,
@@ -19,9 +19,9 @@ import {
   BritPopModalBody,
   IndiPopModalBody,
   LatinPopModalBody,
-} from './ModalCon';
+} from '../../Components/modal/ModalContent';
 
-import Share from '../../Components/Share';
+import Share from '../../Components/Share/Share';
 
 const Pop = () => {
   const PopValue = useRecoilValue(PopValueState);

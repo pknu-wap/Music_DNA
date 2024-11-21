@@ -1,20 +1,19 @@
-import React from 'react';
-import CheckBoxCnt from './CheckBox.style';
-import '../App.css';
-import { atom } from 'recoil';
-import { useRecoilState } from 'recoil';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { atom, useRecoilState } from 'recoil';
 
-export const RbValueState = atom({
-  key: 'RB',
+import CheckBoxCnt from './CheckBox.style';
+import '../../App.css';
+
+export const HipValueState = atom({
+  key: 'Hip',
   default: {},
 });
 
-const RbBox = ({ id, onNext }) => {
-  const [RbValues, setRbValueState] = useRecoilState(RbValueState);
+const HipBox = ({ id, onNext }) => {
+  const [hipValues, setHipValueState] = useRecoilState(HipValueState);
 
   const checkOnlyOne = (num) => {
-    setRbValueState((prevCheckedValues) => {
+    setHipValueState((prevCheckedValues) => {
       const updatedValues = { ...prevCheckedValues, [id]: num };
       return updatedValues;
     });
@@ -25,7 +24,7 @@ const RbBox = ({ id, onNext }) => {
 
   useEffect(() => {
     const handleCheckboxChange = () => {
-      console.log(id, RbValues[id]);
+      console.log(id, hipValues[id]);
     };
 
     const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
@@ -39,12 +38,12 @@ const RbBox = ({ id, onNext }) => {
         checkboxElement.removeEventListener('change', handleCheckboxChange);
       }
     };
-  }, [RbValues, id]);
+  }, [hipValues, id]);
 
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (
-    <CheckBoxCnt id={`checkBoxCnt_${id}`} num={RbValues[id]}>
+    <CheckBoxCnt id={`checkBoxCnt_${id}`} num={hipValues[id]}>
       {[1, 2, 3, 4, 5].map((num) => (
         <React.Fragment key={num}>
           <input
@@ -52,7 +51,7 @@ const RbBox = ({ id, onNext }) => {
             id={generateUniqueId(`b${num}`)}
             name="checkWrap"
             value={num}
-            checked={RbValues[id] === num}
+            checked={hipValues[id] === num}
             onChange={() => checkOnlyOne(num)}
           />
           <label htmlFor={generateUniqueId(`b${num}`)}>{num}</label>
@@ -62,4 +61,4 @@ const RbBox = ({ id, onNext }) => {
   );
 };
 
-export default RbBox;
+export default HipBox;

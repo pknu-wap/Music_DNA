@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './Result.css';
-import CommonModal from './Modal';
+import { useRecoilValue } from 'recoil';
 
+import { JazzValueState } from '../../Components/CheckBox/JazzBox';
 import ProgressBar from '@ramonak/react-progress-bar';
 import {
   ChakraProvider,
@@ -11,18 +11,18 @@ import {
   useDisclosure,
   Button,
 } from '@chakra-ui/react';
-import { JazzValueState } from '../../Components/JazzBox';
-import { useRecoilValue } from 'recoil';
+
 import {
   LatinJazzModalBody,
   SwingJazzModalBody,
   SoulJazzModalBody,
   FreeJazzModalBody,
   BibobJazzModalBody,
-} from './ModalCon';
+} from '../../Components/modal/ModalContent';
 
-import Share from '../../Components/Share';
-
+import Share from '../../Components/Share/Share';
+import CommonModal from '../../Components/modal/Modal';
+import './Result.css';
 const Jazz = () => {
   const JazzValue = useRecoilValue(JazzValueState);
 
