@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useRef } from 'react';
-import { supabase } from '../../supabaseClient';
 
 import RockBox from '../../Components/CheckBox/RockBox';
 import RbBox from '../../Components/CheckBox/RbBox';
@@ -10,43 +9,25 @@ import NextButton from '../../Components/common/Button/NextButton';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import Bar from '../../Components/common/Progress/Bar';
 import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
+import audioPath from '../../constants/audioPath';
 
 import './FirstPage.css';
 
-const audioPath = {
-  1: 'POP1.mp3',
-  2: 'POP2.mp3',
-  3: 'HipHop1.mp3',
-  4: 'HipHop2.mp3',
-  5: 'Rock1.mp3',
-  6: 'Rock2.mp3',
-  7: 'RB1.mp3',
-  8: 'RB2.mp3',
-  9: 'Jazz1.mp3',
-  10: 'Jazz2.mp3',
-};
-
 const FirstPage1 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  // 음원 개수가 총 10개이므로 각 음원의 상태를 배열 형태로 다루어야함
   const audioRefs = useRef([]);
 
   const playMusic = async (audioName) => {
     try {
       if (!audioRefs.current[audioName].src) {
-        const { data, error } = await supabase.storage
-          .from('Music_src') // 여기에 실제 버킷 이름을 넣으세요
-          .getPublicUrl(audioPath[audioName]);
+        const audioSrc = audioPath[audioName];
+        const audioRef = audioRefs.current[audioName];
 
-        if (error) {
-          console.error('Error fetching audio URL:', error);
-          return;
+        if (audioRef && !audioRef.src) {
+          audioRef.src = audioSrc;
         }
-
-        audioRefs.current[audioName].src = data.publicUrl;
       }
 
-      // 재생중인 음악이 있다면 정지
       audioRefs.current.forEach((audio, i) => {
         if (i !== audioName && !audio.paused) {
           audio.pause();

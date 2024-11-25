@@ -1,6 +1,5 @@
 import React from 'react';
-import { useRef } from 'react';
-import { supabase } from '../../supabaseClient';
+import { useState, useRef } from 'react';
 
 import PopBox from '../../Components/CheckBox/PopBox';
 import HipBox from '../../Components/CheckBox/HipBox';
@@ -10,37 +9,23 @@ import NextButton from '../../Components/common/Button/NextButton';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import Bar from '../../Components/common/Progress/Bar';
 import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
+import audioPath from '../../constants/audioPath';
 
 import './FirstPage.css';
 
-const audioPath = {
-  1: 'POP1.mp3',
-  2: 'POP2.mp3',
-  3: 'HipHop1.mp3',
-  4: 'HipHop2.mp3',
-  5: 'Rock1.mp3',
-  6: 'Rock2.mp3',
-  7: 'RB1.mp3',
-  8: 'RB2.mp3',
-  9: 'Jazz1.mp3',
-  10: 'Jazz2.mp3',
-};
 const FirstPage = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRefs = useRef([]);
 
   const playMusic = async (audioName) => {
     try {
       if (!audioRefs.current[audioName].src) {
-        const { data, error } = await supabase.storage
-          .from('Music_src') // 여기에 실제 버킷 이름을 넣으세요
-          .getPublicUrl(audioPath[audioName]);
+        const audioSrc = audioPath[audioName];
+        const audioRef = audioRefs.current[audioName];
 
-        if (error) {
-          console.error('Error fetching audio URL:', error);
-          return;
+        if (audioRef && !audioRef.src) {
+          audioRef.src = audioSrc;
         }
-
-        audioRefs.current[audioName].src = data.publicUrl;
       }
 
       audioRefs.current.forEach((audio, i) => {
@@ -58,6 +43,7 @@ const FirstPage = () => {
     } catch (error) {
       console.error('Error handling audio:', error);
     }
+    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -89,6 +75,7 @@ const FirstPage = () => {
                   {index + 1}번 사운드가 당신의 마음에 드나요?
                 </div>
               </h3>
+
               <item.Component
                 id={item.id}
                 onNext={() => handleScrollToNext(index)}
