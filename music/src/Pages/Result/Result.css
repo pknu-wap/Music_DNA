@@ -192,14 +192,6 @@
   background-color: white;
 }
 
-.vstack-custom .first_box .Sub .elec {
-  padding: 0px 16px;
-}
-
-.vstack-custom .first_box .Sub .RageHip {
-  padding: 0px 30px;
-}
-
 .vstack-custom .first_box Button {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -297,55 +289,60 @@
     font-size: 10px;
   }
 
-  .vstack-custom {
-    position: relative;
-    left: -300px;
-  }
-
   .vstack-custom .first_box {
     width: 420px;
+  }
+
+  /* Pop */
+  .vstack-custom .first_box .Sub .elec {
+    padding: 0px 30px;
+  }
+
+  .vstack-custom .first_box .Sub .kpop {
+    padding: 0px 30px !important;
+  }
+
+  /* Rock */
+  .vstack-custom .first_box .Sub .Pro {
+    padding: 0px 30px !important;
+  }
+
+  .vstack-custom .first_box .Sub .HeavyRock {
+    padding: 0px 30px !important;
+  }
+
+  .vstack-custom .first_box .Sub .AlterRock {
+    padding: 0px 30px !important;
+  }
+
+  .vstack-custom .first_box .Sub .PunkRock {
+    padding: 0px 30px !important;
+  }
+
+  /* HipHop */
+  .vstack-custom .first_box .Sub .AlterHip {
+    padding: 0px 37px !important;
+  }
+
+  .vstack-custom .first_box .Sub .RageHip {
+    padding: 0px 37px !important;
+  }
+
+  /* R&B */
+  .vstack-custom .first_box .Sub .ComRB {
+    padding: 0px 37px !important;
+  }
+
+  .vstack-custom .first_box .Sub .AlterRB {
+    padding: 0px 37px !important;
   }
 
   .vstack-custom .first_box .Sub Button {
     width: 10px;
     font-size: 10px;
   }
-  .vstack-custom .first_box .Sub .elec {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .vstack-custom .first_box .Sub .AlterHip {
-    padding-left: 37px;
-    padding-right: 37px;
-  }
-
-  .vstack-custom .first_box .Sub .RageHip {
-    padding-left: 37px;
-    padding-right: 37px;
-  }
-
-  .vstack-custom .first_box .Sub .Pro {
-    padding: 0px 43px;
-  }
 
   .vstack-custom .first_box HStack Box ProgressBar {
     width: 1000px;
-  }
-
-  .vstack-custom .first_box .Sub .AlterRock {
-    padding: 0px 43px;
-  }
-
-  .vstack-custom .first_box .Sub .show {
-    padding: 0px 43px;
-  }
-
-  .vstack-custom .first_box .Sub .ComRB {
-    padding: 0px 37px;
-  }
-
-  .vstack-custom .first_box .Sub .AlterRB {
-    padding: 0px 37px;
   }
 }
