@@ -101,6 +101,7 @@ const Rock = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
+          <img src="/result/rock_result.png" width="300" height="50" />
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>Rock</span>' 에 가깝군요!
