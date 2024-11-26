@@ -223,7 +223,11 @@ const Hip = () => {
           <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
               <div className="Sub">
-                <Button className="RageHip" onClick={onRageHipOpen}>
+                <Button
+                  className="RageHip"
+                  onClick={onRageHipOpen}
+                  style={{ padding: '0px 30px' }}
+                >
                   레이지
                 </Button>
                 <CommonModal
