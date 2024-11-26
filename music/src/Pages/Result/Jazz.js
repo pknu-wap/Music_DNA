@@ -100,6 +100,7 @@ const Jazz = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
+          <img src="/result/jazz_result.png" width="300" height="50" />
           <h3>당신의 음악 DNA는</h3>
           <h2>
             '<span>Jazz</span>' 에 가깝군요!
