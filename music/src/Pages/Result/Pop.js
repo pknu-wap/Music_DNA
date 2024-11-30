@@ -98,14 +98,10 @@ const Pop = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
-          <img src="/result/pop_result.png" width="300" height="50" />
-
           <h3>당신의 음악 DNA는</h3>
-          <h2>
-            '<span>POP</span>' 에 가깝군요!
-          </h2>
+          <img src="/result/pop_result.png" width="400" height="50" />
         </div>
-        <br />
+
         <div class="singer">
           <table>
             <tr>
