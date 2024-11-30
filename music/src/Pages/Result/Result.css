@@ -152,6 +152,22 @@
   margin-left: 680px;
   color: #d6ff32;
   align-items: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #c63fcd;
+  }
+  70% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
 }
 
 .musictable .play span {
@@ -211,40 +227,27 @@
 }
 
 @media (max-width: 698px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   .body {
-    width: 500px;
-    height: 1600px !important;
+    width: 100%;
+    height: 1450px !important;
     margin: 0 auto;
     background-size: cover;
-    padding: -200px;
     overflow-x: hidden;
   }
 
   .Top h2 {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
-    margin-left: 110px;
   }
 
   .Top h3 {
     font-size: 14px;
     text-align: left;
-    margin-left: 180px;
   }
 
   .singer table {
     width: 340px;
     height: 120px;
-    margin-left: 70px;
   }
 
   .singer img {
@@ -257,9 +260,7 @@
   }
 
   .graph {
-    text-align: left;
     font-size: 20px;
-    margin-left: 140px;
   }
 
   .musictable hr {
@@ -278,19 +279,18 @@
     font-size: 10px;
   }
 
-  .musictable .play img {
-    position: relative;
-    width: 25px;
-    left: -340px;
+  .musictable .play {
+    width: 30px;
+    margin-left: 330px;
   }
 
   .musictable .play span {
-    left: -347px;
     font-size: 10px;
+    margin-left: 5px;
   }
 
   .vstack-custom .first_box {
-    width: 420px;
+    width: 350px;
   }
 
   /* Pop */
