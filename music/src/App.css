@@ -154,8 +154,8 @@ body {
 
 @media screen and (max-width: 481px) {
   .sound {
-    top: 10%;
-    left: 60%;
+    top: 5%;
+    left: 70%;
   }
 
   .sound img {
