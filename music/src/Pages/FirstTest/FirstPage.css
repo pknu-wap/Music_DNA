@@ -54,6 +54,22 @@
   border-radius: 100px;
   width: 40px;
   top: 30%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #c63fcd;
+  }
+  70% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
 }
 
 .progress {
