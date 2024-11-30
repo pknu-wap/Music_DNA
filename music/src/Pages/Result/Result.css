@@ -152,6 +152,22 @@
   margin-left: 680px;
   color: #d6ff32;
   align-items: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #c63fcd;
+  }
+  70% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
 }
 
 .musictable .play span {
