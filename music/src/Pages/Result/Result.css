@@ -279,18 +279,18 @@
     font-size: 10px;
   }
 
-  .musictable .play img {
-    position: relative;
-    width: 25px;
-    left: -340px;
+  .musictable .play {
+    width: 30px;
+    margin-left: 330px;
   }
 
   .musictable .play span {
     font-size: 10px;
+    margin-left: 5px;
   }
 
   .vstack-custom .first_box {
-    width: 420px;
+    width: 350px;
   }
 
   /* Pop */
