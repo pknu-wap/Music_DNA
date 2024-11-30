@@ -139,6 +139,7 @@ body {
 @media screen and (max-width: 481px) {
   .sound {
     top: 10%;
+    left: 55%;
   }
 
   .sound img {
@@ -149,25 +150,25 @@ body {
 
   .Main h2 {
     left: 10%;
-    top: 25%;
+    top: 10%;
     font-size: 30px;
   }
 
   .Main h1 {
     left: 10%;
-    top: 25%;
+    top: 10%;
     font-size: 100px;
     font-weight: 600;
   }
 
   .caution {
-    top: 74%;
+    top: 70%;
     left: 50%;
     font-size: 9px;
   }
 
   .mainButton {
-    top: 70%;
+    top: 35%;
     left: 50%;
   }
 
