@@ -155,7 +155,7 @@ body {
 @media screen and (max-width: 481px) {
   .sound {
     top: 10%;
-    left: 55%;
+    left: 60%;
   }
 
   .sound img {
@@ -184,7 +184,7 @@ body {
   }
 
   .mainButton {
-    top: 40%;
+    top: 45%;
     left: 50%;
   }
 
