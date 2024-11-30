@@ -236,21 +236,18 @@
   }
 
   .Top h2 {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
-    margin-left: 110px;
   }
 
   .Top h3 {
     font-size: 14px;
     text-align: left;
-    margin-left: 180px;
   }
 
   .singer table {
     width: 340px;
     height: 120px;
-    margin-left: 70px;
   }
 
   .singer img {
@@ -263,9 +260,7 @@
   }
 
   .graph {
-    text-align: left;
     font-size: 20px;
-    margin-left: 140px;
   }
 
   .musictable hr {
@@ -291,7 +286,6 @@
   }
 
   .musictable .play span {
-    left: -347px;
     font-size: 10px;
   }
 
