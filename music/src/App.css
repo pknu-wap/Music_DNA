@@ -28,6 +28,22 @@ body {
   top: 35%;
   left: 80%;
   color: rgb(208, 213, 216);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #c63fcd;
+  }
+  70% {
+    transform: scale(1);
+    color: #d6ff32;
+  }
 }
 
 .sound img {
@@ -162,13 +178,13 @@ body {
   }
 
   .caution {
-    top: 70%;
+    top: 75%;
     left: 50%;
     font-size: 9px;
   }
 
   .mainButton {
-    top: 35%;
+    top: 40%;
     left: 50%;
   }
 
