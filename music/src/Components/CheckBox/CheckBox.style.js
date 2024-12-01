@@ -6,7 +6,6 @@ const CheckBoxCnt = styled.div`
   }
 
   input[type='checkbox'] + label {
-    text-indent: -9999px;
     display: block;
     position: relative;
     top: -15%;
