@@ -25,13 +25,14 @@ const CheckBoxCnt = styled.div`
     @media screen and (min-width: 698px) and (max-width: 1024px) {
       width: 30px;
       height: 30px;
-      font-size: 7px;
+      font-size: 8px;
     }
 
     @media screen and (max-width: 698px) {
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       margin: 8px;
+      font-size: 8px;
     }
   }
 
@@ -54,9 +55,10 @@ const CheckBoxCnt = styled.div`
     }
 
     @media screen and (max-width: 698px) {
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       margin: 8px;
+      font-size: 8px;
     }
 
     &::after {
