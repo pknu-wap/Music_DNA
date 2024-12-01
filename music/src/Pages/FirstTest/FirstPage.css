@@ -101,10 +101,6 @@
 }
 
 @media screen and (max-width: 698px) {
-  .firstPage {
-    background-image: url('/public/mobile.gif') !important;
-  }
-
   .num1 {
     height: 20vh;
   }
