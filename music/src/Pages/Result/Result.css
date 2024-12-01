@@ -15,6 +15,9 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(37, 37, 103);
+  background-image: url('/public/desktop.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
 
   height: 2000px;
   top: 0px;
