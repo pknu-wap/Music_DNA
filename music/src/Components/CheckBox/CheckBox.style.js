@@ -13,6 +13,7 @@ const CheckBoxCnt = styled.div`
     display: inline-block;
     margin: 15px;
     text-align: center;
+    color: white;
     border: 3px solid ${(props) => getBorderColor(props.num)};
     padding: 8px 8px;
     width: 40px;
