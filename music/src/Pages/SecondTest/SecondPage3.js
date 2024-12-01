@@ -19,7 +19,7 @@ const SecondPage3 = () => {
           {[
             {
               id: 'ProRock1',
-              text: '환상을 보는 듯한 실험적인 사운드. 상상 속에만 존재하는 공간에 있는 것 같아.',
+              text: '환상을 보는 듯한 실험적인 사운드. 상상속 공간에 있는 것 같아.',
             },
             {
               id: 'HeavyRock1',
@@ -35,7 +35,7 @@ const SecondPage3 = () => {
             },
             {
               id: 'ShowRock1',
-              text: '꿈속에서 하늘을 헤엄치는 것만 같은 음악이 좋아.',
+              text: '하늘위를 헤엄치는 꿈 같은 음악이 좋아.',
             },
           ].map((item, index) => (
             <div
