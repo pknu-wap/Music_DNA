@@ -24,7 +24,7 @@ const fillAnimation = keyframes`
 export const ProgressBar = styled.div`
   width: 100%;
   height: 20px;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 10px;
 
   @media screen and (min-width: 698px) and (max-width: 1024px) {
@@ -39,7 +39,7 @@ export const ProgressBar = styled.div`
 export const Gauge = styled.div`
   height: 100%;
   background: linear-gradient(90deg, white, #d6ff32);
-  border-radius: 15px;
+  border-radius: 5px;
   width: ${({ percentage }) => `${percentage}%`};
   animation: ${fillAnimation} 1s ease-out forwards;
   display: flex;
