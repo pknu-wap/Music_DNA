@@ -39,7 +39,7 @@ export const ProgressBar = styled.div`
 export const Gauge = styled.div`
   height: 100%;
   background: linear-gradient(90deg, white, #d6ff32);
-  border-radius: 15px;
+  border-radius: 5px;
   width: ${({ percentage }) => `${percentage}%`};
   animation: ${fillAnimation} 1s ease-out forwards;
   display: flex;
