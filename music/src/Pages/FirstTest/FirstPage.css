@@ -94,6 +94,10 @@
   .num1 .q1 {
     font-size: 20px;
   }
+
+  .num1 img {
+    top: 50px;
+  }
 }
 
 @media screen and (max-width: 698px) {
