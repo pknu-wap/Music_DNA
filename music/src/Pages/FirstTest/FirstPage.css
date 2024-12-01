@@ -44,7 +44,7 @@
   position: relative;
   color: #d6ff32;
   font-size: 25px;
-  top: -40px;
+  top: -50px;
 }
 
 .num1 img {
@@ -53,7 +53,7 @@
   background-color: black;
   border-radius: 100px;
   width: 40px;
-  top: 30%;
+  top: 55px;
   animation: pulse 2s infinite;
 }
 
@@ -94,6 +94,10 @@
   .num1 .q1 {
     font-size: 20px;
   }
+
+  .num1 img {
+    top: 50px;
+  }
 }
 
 @media screen and (max-width: 698px) {
@@ -107,6 +111,10 @@
 
   .num1 .q1 {
     top: -50px;
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .num1 img {
+    top: 45px;
   }
 }
