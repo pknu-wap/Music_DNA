@@ -113,5 +113,8 @@
     top: -50px;
     font-size: 12px;
   }
+
+  .num1 img {
+    top: 45px;
   }
 }
