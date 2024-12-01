@@ -29,10 +29,11 @@ const CheckBoxCnt = styled.div`
     }
 
     @media screen and (max-width: 698px) {
-      width: 30px;
-      height: 30px;
+      width: 27px;
+      height: 27px;
       margin: 8px;
       font-size: 8px;
+      line-height: 5px;
     }
   }
 
@@ -55,10 +56,11 @@ const CheckBoxCnt = styled.div`
     }
 
     @media screen and (max-width: 698px) {
-      width: 30px;
-      height: 30px;
+      width: 27px;
+      height: 27px;
       margin: 8px;
       font-size: 8px;
+      line-height: 5px;
     }
 
     &::after {
