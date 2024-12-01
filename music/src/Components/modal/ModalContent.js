@@ -59,7 +59,7 @@ function IndiPopModalBody() {
       수 있다.
       <p style={{ fontSize: '14px' }}>
         <br />
-        대표 아티스트 : The Smtihsm, Omar Apollo, Men I Trust
+        대표 아티스트 : The Smith, Omar Apollo, Men I Trust
       </p>
     </p>
   );
@@ -86,10 +86,10 @@ function LatinJazzModalBody() {
   return (
     <p>
       1940년대 라틴 아메리카 음악과 재즈음악의 만남으로 재즈의 형태 속 라틴
-      아메리카의 (클라베, 탱고, 살사, 삼바 등) 특유한 리듬 패턴이 첨가됨
-      음악이다. 대표적으로 아프로큐반 재즈(Afro-Cubanjazz)는 쿠바,
-      보사노바(Bossa nova)는 브라질 곧 라틴아메라카의 속한 나라에서 탄생했으며
-      특히 퍼커션 악기의 사운드가 두드러지는 것이 특징이다.
+      아메리카의 클라베, 탱고, 살사, 삼바 등 특유한 리듬 패턴이 첨가됨 음악이다.
+      대표적으로 아프로큐반 재즈(Afro-Cuban jazz)는 쿠바, 보사노바(Bossa nova)는
+      브라질 곧 라틴아메라카의 속한 나라에서 탄생했으며 특히 퍼커션 악기의
+      사운드가 두드러지는 것이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Paquito D'Rivera, Arturo Sandoval, Stan Getz
@@ -117,9 +117,9 @@ function SoulJazzModalBody() {
   return (
     <p>
       1950년대 흑인만의 풍부한 펑키(Funky)한 소울과 재즈가 결합된 음악이다. 펑키
-      재즈(Funcky jazz)라고도 부를 수 있으며 하드 밥(Hard Bop) 의 파생물이자
-      흑인 음악인 블루스(Blues), 소울(Soul), 가스펠(Gaspel)의 강한 영향을
-      받은것이 특징이다.
+      재즈(Funky jazz)라고도 부를 수 있으며 하드 밥(Hard Bop)의 파생물이자 흑인
+      음악인 블루스(Blues), 소울(Soul), 가스펠(Gaspel)의 강한 영향을 받은것이
+      특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Robert Glasper, The Ramsey Lewis Trio, Angie Stone
@@ -133,8 +133,9 @@ function FreeJazzModalBody() {
     <p>
       1960년대 중반 기존 재즈구조와 규칙에 매너리즘에 빠져 탄생한 창작적 자유가
       담긴 즉흥 스타일의 재즈이며 아방가르드 재즈(Avant-garade jazz) 라고도
-      부른다. 정통을 무시한채 구조화 된 조성,박자에 구애받지 않는 것이 특징이다.
-      또한 당시 흑인인권차별에 대한 "Free"를 외치는 정치적 의미가 담겨 있다.
+      부른다. 정통을 무시한 채 구조화된 조성, 박자에 구애받지 않는 것이
+      특징이다. 또한 당시 흑인인권차별에 대한 "Free"를 외치는 정치적 의미가 담겨
+      있다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트: Ornette Coleman, John Coltrane, Cecil Taylor
@@ -161,10 +162,10 @@ function DrillHipModalBody() {
   return (
     <p>
       2010년대 초반에 시카고에 트랩(Trap) 아티스트들이 발전시킨 음악이며
-      '누군가를 쏘다' 속어인 "Drill"은 트랩보다 훨씬 폭력적이고 전투적인 가사와
-      주로 범죄와 관련된 잔혹한 삶을 음악에 담는다. 2010년대 후반부터는 유럽
-      전역에서 유행이 시작돼 "UK Drill" 이 탄생한다. UK드릴은 그라임(Grime) ,
-      개러지(UK Garage)의 영향을 받았으며 빠른 Bpm, 단조의 어두운 분위기,
+      '누군가를 쏘다'의 속어인 "Drill"은 트랩보다 훨씬 폭력적이고 전투적인
+      가사와 주로 범죄와 관련된 잔혹한 삶을 음악에 담는다. 2010년대 후반부터는
+      유럽 전역에서 유행이 시작돼 "UK Drill" 이 탄생한다. UK드릴은 그라임(Grime)
+      , 개러지(UK Garage)의 영향을 받았으며 빠른 bpm, 단조의 어두운 분위기,
       트레실로(Tresillo) 하이햇 패턴, 글라이딩 기술의 808베이스 등이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
@@ -177,10 +178,10 @@ function DrillHipModalBody() {
 function TrapHipModalBody() {
   return (
     <p>
-      1990년 대 등장하여 마약을 제조 판매하던 "Trap house"에서 이름이 탄생했다.
-      그래서 모든 아티스트가 그런것은 아니지만 대부분 약물. 도시폭력, 성관련
-      적인 가사를 직접적으로 표출한다. 또한 신디사이저 드럼에 빠르고 복잡한
-      하이햇 패턴이 특징이다.
+      1990년대 등장하여 마약을 제조 판매하던 "Trap house"에서 이름이 탄생했다.
+      그래서 모든 아티스트가 그런 것은 아니지만 대부분 약물, 도시폭력, 성 관련된
+      가사를 직접적으로 표출한다. 또한 신디사이저 드럼에 빠르고 복잡한 하이햇
+      패턴이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Future, Migos, Gucci Mane
@@ -193,9 +194,9 @@ function AlterHipModalBody() {
   return (
     <p>
       1980년대 초 얼터너티브 록(Alternative rock)과 비슷한 시기에 시작됐다고 볼
-      수 있다. "얼터너티브(Alternative)" 뜻처럼 "대안적인" 음악이며 기존
-      힙합장르의 뼈대에서 여러부분을 실험적인 사운드로 채워 아티스트 마다 특색이
-      보다 더욱 들어나는것이 특징이다.
+      수 있다. "얼터너티브(Alternative)" 뜻처럼 대안적인 음악이며 기존
+      힙합장르의 뼈대에서 여러 부분을 실험적인 사운드로 채워 아티스트마다 특색이
+      보다 더욱 드러나는 것이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Kanye West(Ye), Tyler, The Creator, Kid Cudi
@@ -208,12 +209,11 @@ function RageHipModalBody() {
   return (
     <p>
       2021년 Trippie Redd라는 아티스트 트랙인 "Miss the Rage"에서 이름을 따왔다.
-      "Trap(트랩)"의 하위장르 이지만 또 "Hyper pop(하이퍼 팝)"와 밀접한
-      장르이기에 에너지가 느껴지는 신디사이저와 분노를 표출하는 듯한 가사가
-      특징이다.
+      "Trap(트랩)"의 하위장르지만 "Hyper pop(하이퍼 팝)"과 밀접한 장르이기에
+      에너지가 느껴지는 신디사이저와 분노를 표출하는 듯한 가사가 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
-        대표 아티스트 : Playboi Carti, Trppie Redd, lil uzi vert
+        대표 아티스트 : Playboi Carti, Trppie Redd, lil Uzi Vert
       </p>
     </p>
   );
@@ -224,9 +224,9 @@ function BoomHipModalBody() {
     <p>
       1990년대 힙합 전성기 시절 동부 힙합(East Coast hip hop)에서 두드러진
       장르이자 음악 제작 스타일이다. 드럼소리를 의성어로 표현해 '붐 뱁 붐붐 뱁
-      붐' 같은 드럼의 소리에서 따온것이다. 그만큼 드럼의 그루브와 역할의 비중이
-      큰 음악이다. 그래서 대부분 느긋하고 단조로운 드럼의 그루브를 느낄 수
-      있으며 또한 올드한 질감의 샘플링을 사용하는 것이 특징이다.
+      붐' 같은 드럼의 소리에서 따온 것이다. 그만큼 드럼의 그루브와 역할의 비중이
+      큰 음악이다. 대부분 느긋하고 단조로운 드럼의 그루브를 느낄 수 있으며
+      올드한 질감의 샘플링을 사용하는 것이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Wu-Tang Clan, Jay-Z, Nas
@@ -238,10 +238,10 @@ function BoomHipModalBody() {
 function ProRockModalBody() {
   return (
     <p>
-      1960대에 등장한 음악 장르이며 클래식 음악, 재즈, 포크 등 많은 문화적,
-      음악적 요소를 결합한 장르이다. 가사는 시적이거나 철학적인 요소가 담겨
-      있으며 전반적으로 곡이 되게 복잡하고 긴 진행구조이다. 그래서 다양한 악기의
-      연주와 긴 솔로가 특징이다.
+      1960년대 등장한 음악 장르이며 클래식 음악, 재즈, 포크 등 많은 문화적,
+      음악적 요소를 결합한 장르이다. 가사는 시적이고 철학적인 요소가 담겨 있으며
+      전반적으로 곡이 복잡하고 긴 진행 구조이다. 그래서 다양한 악기의 연주와 긴
+      솔로가 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Yes, Rush, King Crimson
@@ -253,7 +253,7 @@ function ProRockModalBody() {
 function HeavyRockModalBody() {
   return (
     <p>
-      1960년대 후반 하드록(Hard rock),블루스 록(Blues rock)장르의 아티스트들이
+      1960년대 후반 하드록(Hard rock), 블루스 록(Blues rock)장르의 아티스트들이
       발전시킨 장르이다. 장르 이름에서 느껴지는 그대로 빠른템포와 강력하고
       찢어지는 듯한 높은 음량, 복잡한 기타 리프, 강렬한 드럼 비트, 보컬의
       샤우팅이 특징이다.
@@ -270,8 +270,8 @@ function AlterRockModalBody() {
     <p>
       1960년대 등장해 포스트 펑크(Post Punk)의 DIY(Do it yourself)정신의 영향을
       받아 전통적이고 대중화된 록 사운드의 "대안"(Alternative) 으로 만들어진
-      장르이다. 기존의 록만의 구성 방식을 실험적으로 바꿔 많은 하위장르를
-      탄생시킨 것이 특징이다.
+      장르이다. 기존 록만의 구성 방식을 실험적으로 바꿔 많은 하위장르를 탄생시킨
+      것이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
         대표 아티스트 : Nirvana, Coldplay, Pearl Jam - J
@@ -284,11 +284,11 @@ function PunkRockModalBody() {
   return (
     <p>
       1970년대 등장한 펑크 록은 문화 운동으로 시작되었다. "DIY(Do It Yourself)"
-      정신과 이념의 시발점이다. 그래서 펑크 운동의 원칙중 하나로 빠르고 간결한
-      곡구조와 사회문제의 대한 직설적인 가사전달이 특징이다.
+      정신과 이념의 시발점이다. 그래서 펑크 운동의 원칙 중 하나로 빠르고 간결한
+      곡 구조와 사회 문제에 대한 직설적인 가사전달이 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
-        대표 아티스트 : Sex pistols, Green day,The Clash
+        대표 아티스트 : Sex Pistols, Green Day, The Clash
       </p>
     </p>
   );
@@ -299,13 +299,13 @@ function ShowRockModalBody() {
     <p>
       1980년대 말 영국에서 등장했으며 Shoe(신발) + gaze(응시하다)의 합성어로
       관객과의 소통없이 기타 이펙트 페달을 밟는 발만 내내 내려다보며 연주한다는
-      이유로 이와 같은 이름이 탄생했다. 그래서 강한 리벌브와 딜레이 효과가
-      걸려있어 환상적에 있는 듯한 장황한 기타리프가 특징이다. 그리고 보컬의
-      뭉게지는 듯한 사운드와 여운이 느껴지는 멜로디와 가사가 특징이다. 때론
-      "Dream pop"이라고도 불린다.
+      이유로 이와 같은 이름이 탄생했다. 강한 리벌브와 딜레이 효과가 걸려있어
+      환상속에 있는 듯한 장황한 기타리프가 특징이다. 그리고 보컬의 뭉게지는 듯한
+      사운드와 여운이 느껴지는 멜로디와 가사가 특징이다. 때론 "Dream
+      pop"이라고도 불린다.
       <p style={{ fontSize: '14px' }}>
         <br />
-        대표 아티스트 : Slow dive, Cocteau Twins, Beach House
+        대표 아티스트 : Slow Dive, Cocteau Twins, Beach House
       </p>
     </p>
   );
@@ -315,8 +315,8 @@ function NeoRbModalBody() {
   return (
     <p>
       1990년대 전통적인 소울과 R&B의 요소를 현대적으로 재해석해 생겨난 음악
-      양식을 홍보 및 설명 하고자 만들어진 용어이다. 많은 장르에 걸쳐 다양한
-      요소가 합해져있으며 좀 더 소울스러운 흑인만의 색감이 나타나는것이
+      양식을 홍보 및 설명하고자 만들어진 용어이다. 많은 장르에 걸쳐 다양한
+      요소가 합해져 있으며 좀 더 소울스러운 흑인만의 색감이 나타나는것이
       특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
@@ -344,13 +344,13 @@ function ComtemRbModalBody() {
 function PunkRbModalBody() {
   return (
     <p>
-      펑크는 1960년대 중반 아프리카계 미국인들 사이에 유행했으며 '강한 냄새' 곧
-      신체적 노력으로 인한 체취가 느껴지는 음악이라는 뜻이다. 다양한 음악 장르를
-      혼합해 끈적한 그루브와 리듬이 강조된 음악이라 그루브를 느끼며 춤추기 쉬운
-      새로운 형태의 리듬적 역할이 강한 음악이다.
+      펑크는 1960년대 중반 아프리카계 미국인들 사이에서 유행했으며 '강한 냄새'
+      곧 신체적 노력으로 인한 체취가 느껴지는 음악이라는 뜻이다. 다양한 음악
+      장르를 혼합해 끈적한 그루브와 리듬이 강조된 음악이라 그루브를 느끼며
+      춤추기 쉬운 새로운 형태의 리듬적 역할이 강한 음악이다.
       <p style={{ fontSize: '14px' }}>
         <br />
-        대표 아티스트 :James Brown, King Floyd, Sly and the Family Stone
+        대표 아티스트 : James Brown, King Floyd, Sly and the Family Stone
       </p>
     </p>
   );
@@ -359,12 +359,11 @@ function PunkRbModalBody() {
 function SoulRbModalBody() {
   return (
     <p>
-      {' '}
       1950년대 후반 민권운동의 시작으로 등장했고 블루스(Blues)의 정신과
       가스펠(Gaspel)의 영향이 더해져 R&B(알앤비)의 뿌리가 되는 음악이다. 당시
-      백인들만의 음악은 로큰롤(Rock'n Rll)이였다면 흑인들만의 음악은
+      백인들만의 음악은 로큰롤(Rock'n Rll)이었다면 흑인들만의 음악은
       소울(Soul)음악이었다. 그리고 아프리카계 미국인이 소유한 최초의 레코드
-      레이블인 "모타운(Motown)"이 등장해 흑인 음악이 대중화가 되는데 큰기여를
+      레이블인 "모타운(Motown)"이 등장해 흑인 음악이 대중화가 되는데 큰 기여를
       했다.
       <p style={{ fontSize: '14px' }}>
         <br />
@@ -377,10 +376,10 @@ function SoulRbModalBody() {
 function AlterRbModalBody() {
   return (
     <p>
-      2000년대 중후반에 등장한 장르로 Progressvie R&B(프로그레시브 알앤비),PB
+      2000년대 중후반에 등장한 장르로 Progressvie R&B(프로그레시브 알앤비), PB
       R&B(피비 알앤비), Hipster R&B(힙스터 알앤비) 등으로 불리기도 해 유래와
       탄생이 명확하지 않다. EDM, 록, 힙합 등을 결합을 서슴지 않고 시도해
-      실험적인. 변칙적인 사운드를 탄생시켜 귀를 매료시키는 음악이다. 대부분
+      실험적이고 변칙적인 사운드를 탄생시켜 귀를 매료시키는 음악이다. 대부분
       나긋한 멜로디 위에 신디사이저(Synth)를 활용한 몽환적인 사운드가 특징이다.
       <p style={{ fontSize: '14px' }}>
         <br />
