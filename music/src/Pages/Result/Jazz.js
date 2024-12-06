@@ -22,7 +22,9 @@ import {
 
 import Share from '../../Components/Share/Share';
 import CommonModal from '../../Components/modal/Modal';
+import LazyImage from '../../Components/Image/LazyImage';
 import './Result.css';
+
 const Jazz = () => {
   const JazzValue = useRecoilValue(JazzValueState);
 
@@ -101,7 +103,7 @@ const Jazz = () => {
       <div className="body">
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
-          <img src="/result/jazz_result.png" width="300" height="50" />
+          <LazyImage src="/result/jazz_result.webp" width="300" height="50" />
         </div>
 
         <div class="singer">
@@ -109,27 +111,27 @@ const Jazz = () => {
             <tr>
               <td>
                 <span>Latin</span>
-                <img src="/jazz_singer1.png" alt="Stan Getz" />
+                <LazyImage src="/jazz_singer1.webp" alt="Stan Getz" />
                 Stan Getz
               </td>
               <td>
                 <span>Swing</span>
-                <img src="/jazz_singer2.png" alt="Benny Goodman" />
+                <LazyImage src="/jazz_singer2.webp" alt="Benny Goodman" />
                 Benny Goodman
               </td>
               <td>
                 <span>Soul</span>
-                <img src="/jazz_singer3.png" alt="Jimmy smith" />
+                <LazyImage src="/jazz_singer3.webp" alt="Jimmy smith" />
                 Jimmy Smith
               </td>
               <td>
                 <span>Free</span>
-                <img src="/jazz_singer4.png" alt="Ornette Coleman" />
+                <LazyImage src="/jazz_singer4.webp" alt="Ornette Coleman" />
                 Ornette Coleman
               </td>
               <td>
                 <span>Bebop</span>
-                <img src="/jazz_singer5.png" alt="Charlie Parker" />
+                <LazyImage src="/jazz_singer5.webp" alt="Charlie Parker" />
                 Charlie Parker
               </td>
             </tr>
@@ -292,19 +294,19 @@ const Jazz = () => {
             <tr>
               <hr />
               <td>
-                <img src="/jazz_m1.jpg" id="albumcover" />
+                <LazyImage src="/jazz_m1.webp" id="albumcover" />
                 <div id="song">
                   The Girl From Ipanema
                   <br />
                   <span>Stan Getz</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYz-ulK000LqaLp6XPVVD6s')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m1"
                   />
                   <span>play</span>
@@ -315,19 +317,19 @@ const Jazz = () => {
             </tr>
             <tr>
               <td>
-                <img src="/jazz_m2.jpg" id="albumcover" />
+                <LazyImage src="/jazz_m2.webp" id="albumcover" />
                 <div id="song">
                   Sing Sing Sing
                   <br />
                   <span>Benny Goodman</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYu0VZR6fElTGZLEeq5olcL')
                     }
-                    src="/sound1.png"
+                    src="sound.webp"
                     id="m2"
                   />
                   <span>play</span>
@@ -337,19 +339,19 @@ const Jazz = () => {
             </tr>
             <tr>
               <td>
-                <img src="/jazz_m3.jpg" id="albumcover" />
+                <LazyImage src="/jazz_m3.webp" id="albumcover" />
                 <div id="song">
                   Midnight Special
                   <br />
                   <span>Jimmy Smith</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDB57IXkCJN8NiMLeq0xmM')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m3"
                   />
                   <span>play</span>
@@ -359,19 +361,19 @@ const Jazz = () => {
             </tr>
             <tr>
               <td>
-                <img src="/jazz_m4.jpg" id="albumcover" />
+                <LazyImage src="/jazz_m4.webp" id="albumcover" />
                 <div id="song">
                   Lonely Woman
                   <br />
                   <span>Ornette Coleman</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MaS65mSke-ouu9Nz5PJLLXw')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m4"
                   />
                   <span>play</span>
@@ -381,19 +383,19 @@ const Jazz = () => {
             </tr>
             <tr>
               <td>
-                <img src="/jazz_m5.jpg" id="albumcover" />
+                <LazyImage src="/jazz_m5.webp" id="albumcover" />
                 <div id="song">
                   Confirmation
                   <br />
                   <span>Charlie Parker</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MaWk1QneIEshUvxCa9aBKEv')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m5"
                   />
                   <span>play</span>

@@ -22,6 +22,7 @@ import {
 } from '../../Components/modal/ModalContent';
 
 import Share from '../../Components/Share/Share';
+import LazyImage from '../../Components/Image/LazyImage';
 
 const Pop = () => {
   const PopValue = useRecoilValue(PopValueState);
@@ -99,7 +100,12 @@ const Pop = () => {
       <div className="body">
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
-          <img src="/result/pop_result.png" width="400" height="50" />
+          <LazyImage
+            src="/result/pop_result.webp"
+            width="400"
+            height="50"
+            alt="pop_result"
+          />
         </div>
 
         <div class="singer">
@@ -107,27 +113,43 @@ const Pop = () => {
             <tr>
               <td>
                 <span>Dance</span>
-                <img src="/pop_singer1.png" alt="Lady gaga" />
+                <LazyImage
+                  src="/pop_singer1.webp"
+                  loading="lazy"
+                  alt="Lady gaga"
+                />
                 Lady Gaga
               </td>
               <td>
                 <span>Electro</span>
-                <img src="/pop_singer2.png" alt="Halsey" />
+                <LazyImage
+                  src="/pop_singer2.webp"
+                  loading="lazy"
+                  alt="Halsey"
+                />
                 Halsey
               </td>
               <td>
                 <span>Indie</span>
-                <img src="/pop_singer3.png" alt="The smtihs" />
+                <LazyImage
+                  src="/pop_singer3.webp"
+                  loading="lazy"
+                  alt="The smtihs"
+                />
                 The Smiths
               </td>
               <td>
                 <span>Latin</span>
-                <img src="/pop_singer4.png" alt="Camila Cabello" />
+                <LazyImage
+                  src="/pop_singer4.webp"
+                  loading="lazy"
+                  alt="Camila Cabello"
+                />
                 Camila Cabello
               </td>
               <td>
                 <span>K-pop</span>
-                <img src="/pop_singer5.png" alt="Oasis" />
+                <LazyImage src="/pop_singer5.webp" loading="lazy" alt="Oasis" />
                 BTS
               </td>
             </tr>
@@ -284,20 +306,20 @@ const Pop = () => {
             <tr>
               <hr />
               <td>
-                <img src="/pop_m1.jpg" id="albumcover" />
+                <LazyImage src="/pop_m1.webp" id="albumcover" alt="pop_m1" />
                 <div id="song">
                   Just Dance
                   <br />
                   <span>Lady Gaga</span>
                 </div>
-                <img src="19.png" id="prohibit1" />
+                <LazyImage src="19.webp" id="prohibit1" alt="19" />
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m1"
                   />
                   <span>play</span>
@@ -308,19 +330,19 @@ const Pop = () => {
             </tr>
             <tr>
               <td>
-                <img src="/pop_m2.jpg" id="albumcover" />
+                <LazyImage src="/pop_m2.webp" id="albumcover" alt="pop_m2" />
                 <div id="song">
                   Gasoline
                   <br />
                   <span>Halsey</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l')
                     }
-                    src="/sound1.png"
+                    src="/sound.webp"
                     id="m2"
                   />
                   <span>play</span>
@@ -330,19 +352,19 @@ const Pop = () => {
             </tr>
             <tr>
               <td>
-                <img src="/pop_m3.jpg" id="albumcover" />
+                <LazyImage src="/pop_m3.webp" id="albumcover" />
                 <div id="song">
                   This Charming Man
                   <br />
                   <span>The Smiths</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m3"
                   />
                   <span>play</span>
@@ -352,19 +374,19 @@ const Pop = () => {
             </tr>
             <tr>
               <td>
-                <img src="/pop_m4.jpg" id="albumcover" />
+                <LazyImage src="/pop_m4.webp" id="albumcover" />
                 <div id="song">
                   Havana
                   <br />
                   <span>Camila Cabello</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m4"
                   />
                   <span>play</span>
@@ -374,19 +396,19 @@ const Pop = () => {
             </tr>
             <tr>
               <td>
-                <img src="/pop_m5.png" id="albumcover" />
+                <LazyImage src="/pop_m5.webp" id="albumcover" />
                 <div id="song">
                   Butter
                   <br />
                   <span>BTS</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYaW79d9ymkxjp26uC1xRmT')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m5"
                   />
                   <span>play</span>

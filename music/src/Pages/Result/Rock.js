@@ -22,6 +22,7 @@ import {
 
 import CommonModal from '../../Components/modal/Modal';
 import Share from '../../Components/Share/Share';
+import LazyImage from '../../Components/Image/LazyImage';
 import './Result.css';
 
 const Rock = () => {
@@ -102,7 +103,7 @@ const Rock = () => {
       <div className="body">
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
-          <img src="/result/rock_result.png" width="300" height="50" />
+          <LazyImage src="/result/rock_result.webp" width="300" height="50" />
         </div>
 
         <div class="singer">
@@ -110,27 +111,27 @@ const Rock = () => {
             <tr>
               <td>
                 <span>Progressive</span>
-                <img src="/rock_singer1.png" alt="Yes" />
+                <LazyImage src="/rock_singer1.webp" alt="Yes" />
                 Yes
               </td>
               <td>
                 <span>Hard</span>
-                <img src="/rock_singer2.png" alt="Guns N' Roses" />
+                <LazyImage src="/rock_singer2.webp" alt="Guns N' Roses" />
                 Guns N' Roses
               </td>
               <td>
                 <span>Alternative</span>
-                <img src="/rock_singer3.png" alt="Nirvana" />
+                <LazyImage src="/rock_singer3.webp" alt="Nirvana" />
                 Nirvana
               </td>
               <td>
                 <span>Punk</span>
-                <img src="/rock_singer4.png" alt="Sex pistols" />
+                <LazyImage src="/rock_singer4.webp" alt="Sex pistols" />
                 Sex Pistols
               </td>
               <td>
                 <span>Shoegaze</span>
-                <img src="/rock_singer5.png" alt="Slow dive" />
+                <LazyImage src="/rock_singer5.webp" alt="Slow dive" />
                 Slow Dive
               </td>
             </tr>
@@ -294,19 +295,19 @@ const Rock = () => {
             <tr>
               <hr />
               <td>
-                <img src="/rock_m1.jpg" id="albumcover" />
+                <LazyImage src="/rock_m1.webp" id="albumcover" />
                 <div id="song">
                   Owner of a Lonely Heart
                   <br />
                   <span>Yes</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m1"
                   />
                   <span>play</span>
@@ -317,19 +318,19 @@ const Rock = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rock_m2.webp" id="albumcover" />
+                <LazyImage src="/rock_m2.webp" id="albumcover" />
                 <div id="song">
                   Sweet Child O' Mine
                   <br />
                   <span>Guns N' Roses</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MbI51oLrTl-9D9nhhKZk7CD')
                     }
-                    src="/sound1.png"
+                    src="sound.webp"
                     id="m2"
                   />
                   <span>play</span>
@@ -339,19 +340,19 @@ const Rock = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rock_m3.webp" id="albumcover" />
+                <LazyImage src="/rock_m3.webp" id="albumcover" />
                 <div id="song">
                   Smells Like Teen Spirit
                   <br />
                   <span>Nirvana</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m3"
                   />
                   <span>play</span>
@@ -361,19 +362,19 @@ const Rock = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rock_m4.jpg" id="albumcover" />
+                <LazyImage src="/rock_m4.webp" id="albumcover" />
                 <div id="song">
                   God Save The Queen
                   <br />
                   <span>Sex Pistols</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m4"
                   />
                   <span>play</span>
@@ -383,19 +384,19 @@ const Rock = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rock_m5.jpg" id="albumcover" />
+                <LazyImage src="/rock_m5.webp" id="albumcover" />
                 <div id="song">
                   When the Sun Hits
                   <br />
                   <span>Slow Dive</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m5"
                   />
                   <span>play</span>
