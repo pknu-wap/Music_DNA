@@ -67,7 +67,7 @@ const FirstPage1 = () => {
             >
               <img
                 onClick={() => playMusic(item.audio)}
-                src="./sound1.png"
+                src="sound.webp"
                 alt="Sound Icon"
               />
               <h3>

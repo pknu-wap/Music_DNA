@@ -33,7 +33,7 @@ const Main = () => {
       <img
         style={{ cursor: 'pointer' }}
         onClick={playMusic}
-        src="./sound1.png"
+        src="sound.webp"
         alt="Sound Icon"
         className={isPlaying ? 'playing' : ''}
       />
