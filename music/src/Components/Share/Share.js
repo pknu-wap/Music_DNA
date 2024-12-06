@@ -48,7 +48,7 @@ const Share = () => {
         <LineIcon size={48} round={true} borderRadius={24}></LineIcon>
       </LineShareButton>
       <KakaoShareButton onClick={handleKakaoButton}>
-        <KaKaoIcon src="./kakao.png"></KaKaoIcon>
+        <KaKaoIcon src="./kakao.webp"></KaKaoIcon>
       </KakaoShareButton>
     </Container>
   );

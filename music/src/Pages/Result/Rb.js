@@ -22,6 +22,7 @@ import {
 
 import Share from '../../Components/Share/Share';
 import CommonModal from '../../Components/modal/Modal';
+import LazyImage from '../../Components/Image/LazyImage';
 import './Result.css';
 
 const Rb = () => {
@@ -96,7 +97,7 @@ const Rb = () => {
       <div className="body">
         <div className="Top">
           <h3>당신의 음악 DNA는</h3>
-          <img src="/result/rb_result.png" width="300" height="50" />
+          <LazyImage src="/result/rb_result.webp" width="300" height="50" />
         </div>
 
         <div class="singer">
@@ -104,27 +105,27 @@ const Rb = () => {
             <tr>
               <td>
                 <span>Neo Soul</span>
-                <img src="/rb_singer1.png" alt="D'Angelo" />
+                <LazyImage src="/rb_singer1.webp" alt="D'Angelo" />
                 D'Angelo
               </td>
               <td>
                 <span>Contemporary</span>
-                <img src="/rb_singer2.png" alt="SZA" />
+                <LazyImage src="/rb_singer2.webp" alt="SZA" />
                 Beyoncé
               </td>
               <td>
                 <span>Funk</span>
-                <img src="/rb_singer3.png" alt="Michael Jackson" />
+                <LazyImage src="/rb_singer3.webp" alt="Michael Jackson" />
                 James Brown
               </td>
               <td>
                 <span>Soul</span>
-                <img src="/rb_singer4.png" alt="Stevie Wonder" />
+                <LazyImage src="/rb_singer4.webp" alt="Stevie Wonder" />
                 Stevie Wonder
               </td>
               <td>
                 <span>Alternative</span>
-                <img src="/rb_singer5.png" alt="Frank ocean" />
+                <LazyImage src="/rb_singer5.webp" alt="Frank ocean" />
                 Frank Ocean
               </td>
             </tr>
@@ -273,20 +274,20 @@ const Rb = () => {
             <tr>
               <hr />
               <td>
-                <img src="rb_m1.jpg" id="albumcover" />
+                <LazyImage src="rb_m1.webp" id="albumcover" />
                 <div id="song">
                   Brown Sugar
                   <br />
                   <span>D'Angelo</span>
                 </div>
-                <img src="19.png" id="prohibit1" />
+                <LazyImage src="19.webp" id="prohibit1" />
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m1"
                   />
                   <span>play</span>
@@ -297,19 +298,19 @@ const Rb = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rb_m2.jpg" id="albumcover" />
+                <LazyImage src="/rb_m2.webp" id="albumcover" />
                 <div id="song">
                   Crazy In Love
                   <br />
                   <span>Beyoncé</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su')
                     }
-                    src="/sound1.png"
+                    src="sound.webp"
                     id="m2"
                   />
                   <span>play</span>
@@ -319,20 +320,19 @@ const Rb = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rb_m3.jpeg" id="albumcover" />
+                <LazyImage src="/rb_m3.webp" id="albumcover" />
                 <div id="song">
-                  {' '}
                   I Got You
                   <br />
                   <span>James Brown</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m3"
                   />
                   <span>play</span>
@@ -342,19 +342,19 @@ const Rb = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rb_m4.jpg" id="albumcover" />
+                <LazyImage src="/rb_m4.webp" id="albumcover" />
                 <div id="song">
                   You Send Me
                   <br />
                   <span>Stevie Wonder</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m4"
                   />
                   <span>play</span>
@@ -364,19 +364,19 @@ const Rb = () => {
             </tr>
             <tr>
               <td>
-                <img src="/rb_m5.jpg" id="albumcover" />
+                <LazyImage src="/rb_m5.webp" id="albumcover" />
                 <div id="song">
                   Self Control
                   <br />
                   <span>Frank Ocean</span>
                 </div>
                 <div class="play">
-                  <img
+                  <LazyImage
                     onClick={() =>
                       (window.location.href =
                         'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0')
                     }
-                    src="sound1.png"
+                    src="sound.webp"
                     id="m5"
                   />
                   <span>play</span>
