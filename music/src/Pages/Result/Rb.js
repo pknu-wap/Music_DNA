@@ -121,7 +121,7 @@ const Rb = () => {
               <td>
                 <span>Soul</span>
                 <LazyImage src="/rb_singer4.webp" alt="Stevie Wonder" />
-                Stevie Wonder
+                Sam Cooke
               </td>
               <td>
                 <span>Alternative</span>
@@ -346,7 +346,7 @@ const Rb = () => {
                 <div id="song">
                   You Send Me
                   <br />
-                  <span>Stevie Wonder</span>
+                  <span>Sam Cooke</span>
                 </div>
                 <div class="play">
                   <LazyImage
