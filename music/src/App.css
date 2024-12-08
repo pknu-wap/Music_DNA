@@ -208,12 +208,13 @@ body {
 
 @media screen and (max-width: 698px) {
   .Main h2 {
-    left: 30%;
+    left: 20%;
     font-size: 30px;
   }
 
   .Main h1 {
-    font-size: 100px;
+    left: 20%;
+    font-size: 60px;
     font-weight: 600;
   }
 }
