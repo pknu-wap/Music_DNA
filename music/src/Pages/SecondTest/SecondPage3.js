@@ -47,16 +47,18 @@ const SecondPage3 = () => {
               <RockBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to="/SecondPage4"
-            ids={[
-              'ProRock1',
-              'HeavyRock1',
-              'AlterRock1',
-              'PunkRock1',
-              'ShowRock1',
-            ]}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to="/SecondPage4"
+              ids={[
+                'ProRock1',
+                'HeavyRock1',
+                'AlterRock1',
+                'PunkRock1',
+                'ShowRock1',
+              ]}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>

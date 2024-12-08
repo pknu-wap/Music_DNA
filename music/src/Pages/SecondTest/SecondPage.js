@@ -47,10 +47,18 @@ const SecondPage = () => {
               <PopBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to="/SecondPage1"
-            ids={['DancePop1', 'ElecPop1', 'BritPop1', 'IndiPop1', 'LatinPop1']}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to="/SecondPage1"
+              ids={[
+                'DancePop1',
+                'ElecPop1',
+                'BritPop1',
+                'IndiPop1',
+                'LatinPop1',
+              ]}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>

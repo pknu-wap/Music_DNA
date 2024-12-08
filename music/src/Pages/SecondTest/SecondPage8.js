@@ -47,10 +47,12 @@ const SecondPage8 = () => {
               <RbBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to="/SecondPage9"
-            ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to="/SecondPage9"
+              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>
