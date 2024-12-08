@@ -83,12 +83,14 @@ const FirstPage = () => {
               <audio ref={(el) => (audioRefs.current[item.audio] = el)} />
             </div>
           ))}
-          <NextButton
-            to="/FirstPage1"
-            popCount={2}
-            hipCount={2}
-            rockCount={1}
-          />
+          <div className="nextButton">
+            <NextButton
+              to="/FirstPage1"
+              popCount={2}
+              hipCount={2}
+              rockCount={1}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>

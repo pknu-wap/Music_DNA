@@ -193,3 +193,27 @@ body {
     font-size: 25px;
   }
 }
+
+@media screen and (min-width: 698px) and (max-width: 1024px) {
+  .Main h2 {
+    left: 60%;
+    font-size: 30px;
+  }
+
+  .Main h1 {
+    font-size: 100px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .Main h2 {
+    left: 30%;
+    font-size: 30px;
+  }
+
+  .Main h1 {
+    font-size: 100px;
+    font-weight: 600;
+  }
+}

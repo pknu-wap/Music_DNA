@@ -136,11 +136,13 @@ const SecondPage9 = () => {
               <RbBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to={`/${Result}`}
-            ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
-            onCompleteButtonClick={completeButton}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to={`/${Result}`}
+              ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
+              onCompleteButtonClick={completeButton}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>

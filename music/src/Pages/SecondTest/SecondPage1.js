@@ -47,16 +47,18 @@ const SecondPage1 = () => {
               <JazzBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to="/SecondPage2"
-            ids={[
-              'LatinJazz1',
-              'SwingJazz1',
-              'SoulJazz1',
-              'FreeJazz1',
-              'BibobJazz1',
-            ]}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to="/SecondPage2"
+              ids={[
+                'LatinJazz1',
+                'SwingJazz1',
+                'SoulJazz1',
+                'FreeJazz1',
+                'BibobJazz1',
+              ]}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>

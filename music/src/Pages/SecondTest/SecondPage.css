@@ -64,6 +64,10 @@
   margin-right: 80px;
 }
 
+.secondButton {
+  height: 100px;
+}
+
 @media screen and (min-width: 698px) and (max-width: 1024px) {
   .num2 {
     width: 80%;

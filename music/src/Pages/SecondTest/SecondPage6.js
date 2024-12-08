@@ -47,10 +47,18 @@ const SecondPage6 = () => {
               <HipBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
-          <SecondBtn
-            to="/SecondPage7"
-            ids={['DrillHip2', 'TrapHip2', 'AlterHip2', 'RageHip2', 'BoomHip2']}
-          />
+          <div className="secondButton">
+            <SecondBtn
+              to="/SecondPage7"
+              ids={[
+                'DrillHip2',
+                'TrapHip2',
+                'AlterHip2',
+                'RageHip2',
+                'BoomHip2',
+              ]}
+            />
+          </div>
         </div>
       )}
     </ScrollToNext>
