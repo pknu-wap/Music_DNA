@@ -1,10 +1,14 @@
-### Introduction(소개)
-**사용자의 취향 장르**를 판별하고 그에 맞는 **플레이리스트**를 제공하기 위해 설계된 **웹 애플리케이션**입니다. 
-<br/>
-
+## Music Dopamine
 <img width="500" alt="스크린샷 2024-12-08 23 20 18" src="https://github.com/user-attachments/assets/05c3d0d1-e052-49ef-b0ee-9c9686baf579">
+<br/><br/><br/>
 
-## 👨‍💻 Contributors 👩‍💻
+## 🎧 소개 (Introduction)
+**사용자의 취향 장르**를 알려주고 그에 맞는 **플레이리스트**를 제공하는 서비스입니다.
+<br/><br/><br/>
+
+
+
+## 👨‍💻 기여자(Contributors) 👩‍💻
 
 <table>
   <tr>
@@ -48,8 +52,9 @@
 - **박준용**: 결과 저장 및 배포
 - **신채은**: 음악 db 저장 및 배포
 - **김지혜**: UX/UI 디자인
+<br/><br/><br/>
 
-## 기술스택(Tech Stack)
+## 🔫 기술스택(Tech Stack)
 
 ### Front
 <div>
