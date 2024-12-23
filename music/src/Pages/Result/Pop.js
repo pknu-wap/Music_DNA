@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Result.css';
 import CommonModal from '../../Components/modal/Modal';
 
@@ -23,8 +23,11 @@ import {
 
 import Share from '../../Components/Share/Share';
 import LazyImage from '../../Components/Image/LazyImage';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const Pop = () => {
+  const isMobile = useIsMobile(698);
+
   const PopValue = useRecoilValue(PopValueState);
 
   useEffect(() => {
@@ -139,6 +142,7 @@ const Pop = () => {
                 The Smiths
               </td>
               <td>
+                {isMobile && <br />}
                 <span>Latin</span>
                 <LazyImage
                   src="/pop_singer4.webp"
