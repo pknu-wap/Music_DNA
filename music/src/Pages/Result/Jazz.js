@@ -23,9 +23,12 @@ import {
 import Share from '../../Components/Share/Share';
 import CommonModal from '../../Components/modal/Modal';
 import LazyImage from '../../Components/Image/LazyImage';
+import useIsMobile from '../../hooks/useIsMobile';
 import './Result.css';
 
 const Jazz = () => {
+  const isMobile = useIsMobile(698);
+
   const JazzValue = useRecoilValue(JazzValueState);
 
   useEffect(() => {
@@ -115,6 +118,7 @@ const Jazz = () => {
                 Stan Getz
               </td>
               <td>
+                {isMobile && <br />}
                 <span>Swing</span>
                 <LazyImage src="/jazz_singer2.webp" alt="Benny Goodman" />
                 Benny Goodman
@@ -125,6 +129,7 @@ const Jazz = () => {
                 Jimmy Smith
               </td>
               <td>
+                {isMobile && <br />}
                 <span>Free</span>
                 <LazyImage src="/jazz_singer4.webp" alt="Ornette Coleman" />
                 Ornette Coleman
