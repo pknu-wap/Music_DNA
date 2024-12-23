@@ -23,10 +23,10 @@ import {
 
 import Share from '../../Components/Share/Share';
 import LazyImage from '../../Components/Image/LazyImage';
-import useIsMobie from '../../hooks/useIsMobile';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const Pop = () => {
-  const isMobile = useIsMobie(698);
+  const isMobile = useIsMobile(698);
 
   const PopValue = useRecoilValue(PopValueState);
 
