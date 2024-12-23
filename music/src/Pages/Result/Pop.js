@@ -99,7 +99,7 @@ const Pop = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
-          <h3>당신의 음악 Dopamine은</h3>
+          <h3>당신의 음악 DNA는</h3>
           <LazyImage
             src="/result/pop_result.webp"
             width="400"

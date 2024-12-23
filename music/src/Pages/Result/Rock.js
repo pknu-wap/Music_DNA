@@ -102,7 +102,7 @@ const Rock = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
-          <h3>당신의 음악 Dopamine은</h3>
+          <h3>당신의 음악 DNA는</h3>
           <LazyImage src="/result/rock_result.webp" width="300" height="50" />
         </div>
 
