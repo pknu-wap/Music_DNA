@@ -1,5 +1,6 @@
-## Music Dopamine
-<img width="500" alt="스크린샷 2024-12-08 23 20 18" src="https://github.com/user-attachments/assets/05c3d0d1-e052-49ef-b0ee-9c9686baf579">
+## Music DNA
+<img width="500" alt="스크린샷 2024-12-23 22 54 55" src="https://github.com/user-attachments/assets/9ff2cf0f-8ddd-4615-8bc4-ec22b1a30bdc" />
+
 <br/><br/><br/>
 
 ## 🎧 소개 (Introduction)
