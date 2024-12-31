@@ -51,7 +51,7 @@ const SecondPage9 = () => {
     Rock: RockTotal,
   };
 
-  const Result = Object.keys(AllTotal).reduce((max, genre) => {
+  const favoriteGenre = Object.keys(AllTotal).reduce((max, genre) => {
     return AllTotal[genre] > AllTotal[max] ? genre : max;
   }, 'Pop');
 
@@ -98,6 +98,7 @@ const SecondPage9 = () => {
           ))}
           <div className="secondButton">
             <SecondBtn
+              to={`/${favoriteGenre}`}
               ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
             />
           </div>
