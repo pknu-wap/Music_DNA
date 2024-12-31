@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PopBox from '../../Components/CheckBox/PopBox';
+import RbBox from '../../Components/CheckBox/RbBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
@@ -18,24 +18,24 @@ const SecondPage4 = () => {
           </div>
           {[
             {
-              id: 'DancePop2',
-              text: '긍정 에너지를 분출하는 업템포 음악과 중독성이 강한 멜로디는 내 어깨를 들썩이게 해!',
+              id: 'NeoRB2',
+              text: '여러 장르의 요소에 흑인 소울이 조화를 이루는 음악. 그 끈적임속에 너와 함께 빠져드는 느낌이야.',
             },
             {
-              id: 'ElecPop2',
-              text: '전자 악기와 디지털 사운드의 조화! 마치 다채로운 레이저쇼 현장에 온 기분이야!',
+              id: 'ComRB2',
+              text: '대중적인 음악에는 흑인들의 바이브가 담겨야 한다고 생각해. 이런 조화가 날 트랜드 섀터로 만들어 줄 것 같거든.',
             },
             {
-              id: 'BritPop2',
-              text: '내가 덕질하는 최애 아이돌 음악은 내 삶의 원동력! 굿즈 소장은 필수 중 필수 아니겠어?',
+              id: 'PunkRB2',
+              text: '드럼과 베이스의 끈적이는 리듬과 흑인 보컬의 찰진 멜로디는 녹아내린 초콜릿 위에서 춤을 추고 싶게 해.',
             },
             {
-              id: 'IndiPop2',
-              text: '혼자만 알고 싶었던 아티스트의 콘서트, 그 곳의 감성적 멜로디와 차분한 선율은 나에게 안정제와 같아.',
+              id: 'SoulRB2',
+              text: '과거 흑인들의 피와 땀, 영혼이 녹아든 보컬 멜로디에 눈물이 날 것 같아.',
             },
             {
-              id: 'LatinPop2',
-              text: '스페인어만의 특유한 어감과 레게톤의 음악! 마치 해변에서 개최한 뮤직 페스티벌에 와 있는 것 같아.',
+              id: 'AlterRB2',
+              text: '아티스트만의 뚜렷하고 독창적 스타일이 담긴 음악에 더욱 공감이 생겨.',
             },
           ].map((item, index) => (
             <div
@@ -44,19 +44,13 @@ const SecondPage4 = () => {
               ref={(el) => (sectionRefs.current[index] = el)}
             >
               <h3>{item.text}</h3>
-              <PopBox id={item.id} onNext={() => handleScrollToNext(index)} />
+              <RbBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
           <div className="secondButton">
             <SecondBtn
               to="/SecondPage5"
-              ids={[
-                'DancePop2',
-                'ElecPop2',
-                'BritPop2',
-                'IndiPop2',
-                'LatinPop2',
-              ]}
+              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
             />
           </div>
         </div>

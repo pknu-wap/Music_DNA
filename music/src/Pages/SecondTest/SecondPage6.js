@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HipBox from '../../Components/CheckBox/HipBox';
+import JazzBox from '../../Components/CheckBox/JazzBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
@@ -18,24 +18,24 @@ const SecondPage6 = () => {
           </div>
           {[
             {
-              id: 'DrillHip2',
-              text: '거친 사운드와 야만적인 가사는 잠재된 나의 야성을 깨워.',
+              id: 'LatinJazz2',
+              text: '모래알들이 부딪히는 듯한 리듬과 따스한 멜로디. 스페인 바다가 훤히 보이는 브런치 카페에 와 있는 것 같아.',
             },
             {
-              id: 'TrapHip2',
-              text: '시동걸린 스포츠카를 연상케하는 808베이스, 어두운 도시 속 대교를 질주하는 듯한 비트는 날 섹시하게 만들어.',
+              id: 'SwingJazz2',
+              text: '구둣발로 리듬을 타며 네 손을 잡고 춤추고 싶어, 아름다운 노을아래서.',
             },
             {
-              id: 'AlterHip2',
-              text: '규칙에 얽메임 없이 여러 장르를 혼합한 독창적인 사운드로 랩하는 아티스트가 매력적이야.',
+              id: 'SoulJazz2',
+              text: '흑인 뮤지션의 건반 터치는 마치 내 영혼을 어루만지는 것 같아.',
             },
             {
-              id: 'RageHip2',
-              text: '에너지가 넘치는 전자 사운드와 거침없이 행진하는 랩에 내 가슴이 뻥 뚫려.',
+              id: 'FreeJazz2',
+              text: '규칙에 얽메이지 않고 즉흥적으로 표현하는 음악을 들으면 나 역시 자유롭게 감정을 표현하고 싶어져.',
             },
             {
-              id: 'BoomHip2',
-              text: '그루브를 타며 박자를 가지고 노는 랩에 집중하면 그래비티 그림이 그려진 골목의 벽화가 떠올라.',
+              id: 'BibobJazz2',
+              text: '즉흥적으로 합을 맞추는 뮤지션들의 모습에서 섹시함이 느껴져.',
             },
           ].map((item, index) => (
             <div
@@ -44,18 +44,18 @@ const SecondPage6 = () => {
               ref={(el) => (sectionRefs.current[index] = el)}
             >
               <h3>{item.text}</h3>
-              <HipBox id={item.id} onNext={() => handleScrollToNext(index)} />
+              <JazzBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
           <div className="secondButton">
             <SecondBtn
               to="/SecondPage7"
               ids={[
-                'DrillHip2',
-                'TrapHip2',
-                'AlterHip2',
-                'RageHip2',
-                'BoomHip2',
+                'LatinJazz2',
+                'SwingJazz2',
+                'SoulJazz2',
+                'FreeJazz2',
+                'BibobJazz2',
               ]}
             />
           </div>

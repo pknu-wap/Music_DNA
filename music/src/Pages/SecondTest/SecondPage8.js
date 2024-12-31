@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RbBox from '../../Components/CheckBox/RbBox';
+import RockBox from '../../Components/CheckBox/RockBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
@@ -18,24 +18,24 @@ const SecondPage8 = () => {
           </div>
           {[
             {
-              id: 'NeoRB2',
-              text: '여러 장르의 요소에 흑인 소울이 조화를 이루는 음악. 그 끈적임속에 너와 함께 빠져드는 느낌이야.',
+              id: 'ProRock2',
+              text: '예상치 못한 음악적 요소와 긴 솔로 연주가 매력적이야.',
             },
             {
-              id: 'ComRB2',
-              text: '대중적인 음악에는 흑인들의 바이브가 담겨야 한다고 생각해. 이런 조화가 날 트랜드 섀터로 만들어 줄 것 같거든.',
+              id: 'HeavyRock2',
+              text: '중독적인 기타 선율과 무대를 장악한 밴드 공연의 강렬한 열기에 몸을 흔들며 열광해.',
             },
             {
-              id: 'PunkRB2',
-              text: '드럼과 베이스의 끈적이는 리듬과 흑인 보컬의 찰진 멜로디는 녹아내린 초콜릿 위에서 춤을 추고 싶게 해.',
+              id: 'AlterRock2',
+              text: '독특한 기타 연주, 창의성이 도드라지는 음악이 진정한 예술이라고 생각해.',
             },
             {
-              id: 'SoulRB2',
-              text: '과거 흑인들의 피와 땀, 영혼이 녹아든 보컬 멜로디에 눈물이 날 것 같아.',
+              id: 'PunkRock2',
+              text: '날티나는 기타 플레이, 반정부적인 가사는 염색머리에 찢어진 청바지를 입고 반항하던 학창시절이 떠올라.',
             },
             {
-              id: 'AlterRB2',
-              text: '아티스트만의 뚜렷하고 독창적 스타일이 담긴 음악에 더욱 공감이 생겨.',
+              id: 'ShowRock2',
+              text: '뮤지션들이 환상에 잠긴 듯 발만 보고 기타를 치며 노래를 부르면 나 역시 환상속으로 빠지는 것 같아.',
             },
           ].map((item, index) => (
             <div
@@ -44,13 +44,19 @@ const SecondPage8 = () => {
               ref={(el) => (sectionRefs.current[index] = el)}
             >
               <h3>{item.text}</h3>
-              <RbBox id={item.id} onNext={() => handleScrollToNext(index)} />
+              <RockBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
           <div className="secondButton">
             <SecondBtn
               to="/SecondPage9"
-              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
+              ids={[
+                'ProRock2',
+                'HeavyRock2',
+                'AlterRock2',
+                'PunkRock2',
+                'ShowRock2',
+              ]}
             />
           </div>
         </div>
