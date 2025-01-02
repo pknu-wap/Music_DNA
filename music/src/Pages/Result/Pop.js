@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Result.css';
-import CommonModal from '../../Components/modal/Modal';
+import React, { useEffect } from 'react';
+import { useRecoilValue } from 'recoil';
 
 import ProgressBar from '@ramonak/react-progress-bar';
 import {
@@ -12,18 +11,20 @@ import {
   Button,
 } from '@chakra-ui/react';
 import { PopValueState } from '../../Components/CheckBox/PopBox';
-import { useRecoilValue } from 'recoil';
+
+import CommonModal from '../../Components/modal/GenreModal/Modal';
 import {
   DancePopModalBody,
   ElecPopModalBody,
   BritPopModalBody,
   IndiPopModalBody,
   LatinPopModalBody,
-} from '../../Components/modal/ModalContent';
+} from '../../Components/modal/GenreModal/ModalContent';
 
 import Share from '../../Components/Share/Share';
 import LazyImage from '../../Components/Image/LazyImage';
 import useIsMobile from '../../hooks/useIsMobile';
+import './Result.css';
 
 const Pop = () => {
   const isMobile = useIsMobile(698);

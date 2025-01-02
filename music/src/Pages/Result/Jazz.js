@@ -12,16 +12,16 @@ import {
   Button,
 } from '@chakra-ui/react';
 
+import CommonModal from '../../Components/modal/GenreModal/Modal';
 import {
   LatinJazzModalBody,
   SwingJazzModalBody,
   SoulJazzModalBody,
   FreeJazzModalBody,
   BibobJazzModalBody,
-} from '../../Components/modal/ModalContent';
+} from '../../Components/modal/GenreModal/ModalContent';
 
 import Share from '../../Components/Share/Share';
-import CommonModal from '../../Components/modal/Modal';
 import LazyImage from '../../Components/Image/LazyImage';
 import useIsMobile from '../../hooks/useIsMobile';
 import './Result.css';
