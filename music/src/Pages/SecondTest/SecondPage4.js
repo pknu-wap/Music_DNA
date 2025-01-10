@@ -1,14 +1,16 @@
 import React from 'react';
-
+import NextModal from '../../Components/modal/NextModal/NextModal';
+import { useFavoriteGenre } from '../../hooks/useFavoriteGenre';
 import RbBox from '../../Components/CheckBox/RbBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
 import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
-
 import './SecondPage.css';
 
 const SecondPage4 = () => {
+  const favoriteGenre = useFavoriteGenre();
+
   return (
     <ScrollToNext>
       {({ sectionRefs, handleScrollToNext }) => (
@@ -48,10 +50,7 @@ const SecondPage4 = () => {
             </div>
           ))}
           <div className="secondButton">
-            <SecondBtn
-              to="/SecondPage5"
-              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
-            />
+            <NextModal favoriteGenre={favoriteGenre} />
           </div>
         </div>
       )}
