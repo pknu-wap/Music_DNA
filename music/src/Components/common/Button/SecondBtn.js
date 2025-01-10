@@ -9,7 +9,13 @@ import { JazzValueState } from '../../CheckBox/JazzBox';
 import { RbValueState } from '../../CheckBox/RbBox';
 import './SecondBtn.css';
 
-const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
+const NextButton = ({
+  divClassName = '',
+  to,
+  ids = [],
+  onCompleteButtonClick,
+  buttonText = '다음으로',
+}) => {
   const [popValues] = useRecoilState(PopValueState);
   const [jazzValues] = useRecoilState(JazzValueState);
   const [hipValues] = useRecoilState(HipValueState);
@@ -34,7 +40,7 @@ const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
   };
 
   return (
-    <div className="SecondBtn">
+    <div className={`SecondBtn ${divClassName}`}>
       <Link to={to}>
         <button
           onClick={(e) => {
@@ -48,7 +54,7 @@ const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
             }
           }}
         >
-          다음으로
+          {buttonText}
         </button>
       </Link>
     </div>

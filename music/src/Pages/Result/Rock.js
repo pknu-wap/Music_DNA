@@ -12,15 +12,15 @@ import {
 } from '@chakra-ui/react';
 import ProgressBar from '@ramonak/react-progress-bar';
 
+import CommonModal from '../../Components/modal/GenreModal/Modal';
 import {
   ProRockModalBody,
   HeavyRockModalBody,
   AlterRockModalBody,
   PunkRockModalBody,
   ShowRockModalBody,
-} from '../../Components/modal/ModalContent';
+} from '../../Components/modal/GenreModal/ModalContent';
 
-import CommonModal from '../../Components/modal/Modal';
 import Share from '../../Components/Share/Share';
 import LazyImage from '../../Components/Image/LazyImage';
 import './Result.css';

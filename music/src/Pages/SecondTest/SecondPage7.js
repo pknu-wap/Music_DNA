@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RockBox from '../../Components/CheckBox/RockBox';
+import HipBox from '../../Components/CheckBox/HipBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
@@ -18,24 +18,24 @@ const SecondPage7 = () => {
           </div>
           {[
             {
-              id: 'ProRock2',
-              text: '예상치 못한 음악적 요소와 긴 솔로 연주가 매력적이야.',
+              id: 'DrillHip2',
+              text: '거친 사운드와 야만적인 가사는 잠재된 나의 야성을 깨워.',
             },
             {
-              id: 'HeavyRock2',
-              text: '중독적인 기타 선율과 무대를 장악한 밴드 공연의 강렬한 열기에 몸을 흔들며 열광해.',
+              id: 'TrapHip2',
+              text: '시동걸린 스포츠카를 연상케하는 808베이스, 어두운 도시 속 대교를 질주하는 듯한 비트는 날 섹시하게 만들어.',
             },
             {
-              id: 'AlterRock2',
-              text: '독특한 기타 연주, 창의성이 도드라지는 음악이 진정한 예술이라고 생각해.',
+              id: 'AlterHip2',
+              text: '규칙에 얽메임 없이 여러 장르를 혼합한 독창적인 사운드로 랩하는 아티스트가 매력적이야.',
             },
             {
-              id: 'PunkRock2',
-              text: '날티나는 기타 플레이, 반정부적인 가사는 염색머리에 찢어진 청바지를 입고 반항하던 학창시절이 떠올라.',
+              id: 'RageHip2',
+              text: '에너지가 넘치는 전자 사운드와 거침없이 행진하는 랩에 내 가슴이 뻥 뚫려.',
             },
             {
-              id: 'ShowRock2',
-              text: '뮤지션들이 환상에 잠긴 듯 발만 보고 기타를 치며 노래를 부르면 나 역시 환상속으로 빠지는 것 같아.',
+              id: 'BoomHip2',
+              text: '그루브를 타며 박자를 가지고 노는 랩에 집중하면 그래비티 그림이 그려진 골목의 벽화가 떠올라.',
             },
           ].map((item, index) => (
             <div
@@ -44,18 +44,18 @@ const SecondPage7 = () => {
               ref={(el) => (sectionRefs.current[index] = el)}
             >
               <h3>{item.text}</h3>
-              <RockBox id={item.id} onNext={() => handleScrollToNext(index)} />
+              <HipBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
           <div className="secondButton">
             <SecondBtn
               to="/SecondPage8"
               ids={[
-                'ProRock2',
-                'HeavyRock2',
-                'AlterRock2',
-                'PunkRock2',
-                'ShowRock2',
+                'DrillHip2',
+                'TrapHip2',
+                'AlterHip2',
+                'RageHip2',
+                'BoomHip2',
               ]}
             />
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import JazzBox from '../../Components/CheckBox/JazzBox';
+import PopBox from '../../Components/CheckBox/PopBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
 import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
@@ -18,24 +18,24 @@ const SecondPage5 = () => {
           </div>
           {[
             {
-              id: 'LatinJazz2',
-              text: '모래알들이 부딪히는 듯한 리듬과 따스한 멜로디. 스페인 바다가 훤히 보이는 브런치 카페에 와 있는 것 같아.',
+              id: 'DancePop2',
+              text: '긍정 에너지를 분출하는 업템포 음악과 중독성이 강한 멜로디는 내 어깨를 들썩이게 해!',
             },
             {
-              id: 'SwingJazz2',
-              text: '구둣발로 리듬을 타며 네 손을 잡고 춤추고 싶어, 아름다운 노을아래서.',
+              id: 'ElecPop2',
+              text: '전자 악기와 디지털 사운드의 조화! 마치 다채로운 레이저쇼 현장에 온 기분이야!',
             },
             {
-              id: 'SoulJazz2',
-              text: '흑인 뮤지션의 건반 터치는 마치 내 영혼을 어루만지는 것 같아.',
+              id: 'BritPop2',
+              text: '내가 덕질하는 최애 아이돌 음악은 내 삶의 원동력! 굿즈 소장은 필수 중 필수 아니겠어?',
             },
             {
-              id: 'FreeJazz2',
-              text: '규칙에 얽메이지 않고 즉흥적으로 표현하는 음악을 들으면 나 역시 자유롭게 감정을 표현하고 싶어져.',
+              id: 'IndiPop2',
+              text: '혼자만 알고 싶었던 아티스트의 콘서트, 그 곳의 감성적 멜로디와 차분한 선율은 나에게 안정제와 같아.',
             },
             {
-              id: 'BibobJazz2',
-              text: '즉흥적으로 합을 맞추는 뮤지션들의 모습에서 섹시함이 느껴져.',
+              id: 'LatinPop2',
+              text: '스페인어만의 특유한 어감과 레게톤의 음악! 마치 해변에서 개최한 뮤직 페스티벌에 와 있는 것 같아.',
             },
           ].map((item, index) => (
             <div
@@ -44,18 +44,18 @@ const SecondPage5 = () => {
               ref={(el) => (sectionRefs.current[index] = el)}
             >
               <h3>{item.text}</h3>
-              <JazzBox id={item.id} onNext={() => handleScrollToNext(index)} />
+              <PopBox id={item.id} onNext={() => handleScrollToNext(index)} />
             </div>
           ))}
           <div className="secondButton">
             <SecondBtn
               to="/SecondPage6"
               ids={[
-                'LatinJazz2',
-                'SwingJazz2',
-                'SoulJazz2',
-                'FreeJazz2',
-                'BibobJazz2',
+                'DancePop2',
+                'ElecPop2',
+                'BritPop2',
+                'IndiPop2',
+                'LatinPop2',
               ]}
             />
           </div>

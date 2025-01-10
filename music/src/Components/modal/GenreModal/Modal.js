@@ -9,7 +9,7 @@ import {
   ModalCloseButton,
 } from '@chakra-ui/react';
 
-function CommonModal({ isOpen, onClose, title, children }) {
+function GenreDescriptionModal({ isOpen, onClose, title, children }) {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
@@ -23,4 +23,4 @@ function CommonModal({ isOpen, onClose, title, children }) {
   );
 }
 
-export default CommonModal;
+export default GenreDescriptionModal;
