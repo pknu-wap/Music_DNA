@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
+import SecondBtn from '../../common/Button/SecondBtn';
 import './Modal.css';
 
-const NextModal = () => {
+const NextModal = ({ favoriteGenre }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const modalBackGround = useRef();
 
@@ -32,6 +33,18 @@ const NextModal = () => {
             <h2>숨겨진 음악 DNA</h2>
             <p>1차분석 완료!</p>
             <p>더 정확한 결과를 위해 추가적인 테스트를 하시겠습니까?</p>
+            <SecondBtn
+              divClassName="modal_button"
+              buttonText="2차 테스트 시작"
+              to="/SecondPage5"
+              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
+            />
+            <SecondBtn
+              divClassName="modal_button"
+              buttonText="바로 결과 확인"
+              to={`/${favoriteGenre}`}
+              ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
+            />
           </div>
         </div>
       )}
