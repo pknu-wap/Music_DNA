@@ -30,9 +30,17 @@ const NextModal = ({ favoriteGenre }) => {
             >
               x
             </button>
-            <h2>숨겨진 음악 DNA</h2>
-            <p>1차분석 완료!</p>
-            <p>더 정확한 결과를 위해 추가적인 테스트를 하시겠습니까?</p>
+            <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>
+              <span>숨겨진 음악</span> DNA
+            </h2>
+            <span>1차분석 완료!</span>
+            <p>
+              더{' '}
+              <span style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                정확한 결과
+              </span>
+              를 위해 추가적인 테스트를 하시겠습니까?
+            </p>
             <SecondBtn
               divClassName="modal_button"
               buttonText="2차 테스트 시작"
