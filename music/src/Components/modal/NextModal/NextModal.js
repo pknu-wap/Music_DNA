@@ -7,8 +7,8 @@ const NextModal = ({ favoriteGenre }) => {
   const modalBackGround = useRef();
 
   return (
-    <div className="nextPage">
-      <div className="btn-wrpper">
+    <div className="modal-wrapper">
+      <div className="btn-wrapper">
         <button className="modal-open-btn" onClick={() => setModalOpen(true)}>
           다음으로
         </button>
