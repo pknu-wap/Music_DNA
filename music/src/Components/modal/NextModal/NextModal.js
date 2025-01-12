@@ -43,13 +43,13 @@ const NextModal = ({ favoriteGenre }) => {
             </p>
             <SecondBtn
               divClassName="modal_button"
-              buttonText="2차 테스트 시작"
+              buttonText="테스트 시작"
               to="/SecondPage5"
               ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
             />
             <SecondBtn
               divClassName="modal_button"
-              buttonText="바로 결과 확인"
+              buttonText="결과 확인"
               to={`/${favoriteGenre}`}
               ids={['NeoRB2', 'ComRB2', 'PunkRB2', 'SoulRB2', 'AlterRB2']}
             />
