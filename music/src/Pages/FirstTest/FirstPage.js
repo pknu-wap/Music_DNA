@@ -80,7 +80,10 @@ const FirstPage = () => {
                 id={item.id}
                 onNext={() => handleScrollToNext(index)}
               />
-              <audio ref={(el) => (audioRefs.current[item.audio] = el)} />
+              <audio
+                preload="none"
+                ref={(el) => (audioRefs.current[item.audio] = el)}
+              />
             </div>
           ))}
           <div className="nextButton">

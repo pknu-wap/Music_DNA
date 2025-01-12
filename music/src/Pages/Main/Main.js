@@ -16,7 +16,6 @@ const Main = () => {
     }
 
     setIsPlaying(!isPlaying);
-    // audio.currenTime = 0 // 클릭하면 다시 처음으로
   };
 
   useEffect(() => {
