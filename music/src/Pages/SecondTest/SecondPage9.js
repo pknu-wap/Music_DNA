@@ -50,6 +50,7 @@ const SecondPage9 = () => {
           ))}
           <div className="secondButton">
             <SecondBtn
+              buttonText="결과 확인"
               to={`/${favoriteGenre}`}
               ids={['NeoRB1', 'ComRB1', 'PunkRB1', 'SoulRB1', 'AlterRB1']}
             />
