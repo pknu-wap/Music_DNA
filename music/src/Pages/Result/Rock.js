@@ -102,7 +102,7 @@ const Rock = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
-          <h3>당신의 음악 DNA는</h3>
+          <h3>당신의 뮤직 Pick</h3>
           <LazyImage src="/result/rock_result.webp" width="300" height="50" />
         </div>
 
@@ -142,6 +142,7 @@ const Rock = () => {
             현재 <span>나의 음악 DNA</span>분포도
           </h2>
         </div>
+
         <VStack
           spacing={3}
           align="stretch"
@@ -286,7 +287,9 @@ const Rock = () => {
             </HStack>
           </Box>
         </VStack>
-
+        <div className="genre-description">
+          <h3>* 박스 클릭시 장르 설명 *</h3>
+        </div>
         <div className="ques">
           <h3>추천 플레이리스트 보기</h3>
         </div>

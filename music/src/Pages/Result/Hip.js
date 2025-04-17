@@ -96,7 +96,7 @@ const Hip = () => {
     <ChakraProvider>
       <div className="body">
         <div className="Top">
-          <h3>당신의 음악 DNA는</h3>
+          <h3>당신의 뮤직 Pick</h3>
           <LazyImage src="/result/hiphop_result.webp" width="300" height="50" />
         </div>
 
@@ -271,11 +271,12 @@ const Hip = () => {
             </HStack>
           </Box>
         </VStack>
-
+        <div className="genre-description">
+          <h3>* 박스 클릭시 장르 설명 *</h3>
+        </div>
         <div className="ques">
           <h3>추천 플레이리스트 보기</h3>
         </div>
-
         <div class="musictable">
           <table>
             <tr>

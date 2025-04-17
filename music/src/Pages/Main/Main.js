@@ -68,7 +68,7 @@ const Main = () => {
   return (
     <div className="Main">
       <SoundIcon isPlaying={isPlaying} playMusic={playMusic} />
-      <MainText title="숨겨진 나의 음악" subtitle="DNA" />
+      <MainText title="숨겨진 나의 음악" subtitle="PICK" />
       <CautionText />
       <StartButton />
     </div>
