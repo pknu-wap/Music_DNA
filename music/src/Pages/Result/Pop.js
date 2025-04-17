@@ -303,9 +303,13 @@ const Pop = () => {
             </HStack>
           </Box>
         </VStack>
+        <div className="genre-description">
+          <h3>* 박스 클릭시 장르 설명 *</h3>
+        </div>
         <div className="ques">
           <h3>추천 플레이리스트 보기</h3>
         </div>
+
         <div className="musictable">
           <table>
             <tr>

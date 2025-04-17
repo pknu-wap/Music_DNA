@@ -97,9 +97,14 @@
   color: #d6ff32;
 }
 
+.genre-description {
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+}
+
 .musictable table {
   display: inline;
-
   width: 500px;
   left: 1000px;
   top: 20px;
