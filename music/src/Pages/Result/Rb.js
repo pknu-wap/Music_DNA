@@ -133,7 +133,7 @@ const Rb = () => {
         </div>
         <div class="graph">
           <h2>
-            현재 <span>나의 음악 DNA</span>분포도
+            현재 <span>나의 뮤직</span> 분포도
           </h2>
         </div>
         <VStack
