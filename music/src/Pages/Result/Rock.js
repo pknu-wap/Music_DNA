@@ -28,10 +28,6 @@ import './Result.css';
 const Rock = () => {
   const RockValue = useRecoilValue(RockValueState);
 
-  useEffect(() => {
-    console.log(RockValue);
-  }, [RockValue]);
-
   let Total = 0;
   let ProRock = 0;
   let HeavyRock = 0;

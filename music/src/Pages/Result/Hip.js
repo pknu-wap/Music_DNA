@@ -28,10 +28,6 @@ import './Result.css';
 const Hip = () => {
   const HipValue = useRecoilValue(HipValueState);
 
-  useEffect(() => {
-    console.log(HipValue);
-  }, [HipValue]);
-
   let Total = 0;
   let DrillHip = 0;
   let TrapHip = 0;

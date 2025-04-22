@@ -31,10 +31,6 @@ const Pop = () => {
 
   const PopValue = useRecoilValue(PopValueState);
 
-  useEffect(() => {
-    console.log(PopValue);
-  }, [PopValue]);
-
   let Total = 0;
   let DancePop = 0;
   let ElecPop = 0;

@@ -22,24 +22,6 @@ const PopBox = ({ id, onNext }) => {
     }
   };
 
-  useEffect(() => {
-    const handleCheckboxChange = () => {
-      console.log(id, popValues[id]);
-    };
-
-    const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-
-    if (checkboxElement) {
-      checkboxElement.addEventListener('change', handleCheckboxChange);
-    }
-
-    return () => {
-      if (checkboxElement) {
-        checkboxElement.removeEventListener('change', handleCheckboxChange);
-      }
-    };
-  }, [popValues, id]);
-
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (

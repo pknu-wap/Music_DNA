@@ -28,10 +28,6 @@ import './Result.css';
 const Rb = () => {
   const RbValue = useRecoilValue(RbValueState);
 
-  useEffect(() => {
-    console.log(RbValue);
-  }, [RbValue]);
-
   let Total = 0;
   let NeoRb = 0;
   let ComtemRb = 0;

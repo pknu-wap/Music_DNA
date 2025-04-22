@@ -22,24 +22,6 @@ const JazzBox = ({ id, onNext }) => {
     }
   };
 
-  useEffect(() => {
-    const handleCheckboxChange = () => {
-      console.log(id, jazzValues[id]);
-    };
-
-    const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-
-    if (checkboxElement) {
-      checkboxElement.addEventListener('change', handleCheckboxChange);
-    }
-
-    return () => {
-      if (checkboxElement) {
-        checkboxElement.removeEventListener('change', handleCheckboxChange);
-      }
-    };
-  }, [jazzValues, id]);
-
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (
