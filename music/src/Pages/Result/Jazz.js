@@ -31,10 +31,6 @@ const Jazz = () => {
 
   const JazzValue = useRecoilValue(JazzValueState);
 
-  useEffect(() => {
-    console.log(JazzValue);
-  }, [JazzValue]);
-
   let Total = 0;
   let LatinJazz = 0;
   let SwingJazz = 0;
