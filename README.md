@@ -1,13 +1,12 @@
-## Music DNA
-<img width="500" alt="스크린샷 2024-12-23 22 54 55" src="https://github.com/user-attachments/assets/9ff2cf0f-8ddd-4615-8bc4-ec22b1a30bdc" />
+## 메인화면
+<img width="500" alt="스크린샷 2025-04-22 18 50 28" src="https://github.com/user-attachments/assets/7da38e28-64b5-4877-a8d1-5670ecbcb3f4" />
 
-<br/><br/><br/>
+
+<br/>
 
 ## 🎧 소개 (Introduction)
 **사용자의 취향 장르**를 알려주고 그에 맞는 **플레이리스트**를 제공하는 서비스입니다.
-<br/><br/><br/>
-
-
+<br/><br/>
 
 ## 👨‍💻 기여자(Contributors) 👩‍💻
 
@@ -53,9 +52,9 @@
 - **박준용**: 결과 저장 및 배포
 - **신채은**: 음악 db 저장 및 배포
 - **김지혜**: UX/UI 디자인
-<br/><br/><br/>
+<br/><br/>
 
-## 🔫 기술스택(Tech Stack)
+## 기술(Tech Stack)
 
 ### Front
 <div>
