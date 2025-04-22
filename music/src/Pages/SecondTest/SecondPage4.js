@@ -3,7 +3,6 @@ import NextModal from '../../Components/modal/NextModal/NextModal';
 import { useFavoriteGenre } from '../../hooks/useFavoriteGenre';
 import RbBox from '../../Components/CheckBox/RbBox';
 import { GAUGE_PERCENTAGES } from '../../constants/gaugePercentages';
-import SecondBtn from '../../Components/common/Button/SecondBtn';
 import Bar from '../../Components/common/Progress/Bar';
 import ScrollToNext from '../../Components/ScrollToNext/scrollToNext';
 import './SecondPage.css';
