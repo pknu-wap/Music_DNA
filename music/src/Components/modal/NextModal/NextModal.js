@@ -31,7 +31,7 @@ const NextModal = ({ favoriteGenre }) => {
               x
             </button>
             <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>
-              <span>숨겨진 음악</span> DNA
+              <span>숨겨진 뮤직</span> PICK
             </h2>
             <span>1차분석 완료!</span>
             <p>
