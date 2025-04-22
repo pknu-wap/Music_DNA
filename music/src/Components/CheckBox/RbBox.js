@@ -22,24 +22,6 @@ const RbBox = ({ id, onNext }) => {
     }
   };
 
-  useEffect(() => {
-    const handleCheckboxChange = () => {
-      console.log(id, RbValues[id]);
-    };
-
-    const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-
-    if (checkboxElement) {
-      checkboxElement.addEventListener('change', handleCheckboxChange);
-    }
-
-    return () => {
-      if (checkboxElement) {
-        checkboxElement.removeEventListener('change', handleCheckboxChange);
-      }
-    };
-  }, [RbValues, id]);
-
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (

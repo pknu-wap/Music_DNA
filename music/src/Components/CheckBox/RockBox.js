@@ -22,24 +22,6 @@ const RockBox = ({ id, onNext }) => {
     }
   };
 
-  useEffect(() => {
-    const handleCheckboxChange = () => {
-      console.log(id, rockValues[id]);
-    };
-
-    const checkboxElement = document.getElementById(`checkBoxCnt_${id}`);
-
-    if (checkboxElement) {
-      checkboxElement.addEventListener('change', handleCheckboxChange);
-    }
-
-    return () => {
-      if (checkboxElement) {
-        checkboxElement.removeEventListener('change', handleCheckboxChange);
-      }
-    };
-  }, [rockValues, id]);
-
   const generateUniqueId = (name) => `${id}_${name}`;
 
   return (
